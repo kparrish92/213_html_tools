@@ -182,15 +182,18 @@ select, input[type=number] {
 }
 
 .audio-button {
-  margin-top: 1.15rem;
-  border: 1px solid #d7dde2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  border: 1px solid #bfc8d0;
   background: white;
-  color: #5f6b75;
+  color: #4f6272;
   border-radius: 999px;
-  min-width: 44px;
-  min-height: 38px;
-  padding: .42em .75em;
-  font-size: 1.05rem;
+  min-height: 40px;
+  padding: .48em .9em;
+  font-size: .95rem;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -208,9 +211,9 @@ select, input[type=number] {
   }
 
   .audio-button {
-    margin-top: .9rem;
-    min-width: 42px;
-    min-height: 36px;
+    margin-top: .8rem;
+    min-height: 38px;
+    font-size: .85rem;
   }
 }
 
@@ -391,19 +394,33 @@ function addAudioButton(text) {
   const btn = document.createElement("button");
   btn.className = "audio-button";
   btn.type = "button";
-  btn.textContent = "🔊";
-  btn.setAttribute("aria-label", "Play Spanish audio");
-  btn.title = "Play Spanish audio";
 
-  btn.addEventListener("click", e => {
-    e.stopPropagation();
-    speakSpanish(text);
-  });
+  if (!("speechSynthesis" in window)) {
+    btn.textContent = "🔇 Audio unavailable";
+    btn.disabled = true;
+    btn.title = "Audio is not supported in this browser";
+    btn.setAttribute(
+      "aria-label",
+      "Audio is not supported in this browser"
+    );
+  } else {
+    btn.textContent = "🔊 Hear sentence";
+    btn.title = "Play the Spanish sentence";
+    btn.setAttribute(
+      "aria-label",
+      "Play the Spanish sentence"
+    );
+
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+      speakSpanish(text);
+    });
+  }
 
   content.appendChild(btn);
 
-  if (autoAudio) {
-    setTimeout(() => speakSpanish(text), 40);
+  if (autoAudio && "speechSynthesis" in window) {
+    speakSpanish(text);
   }
 }
 
@@ -596,7 +613,11 @@ document.getElementById("repeat").onclick = () => {
 next.onclick = forward;
 back.onclick = backward;
 content.onclick = e => {
-  if (e.target.closest(".target")) return;
+  if (
+    e.target.closest(".target") ||
+    e.target.closest(".audio-button")
+  ) return;
+
   forward();
 };
 document.getElementById("exit").onclick = () => {

@@ -61,3 +61,11 @@ All three SPN 213 activities now use the browser's built-in Speech Synthesis API
 - Contextualized vocabulary and subjunctive practice read the full Spanish sentence.
 - Extra-practice/review slides also include audio.
 - The browser selects an available Spanish voice, preferring Mexican/US Spanish when available and falling back to another Spanish voice.
+
+
+## Vocabulary audio fix
+
+The vocabulary pages now place the speaker button directly beside the Spanish answer.
+Automatic playback is invoked synchronously when the answer is revealed, which is
+more compatible with browser user-gesture restrictions. If Speech Synthesis is not
+available, the button displays a disabled speaker icon instead of silently failing.
