@@ -303,7 +303,13 @@ function show() {
   subsetControls.style.display = mode === "training" ? "flex" : "none";
 
   if (!showingAnswer) {
-    content.innerHTML = `<div class="prompt">${escapeHTML(item.english_context)}</div>`;
+    const promptText = mode === "training"
+      ? item.english_context
+      : item.english;
+
+    content.innerHTML =
+      `<div class="prompt">${escapeHTML(promptText)}</div>`;
+
   } else if (mode === "training") {
     content.innerHTML =
       `<div class="answer-en">${escapeHTML(item.english_context)}</div>` +
