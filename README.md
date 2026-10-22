@@ -28,3 +28,15 @@ All three activities now open directly on a trial. There is no title/start scree
 - The subjunctive activity begins with the first English sentence prompt.
 - Both vocabulary activities begin immediately with a randomized vocabulary prompt.
 - Vocabulary sessions include the full item bank; the instructor/student can stop at any point.
+
+
+## Practice subsets
+
+All three practice pages now include a small selector in the upper-right corner for:
+
+- 10 items
+- 20 items
+- 30 items
+- All items
+
+Use `New set` to draw another subset. The subjunctive lesson uses a contiguous block from the fixed progression so local scaffolding is preserved. The vocabulary pages use a fresh random sample of the chosen size.

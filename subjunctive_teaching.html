@@ -114,6 +114,33 @@ select, input[type=number] {
   padding: .55em .7em; min-width: 220px;
 }
 .end-detail { color: #657078; line-height: 1.5; margin-bottom: 1.2em; }
+#subset-controls {
+  position: fixed;
+  top: 12px;
+  right: 52px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  z-index: 20;
+}
+#subset-controls select,
+#subset-controls button {
+  font: inherit;
+  font-size: .78rem;
+  color: #68737c;
+  background: rgba(255,255,255,.94);
+  border: 1px solid #d7dde2;
+  border-radius: 7px;
+  padding: .42em .55em;
+}
+#subset-controls button {
+  cursor: pointer;
+  font-weight: 700;
+}
+#subset-controls button:hover {
+  border-color: #aeb8c0;
+}
+
 @media (max-width: 700px) {
   .screen { padding: 7vh 7vw 14vh; }
   .title { font-size: 2.15rem; }
@@ -121,6 +148,15 @@ select, input[type=number] {
   .answer-en { font-size: 1.02rem; }
   .answer-es { font-size: 1.9rem; }
   .section-title { font-size: 2.2rem; }
+  #subset-controls {
+    top: 8px;
+    right: 44px;
+  }
+  #subset-controls select,
+  #subset-controls button {
+    font-size: .7rem;
+    padding: .36em .45em;
+  }
 }
 </style>
 </head>
@@ -134,6 +170,17 @@ select, input[type=number] {
 
 <div id="lesson-screen" class="screen active">
   <button id="exit">×</button>
+
+  <div id="subset-controls">
+    <select id="subset-size" aria-label="Practice set size">
+      <option value="10">10 items</option>
+      <option value="20">20 items</option>
+      <option value="30">30 items</option>
+      <option value="all" selected>All</option>
+    </select>
+    <button id="new-subset">New set</button>
+  </div>
+
   <div id="content"></div>
   <button id="back" class="nav">← Back</button>
   <div id="progress"></div>
@@ -153,12 +200,20 @@ select, input[type=number] {
 const LESSON = [{"kind": "section", "stage_id": "REG_AR_TU", "title": "Regular -AR · tú"}, {"kind": "item", "item_id": "SUB.10-001", "stage_id": "REG_AR_TU", "english": "You speak Spanish.", "spanish": "Hablas español.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.10-002", "stage_id": "REG_AR_TU", "english": "I want you to speak Spanish.", "spanish": "Quiero que hables español.", "target_span": "hables", "clickable": true}, {"kind": "item", "item_id": "SUB.10-003", "stage_id": "REG_AR_TU", "english": "You rest at home.", "spanish": "Descansas en casa.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.10-004", "stage_id": "REG_AR_TU", "english": "I want you to rest at home.", "spanish": "Quiero que descanses en casa.", "target_span": "descanses", "clickable": true}, {"kind": "item", "item_id": "SUB.10-005", "stage_id": "REG_AR_TU", "english": "You take the medicine.", "spanish": "Tomas la medicina.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.10-006", "stage_id": "REG_AR_TU", "english": "The doctor recommends that you take the medicine.", "spanish": "El médico recomienda que tomes la medicina.", "target_span": "tomes", "clickable": true}, {"kind": "item", "item_id": "SUB.10-007", "stage_id": "REG_AR_TU", "english": "You improve your diet.", "spanish": "Mejoras tu alimentación.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.10-008", "stage_id": "REG_AR_TU", "english": "I want you to improve your diet.", "spanish": "Quiero que mejores tu alimentación.", "target_span": "mejores", "clickable": true}, {"kind": "section", "stage_id": "REG_ERIR_TU", "title": "Regular -ER / -IR · tú"}, {"kind": "item", "item_id": "SUB.20-001", "stage_id": "REG_ERIR_TU", "english": "You eat well.", "spanish": "Comes bien.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.20-002", "stage_id": "REG_ERIR_TU", "english": "I want you to eat well.", "spanish": "Quiero que comas bien.", "target_span": "comas", "clickable": true}, {"kind": "item", "item_id": "SUB.20-003", "stage_id": "REG_ERIR_TU", "english": "You drink a lot of water.", "spanish": "Bebes mucha agua.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.20-004", "stage_id": "REG_ERIR_TU", "english": "The doctor recommends that you drink a lot of water.", "spanish": "El médico recomienda que bebas mucha agua.", "target_span": "bebas", "clickable": true}, {"kind": "item", "item_id": "SUB.20-005", "stage_id": "REG_ERIR_TU", "english": "You run in the morning.", "spanish": "Corres por la mañana.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.20-006", "stage_id": "REG_ERIR_TU", "english": "It is important that you run in the morning.", "spanish": "Es importante que corras por la mañana.", "target_span": "corras", "clickable": true}, {"kind": "item", "item_id": "SUB.20-007", "stage_id": "REG_ERIR_TU", "english": "You live a healthy life.", "spanish": "Vives una vida sana.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.20-008", "stage_id": "REG_ERIR_TU", "english": "I want you to live a healthy life.", "spanish": "Quiero que vivas una vida sana.", "target_span": "vivas", "clickable": true}, {"kind": "section", "stage_id": "STEM_TU", "title": "Stem changers · tú"}, {"kind": "item", "item_id": "SUB.30-001", "stage_id": "STEM_TU", "english": "You sleep eight hours.", "spanish": "Duermes ocho horas.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.30-002", "stage_id": "STEM_TU", "english": "I recommend that you sleep eight hours.", "spanish": "Recomiendo que duermas ocho horas.", "target_span": "duermas", "clickable": true}, {"kind": "item", "item_id": "SUB.30-003", "stage_id": "STEM_TU", "english": "You ask for a doctor's appointment.", "spanish": "Pides una consulta.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.30-004", "stage_id": "STEM_TU", "english": "It is important that you ask for a doctor's appointment.", "spanish": "Es importante que pidas una consulta.", "target_span": "pidas", "clickable": true}, {"kind": "item", "item_id": "SUB.30-005", "stage_id": "STEM_TU", "english": "You feel better.", "spanish": "Te sientes mejor.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.30-006", "stage_id": "STEM_TU", "english": "I hope you feel better.", "spanish": "Espero que te sientas mejor.", "target_span": "te sientas", "clickable": true}, {"kind": "item", "item_id": "SUB.30-009", "stage_id": "STEM_TU", "english": "You think about your health.", "spanish": "Piensas en tu salud.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.30-010", "stage_id": "STEM_TU", "english": "I want you to think about your health.", "spanish": "Quiero que pienses en tu salud.", "target_span": "pienses", "clickable": true}, {"kind": "section", "stage_id": "YO_STEM_TU", "title": "Irregular yo stems · tú"}, {"kind": "item", "item_id": "SUB.40-001", "stage_id": "YO_STEM_TU", "english": "I have a fever.", "spanish": "Tengo fiebre.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.40-002", "stage_id": "YO_STEM_TU", "english": "I hope you do not have a fever.", "spanish": "Espero que no tengas fiebre.", "target_span": "tengas", "clickable": true}, {"kind": "item", "item_id": "SUB.40-003", "stage_id": "YO_STEM_TU", "english": "I do the exercise.", "spanish": "Hago el ejercicio.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.40-004", "stage_id": "YO_STEM_TU", "english": "The doctor recommends that you do the exercise.", "spanish": "El médico recomienda que hagas el ejercicio.", "target_span": "hagas", "clickable": true}, {"kind": "item", "item_id": "SUB.40-005", "stage_id": "YO_STEM_TU", "english": "I put on a bandage.", "spanish": "Me pongo una venda.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.40-006", "stage_id": "YO_STEM_TU", "english": "I want you to put on a bandage.", "spanish": "Quiero que te pongas una venda.", "target_span": "te pongas", "clickable": true}, {"kind": "item", "item_id": "SUB.40-007", "stage_id": "YO_STEM_TU", "english": "I come to the doctor's office.", "spanish": "Vengo al consultorio.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.40-008", "stage_id": "YO_STEM_TU", "english": "I want you to come to the doctor's office.", "spanish": "Quiero que vengas al consultorio.", "target_span": "vengas", "clickable": true}, {"kind": "section", "stage_id": "THIRD_PERSON", "title": "él / ella / usted"}, {"kind": "item", "item_id": "SUB.50-001", "stage_id": "THIRD_PERSON", "english": "She rests at home.", "spanish": "Ella descansa en casa.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.50-002", "stage_id": "THIRD_PERSON", "english": "I want her to rest at home.", "spanish": "Quiero que ella descanse en casa.", "target_span": "descanse", "clickable": true}, {"kind": "item", "item_id": "SUB.50-003", "stage_id": "THIRD_PERSON", "english": "He eats well.", "spanish": "Él come bien.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.50-004", "stage_id": "THIRD_PERSON", "english": "The doctor wants him to eat well.", "spanish": "El médico quiere que él coma bien.", "target_span": "coma", "clickable": true}, {"kind": "section", "stage_id": "YO", "title": "yo"}, {"kind": "item", "item_id": "SUB.60-001", "stage_id": "YO", "english": "I rest at home.", "spanish": "Descanso en casa.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.60-002", "stage_id": "YO", "english": "My doctor wants me to rest at home.", "spanish": "Mi médico quiere que yo descanse en casa.", "target_span": "descanse", "clickable": true}, {"kind": "item", "item_id": "SUB.60-003", "stage_id": "YO", "english": "I eat well.", "spanish": "Como bien.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.60-004", "stage_id": "YO", "english": "My family wants me to eat well.", "spanish": "Mi familia quiere que yo coma bien.", "target_span": "coma", "clickable": true}, {"kind": "section", "stage_id": "NOSOTROS", "title": "nosotros"}, {"kind": "item", "item_id": "SUB.70-001", "stage_id": "NOSOTROS", "english": "We rest at home.", "spanish": "Descansamos en casa.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.70-002", "stage_id": "NOSOTROS", "english": "The doctor wants us to rest at home.", "spanish": "El médico quiere que descansemos en casa.", "target_span": "descansemos", "clickable": true}, {"kind": "item", "item_id": "SUB.70-003", "stage_id": "NOSOTROS", "english": "We eat well.", "spanish": "Comemos bien.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.70-004", "stage_id": "NOSOTROS", "english": "It is important that we eat well.", "spanish": "Es importante que comamos bien.", "target_span": "comamos", "clickable": true}, {"kind": "section", "stage_id": "THEY", "title": "ellos / ellas / ustedes"}, {"kind": "item", "item_id": "SUB.80-001", "stage_id": "THEY", "english": "They rest at home.", "spanish": "Ellos descansan en casa.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.80-002", "stage_id": "THEY", "english": "I want them to rest at home.", "spanish": "Quiero que ellos descansen en casa.", "target_span": "descansen", "clickable": true}, {"kind": "item", "item_id": "SUB.80-003", "stage_id": "THEY", "english": "They eat well.", "spanish": "Ellas comen bien.", "target_span": "", "clickable": false}, {"kind": "item", "item_id": "SUB.80-004", "stage_id": "THEY", "english": "The doctor wants them to eat well.", "spanish": "El médico quiere que ellas coman bien.", "target_span": "coman", "clickable": true}, {"kind": "section", "stage_id": "MIXED", "title": "Mixed health recommendations"}, {"kind": "item", "item_id": "SUB.90-001", "stage_id": "MIXED", "english": "I want you to drink more water.", "spanish": "Quiero que bebas más agua.", "target_span": "bebas", "clickable": true}, {"kind": "item", "item_id": "SUB.90-002", "stage_id": "MIXED", "english": "The doctor wants her to avoid stress.", "spanish": "El médico quiere que ella evite el estrés.", "target_span": "evite", "clickable": true}, {"kind": "item", "item_id": "SUB.90-003", "stage_id": "MIXED", "english": "I hope he feels better.", "spanish": "Espero que él se sienta mejor.", "target_span": "se sienta", "clickable": true}, {"kind": "item", "item_id": "SUB.90-004", "stage_id": "MIXED", "english": "It is important that we take the medicine.", "spanish": "Es importante que tomemos la medicina.", "target_span": "tomemos", "clickable": true}, {"kind": "item", "item_id": "SUB.90-005", "stage_id": "MIXED", "english": "I recommend that they sleep more.", "spanish": "Recomiendo que ellos duerman más.", "target_span": "duerman", "clickable": true}, {"kind": "item", "item_id": "SUB.90-006", "stage_id": "MIXED", "english": "The doctor wants you all to improve your diet.", "spanish": "El médico quiere que ustedes mejoren su alimentación.", "target_span": "mejoren", "clickable": true}, {"kind": "item", "item_id": "SUB.90-007", "stage_id": "MIXED", "english": "My family wants me to visit the doctor.", "spanish": "Mi familia quiere que yo visite al médico.", "target_span": "visite", "clickable": true}, {"kind": "item", "item_id": "SUB.90-008", "stage_id": "MIXED", "english": "I want her to ask for a doctor's appointment.", "spanish": "Quiero que ella pida una consulta.", "target_span": "pida", "clickable": true}];
 const REVIEW = {"REG_AR_TU": [{"context_id": "REG_AR_TU-SUB.10-010", "stage_id": "REG_AR_TU", "english": "It is important that you walk every day.", "spanish": "Es importante que camines todos los días.", "target_span": "camines"}, {"context_id": "REG_AR_TU-SUB.10-012", "stage_id": "REG_AR_TU", "english": "I recommend that you avoid too much stress.", "spanish": "Recomiendo que evites demasiado estrés.", "target_span": "evites"}], "REG_ERIR_TU": [{"context_id": "REG_ERIR_TU-SUB.20-010", "stage_id": "REG_ERIR_TU", "english": "I hope you receive treatment.", "spanish": "Espero que recibas tratamiento.", "target_span": "recibas"}, {"context_id": "REG_ERIR_TU-SUB.20-014", "stage_id": "REG_ERIR_TU", "english": "The doctor wants you to write down your symptoms.", "spanish": "El médico quiere que escribas tus síntomas.", "target_span": "escribas"}], "STEM_TU": [{"context_id": "STEM_TU-SUB.30-012", "stage_id": "STEM_TU", "english": "The doctor wants you to return to the doctor's office.", "spanish": "El médico quiere que vuelvas al consultorio.", "target_span": "vuelvas"}, {"context_id": "STEM_TU-SUB.30-016", "stage_id": "STEM_TU", "english": "I want you to find the pharmacy.", "spanish": "Quiero que encuentres la farmacia.", "target_span": "encuentres"}], "YO_STEM_TU": [{"context_id": "YO_STEM_TU-SUB.40-012", "stage_id": "YO_STEM_TU", "english": "The doctor wants you to say how you feel.", "spanish": "El médico quiere que digas cómo te sientes.", "target_span": "digas"}, {"context_id": "YO_STEM_TU-SUB.40-016", "stage_id": "YO_STEM_TU", "english": "I want you to know the new doctor.", "spanish": "Quiero que conozcas al médico nuevo.", "target_span": "conozcas"}], "THIRD_PERSON": [{"context_id": "THIRD_PERSON-SUB.50-006", "stage_id": "THIRD_PERSON", "english": "I hope she sleeps eight hours.", "spanish": "Espero que ella duerma ocho horas.", "target_span": "duerma"}, {"context_id": "THIRD_PERSON-SUB.50-012", "stage_id": "THIRD_PERSON", "english": "The doctor wants you to come to the doctor's office.", "spanish": "El médico quiere que usted venga al consultorio.", "target_span": "venga"}], "YO": [{"context_id": "YO-SUB.60-006", "stage_id": "YO", "english": "My doctor recommends that I sleep eight hours.", "spanish": "Mi médico recomienda que yo duerma ocho horas.", "target_span": "duerma"}, {"context_id": "YO-SUB.60-008", "stage_id": "YO", "english": "My family wants me to have a doctor's appointment.", "spanish": "Mi familia quiere que yo tenga una consulta.", "target_span": "tenga"}], "NOSOTROS": [{"context_id": "NOSOTROS-SUB.70-008", "stage_id": "NOSOTROS", "english": "The doctor recommends that we sleep eight hours.", "spanish": "El médico recomienda que durmamos ocho horas.", "target_span": "durmamos"}, {"context_id": "NOSOTROS-SUB.70-010", "stage_id": "NOSOTROS", "english": "It is important that we ask for a doctor's appointment.", "spanish": "Es importante que pidamos una consulta.", "target_span": "pidamos"}], "THEY": [{"context_id": "THEY-SUB.80-006", "stage_id": "THEY", "english": "I hope they sleep eight hours.", "spanish": "Espero que ellos duerman ocho horas.", "target_span": "duerman"}, {"context_id": "THEY-SUB.80-012", "stage_id": "THEY", "english": "The doctor wants you all to come to the doctor's office.", "spanish": "El médico quiere que ustedes vengan al consultorio.", "target_span": "vengan"}], "MIXED": [{"context_id": "MIXED-SUB.90-009", "stage_id": "MIXED", "english": "The doctor hopes we can rest this weekend.", "spanish": "El médico espera que podamos descansar este fin de semana.", "target_span": "podamos"}, {"context_id": "MIXED-SUB.90-011", "stage_id": "MIXED", "english": "It is important that you put on a bandage.", "spanish": "Es importante que te pongas una venda.", "target_span": "te pongas"}]};
 
+const STAGE_TITLES = {};
+LESSON.forEach(x => {
+  if (x.kind === "section") STAGE_TITLES[x.stage_id] = x.title;
+});
+const BASE_ITEMS = LESSON.filter(x => x.kind === "item");
+
 let mode = "lesson";
+let lessonItems = BASE_ITEMS;
 let lessonIndex = 0;
 let showingAnswer = false;
 let reviewItems = [];
 let reviewIndex = 0;
 let flagged = new Set();
+let subsetSize = "all";
 
 const startScreen = document.getElementById("start-screen");
 const lessonScreen = document.getElementById("lesson-screen");
@@ -193,8 +248,29 @@ function renderTarget(sentence, span, targetId, review=false) {
     escapeHTML(sentence.slice(i+span.length));
 }
 
+function buildSubset(size) {
+  if (size === "all") return [...BASE_ITEMS];
+
+  const n = Math.min(Number(size), BASE_ITEMS.length);
+  const maxStart = BASE_ITEMS.length - n;
+  const start = Math.floor(Math.random() * (maxStart + 1));
+  return BASE_ITEMS.slice(start, start + n);
+}
+
+function startNewSubset() {
+  subsetSize = document.getElementById("subset-size").value;
+  lessonItems = buildSubset(subsetSize);
+  mode = "lesson";
+  lessonIndex = 0;
+  showingAnswer = false;
+  flagged = new Set();
+  endScreen.classList.remove("active");
+  lessonScreen.classList.add("active");
+  show();
+}
+
 function activeItems() {
-  return mode === "lesson" ? LESSON : reviewItems;
+  return mode === "lesson" ? lessonItems : reviewItems;
 }
 
 function activeIndex() {
@@ -216,12 +292,7 @@ function show() {
 
   content.innerHTML = "";
 
-  if (mode === "lesson" && item.kind === "section") {
-    content.innerHTML =
-      `<div class="section-kicker">Subjunctive</div>` +
-      `<div class="section-title">${escapeHTML(item.title)}</div>`;
-    showingAnswer = false;
-  } else if (!showingAnswer) {
+  if (!showingAnswer) {
     content.innerHTML = `<div class="prompt">${escapeHTML(item.english)}</div>`;
   } else {
     const isReview = mode === "review";
@@ -247,26 +318,15 @@ function show() {
     }
   }
 
+  const subsetControls = document.getElementById("subset-controls");
+
   if (mode === "lesson") {
-    // Count each section divider as one slide and each sentence item as two:
-    // English prompt + Spanish answer.
-    let slideNumber = 0;
-
-    for (let i = 0; i < lessonIndex; i++) {
-      slideNumber += LESSON[i].kind === "section" ? 1 : 2;
-    }
-
-    slideNumber += item.kind === "section"
-      ? 1
-      : (showingAnswer ? 2 : 1);
-
-    const totalSlides = LESSON.reduce(
-      (sum, x) => sum + (x.kind === "section" ? 1 : 2),
-      0
-    );
-
+    subsetControls.style.display = "flex";
+    const slideNumber = (lessonIndex * 2) + (showingAnswer ? 2 : 1);
+    const totalSlides = lessonItems.length * 2;
     progress.textContent = `Slide ${slideNumber} / ${totalSlides}`;
   } else {
+    subsetControls.style.display = "none";
     const reviewSlide = (reviewIndex * 2) + (showingAnswer ? 2 : 1);
     const totalReviewSlides = reviewItems.length * 2;
     progress.textContent = `Review slide ${reviewSlide} / ${totalReviewSlides}`;
@@ -278,13 +338,6 @@ function show() {
 function forward() {
   const item = current();
   if (!item) return finish();
-
-  if (mode === "lesson" && item.kind === "section") {
-    setIndex(activeIndex() + 1);
-    showingAnswer = false;
-    show();
-    return;
-  }
 
   if (!showingAnswer) {
     showingAnswer = true;
@@ -303,15 +356,14 @@ function forward() {
 
 function backward() {
   const item = current();
-  if (showingAnswer && !(mode === "lesson" && item.kind === "section")) {
+  if (showingAnswer) {
     showingAnswer = false;
     show();
     return;
   }
   if (activeIndex() > 0) {
     setIndex(activeIndex() - 1);
-    const prev = current();
-    showingAnswer = !(mode === "lesson" && prev.kind === "section");
+    showingAnswer = true;
     show();
   }
 }
@@ -388,11 +440,9 @@ document.addEventListener("keydown", e => {
   if (e.key === "ArrowLeft") { e.preventDefault(); backward(); }
 });
 
+lessonItems = buildSubset("all");
 mode = "lesson";
 lessonIndex = 0;
-while (lessonIndex < LESSON.length && LESSON[lessonIndex].kind === "section") {
-  lessonIndex++;
-}
 showingAnswer = false;
 flagged = new Set();
 show();
