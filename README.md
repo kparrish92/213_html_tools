@@ -47,3 +47,17 @@ Use `New set` to draw another subset. The subjunctive lesson uses a contiguous b
 Only the extra-practice/review phase is randomized. Each time review begins,
 the unseen examples for flagged items are reshuffled into a fresh order.
 Main-practice behavior is unchanged.
+
+
+## Spanish audio
+
+All three SPN 213 activities now use the browser's built-in Speech Synthesis API.
+
+- Every Spanish answer has a `🔊` replay button.
+- `Audio: Off / On` is available in the upper-right corner.
+- Audio is off by default.
+- When Auto Audio is on, revealing a Spanish answer reads it aloud automatically.
+- Isolated vocabulary reads the vocabulary item.
+- Contextualized vocabulary and subjunctive practice read the full Spanish sentence.
+- Extra-practice/review slides also include audio.
+- The browser selects an available Spanish voice, preferring Mexican/US Spanish when available and falling back to another Spanish voice.
