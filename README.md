@@ -40,3 +40,10 @@ All three practice pages now include a small selector in the upper-right corner 
 - All items
 
 Use `New set` to draw another subset. The subjunctive lesson uses a contiguous block from the fixed progression so local scaffolding is preserved. The vocabulary pages use a fresh random sample of the chosen size.
+
+
+## Extra-practice order
+
+Only the extra-practice/review phase is randomized. Each time review begins,
+the unseen examples for flagged items are reshuffled into a fresh order.
+Main-practice behavior is unchanged.

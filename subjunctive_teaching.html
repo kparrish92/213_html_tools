@@ -392,7 +392,8 @@ function startReview() {
   flagged.forEach(id => {
     (REVIEW[id] || []).forEach(x => reviewItems.push(x));
   });
-  // simple shuffle
+
+  // Fresh randomized order every time extra review starts.
   for (let i = reviewItems.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [reviewItems[i], reviewItems[j]] = [reviewItems[j], reviewItems[i]];

@@ -392,9 +392,16 @@ function startTraining() {
 }
 
 function startReview() {
-  reviewItems = shuffle(REVIEW.filter(x => flagged.has(x.target_id)));
+  // Pull only flagged targets, then randomize the review order fresh each time.
+  reviewItems = shuffle(
+    REVIEW.filter(x => flagged.has(x.target_id))
+  );
+
   if (!reviewItems.length) return;
-  mode = "review"; index = 0; showingAnswer = false;
+
+  mode = "review";
+  index = 0;
+  showingAnswer = false;
   endScreen.classList.remove("active");
   lessonScreen.classList.add("active");
   show();
