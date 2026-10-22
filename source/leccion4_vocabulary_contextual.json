@@ -1,0 +1,2352 @@
+{
+  "items": [
+    {
+      "target_id": "VOC001",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "la depresión",
+      "english": "depression",
+      "english_context": "I hope that the treatment helps with depression.",
+      "spanish_context": "Espero que el tratamiento ayude con la depresión.",
+      "target_span": "la depresión"
+    },
+    {
+      "target_id": "VOC002",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "la enfermedad",
+      "english": "disease; illness",
+      "english_context": "It is important that the doctor treat the illness.",
+      "spanish_context": "Es importante que el médico trate la enfermedad.",
+      "target_span": "la enfermedad"
+    },
+    {
+      "target_id": "VOC003",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "la gripe",
+      "english": "flu",
+      "english_context": "I hope that the flu does not get worse.",
+      "spanish_context": "Espero que la gripe no empeore.",
+      "target_span": "la gripe"
+    },
+    {
+      "target_id": "VOC004",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "la herida",
+      "english": "injury",
+      "english_context": "It is important that the injury heal.",
+      "spanish_context": "Es importante que la herida sane.",
+      "target_span": "la herida"
+    },
+    {
+      "target_id": "VOC005",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "el malestar",
+      "english": "discomfort",
+      "english_context": "I hope that the discomfort improves soon.",
+      "spanish_context": "Espero que el malestar mejore pronto.",
+      "target_span": "el malestar"
+    },
+    {
+      "target_id": "VOC006",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "la obesidad",
+      "english": "obesity",
+      "english_context": "It is important that the doctor talk about obesity.",
+      "spanish_context": "Es importante que el médico hable de la obesidad.",
+      "target_span": "la obesidad"
+    },
+    {
+      "target_id": "VOC007",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "el resfriado",
+      "english": "cold",
+      "english_context": "I hope that the cold improves soon.",
+      "spanish_context": "Espero que el resfriado mejore pronto.",
+      "target_span": "el resfriado"
+    },
+    {
+      "target_id": "VOC008",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "la respiración",
+      "english": "breathing",
+      "english_context": "It is important that your breathing improve.",
+      "spanish_context": "Es importante que la respiración mejore.",
+      "target_span": "la respiración"
+    },
+    {
+      "target_id": "VOC009",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "la tensión (alta/baja)",
+      "english": "(high/low) blood pressure",
+      "english_context": "I hope that the blood pressure goes down.",
+      "spanish_context": "Espero que la tensión baje.",
+      "target_span": "la tensión"
+    },
+    {
+      "target_id": "VOC010",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "la tos",
+      "english": "cough",
+      "english_context": "I hope that the cough improves soon.",
+      "spanish_context": "Espero que la tos mejore pronto.",
+      "target_span": "la tos"
+    },
+    {
+      "target_id": "VOC011",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "el virus",
+      "english": "virus",
+      "english_context": "It is important that the doctor explain the virus.",
+      "spanish_context": "Es importante que el médico explique el virus.",
+      "target_span": "el virus"
+    },
+    {
+      "target_id": "VOC012",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "contagiarse",
+      "english": "to become infected",
+      "english_context": "I hope that you do not become infected.",
+      "spanish_context": "Espero que no te contagies.",
+      "target_span": "te contagies"
+    },
+    {
+      "target_id": "VOC013",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "desmayarse",
+      "english": "to faint",
+      "english_context": "I hope that you do not faint.",
+      "spanish_context": "Espero que no te desmayes.",
+      "target_span": "te desmayes"
+    },
+    {
+      "target_id": "VOC014",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "empeorar",
+      "english": "to get worse",
+      "english_context": "I do not want you to get worse.",
+      "spanish_context": "No quiero que empeores.",
+      "target_span": "empeores"
+    },
+    {
+      "target_id": "VOC015",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "enfermarse",
+      "english": "to get sick",
+      "english_context": "I hope that you do not get sick.",
+      "spanish_context": "Espero que no te enfermes.",
+      "target_span": "te enfermes"
+    },
+    {
+      "target_id": "VOC016",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "estar resfriado/a",
+      "english": "to have a cold",
+      "english_context": "I hope that you do not have a cold tomorrow.",
+      "spanish_context": "Espero que no estés resfriado mañana.",
+      "target_span": "resfriado"
+    },
+    {
+      "target_id": "VOC017",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "lastimarse",
+      "english": "to get hurt",
+      "english_context": "I hope that you do not get hurt.",
+      "spanish_context": "Espero que no te lastimes.",
+      "target_span": "te lastimes"
+    },
+    {
+      "target_id": "VOC018",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "permanecer",
+      "english": "to remain",
+      "english_context": "I want you to remain at home.",
+      "spanish_context": "Quiero que permanezcas en casa.",
+      "target_span": "permanezcas"
+    },
+    {
+      "target_id": "VOC019",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "ponerse bien/mal",
+      "english": "to get well/sick",
+      "english_context": "I hope that you get well soon.",
+      "spanish_context": "Espero que te pongas bien pronto.",
+      "target_span": "te pongas bien"
+    },
+    {
+      "target_id": "VOC020",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "sufrir (de)",
+      "english": "to suffer (from)",
+      "english_context": "I hope that you do not suffer from pain.",
+      "spanish_context": "Espero que no sufras de dolor.",
+      "target_span": "sufras"
+    },
+    {
+      "target_id": "VOC021",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "tener buen/mal aspecto",
+      "english": "to look healthy/sick",
+      "english_context": "I hope that you look healthy tomorrow.",
+      "spanish_context": "Espero que tengas buen aspecto mañana.",
+      "target_span": "buen aspecto"
+    },
+    {
+      "target_id": "VOC022",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "tener fiebre",
+      "english": "to have a fever",
+      "english_context": "I hope that you do not have a fever.",
+      "spanish_context": "Espero que no tengas fiebre.",
+      "target_span": "tengas fiebre"
+    },
+    {
+      "target_id": "VOC023",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "toser",
+      "english": "to cough",
+      "english_context": "I hope that you do not cough much.",
+      "spanish_context": "Espero que no tosas mucho.",
+      "target_span": "tosas"
+    },
+    {
+      "target_id": "VOC024",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "agotado/a",
+      "english": "exhausted",
+      "english_context": "I do not want you to be exhausted.",
+      "spanish_context": "No quiero que estés agotado.",
+      "target_span": "agotado"
+    },
+    {
+      "target_id": "VOC025",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "inflamado/a",
+      "english": "inflamed",
+      "english_context": "I hope that the arm is not inflamed.",
+      "spanish_context": "Espero que el brazo no esté inflamado.",
+      "target_span": "inflamado"
+    },
+    {
+      "target_id": "VOC026",
+      "category": "Los síntomas y las enfermedades",
+      "spanish": "mareado/a",
+      "english": "dizzy",
+      "english_context": "I hope that you are not dizzy.",
+      "spanish_context": "Espero que no estés mareado.",
+      "target_span": "mareado"
+    },
+    {
+      "target_id": "VOC027",
+      "category": "La salud y el bienestar",
+      "spanish": "la alimentación",
+      "english": "diet (nutrition)",
+      "english_context": "It is important that the diet be healthy.",
+      "spanish_context": "Es importante que la alimentación sea sana.",
+      "target_span": "la alimentación"
+    },
+    {
+      "target_id": "VOC028",
+      "category": "La salud y el bienestar",
+      "spanish": "la autoestima",
+      "english": "self-esteem",
+      "english_context": "I hope that your self-esteem improves.",
+      "spanish_context": "Espero que la autoestima mejore.",
+      "target_span": "la autoestima"
+    },
+    {
+      "target_id": "VOC029",
+      "category": "La salud y el bienestar",
+      "spanish": "el bienestar",
+      "english": "well-being",
+      "english_context": "It is important that well-being be a priority.",
+      "spanish_context": "Es importante que el bienestar sea una prioridad.",
+      "target_span": "el bienestar"
+    },
+    {
+      "target_id": "VOC030",
+      "category": "La salud y el bienestar",
+      "spanish": "el estado de ánimo",
+      "english": "mood",
+      "english_context": "I hope that your mood improves.",
+      "spanish_context": "Espero que tu estado de ánimo mejore.",
+      "target_span": "estado de ánimo"
+    },
+    {
+      "target_id": "VOC031",
+      "category": "La salud y el bienestar",
+      "spanish": "la salud",
+      "english": "health",
+      "english_context": "I hope that your health improves.",
+      "spanish_context": "Espero que tu salud mejore.",
+      "target_span": "salud"
+    },
+    {
+      "target_id": "VOC032",
+      "category": "La salud y el bienestar",
+      "spanish": "adelgazar",
+      "english": "to lose weight",
+      "english_context": "The doctor wants you to lose weight gradually.",
+      "spanish_context": "El médico quiere que adelgaces poco a poco.",
+      "target_span": "adelgaces"
+    },
+    {
+      "target_id": "VOC033",
+      "category": "La salud y el bienestar",
+      "spanish": "dejar de fumar",
+      "english": "to quit smoking",
+      "english_context": "The doctor recommends that you quit smoking.",
+      "spanish_context": "El médico recomienda que dejes de fumar.",
+      "target_span": "dejes de fumar"
+    },
+    {
+      "target_id": "VOC034",
+      "category": "La salud y el bienestar",
+      "spanish": "descansar",
+      "english": "to rest",
+      "english_context": "I want you to rest today.",
+      "spanish_context": "Quiero que descanses hoy.",
+      "target_span": "descanses"
+    },
+    {
+      "target_id": "VOC035",
+      "category": "La salud y el bienestar",
+      "spanish": "engordar",
+      "english": "to gain weight",
+      "english_context": "The doctor does not want you to gain too much weight.",
+      "spanish_context": "El médico no quiere que engordes demasiado.",
+      "target_span": "engordes"
+    },
+    {
+      "target_id": "VOC036",
+      "category": "La salud y el bienestar",
+      "spanish": "estar a dieta",
+      "english": "to be on a diet",
+      "english_context": "The doctor recommends that you be on a diet only if necessary.",
+      "spanish_context": "El médico recomienda que estés a dieta solo si es necesario.",
+      "target_span": "estés a dieta"
+    },
+    {
+      "target_id": "VOC037",
+      "category": "La salud y el bienestar",
+      "spanish": "mejorar(se)",
+      "english": "to improve",
+      "english_context": "I hope that you improve soon.",
+      "spanish_context": "Espero que mejores pronto.",
+      "target_span": "mejores"
+    },
+    {
+      "target_id": "VOC038",
+      "category": "La salud y el bienestar",
+      "spanish": "prevenir",
+      "english": "to prevent",
+      "english_context": "It is important that you prevent the flu.",
+      "spanish_context": "Es importante que prevengas la gripe.",
+      "target_span": "prevengas"
+    },
+    {
+      "target_id": "VOC039",
+      "category": "La salud y el bienestar",
+      "spanish": "relajarse",
+      "english": "to relax",
+      "english_context": "I want you to relax.",
+      "spanish_context": "Quiero que te relajes.",
+      "target_span": "te relajes"
+    },
+    {
+      "target_id": "VOC040",
+      "category": "La salud y el bienestar",
+      "spanish": "trasnochar",
+      "english": "to stay up all night",
+      "english_context": "I do not want you to stay up all night.",
+      "spanish_context": "No quiero que trasnoches.",
+      "target_span": "trasnoches"
+    },
+    {
+      "target_id": "VOC041",
+      "category": "La salud y el bienestar",
+      "spanish": "sano/a",
+      "english": "healthy",
+      "english_context": "I hope that you are healthy.",
+      "spanish_context": "Espero que estés sano.",
+      "target_span": "sano"
+    },
+    {
+      "target_id": "VOC042",
+      "category": "Los médicos y el hospital",
+      "spanish": "la cirugía",
+      "english": "surgery",
+      "english_context": "It is possible that you need surgery.",
+      "spanish_context": "Es posible que necesites la cirugía.",
+      "target_span": "la cirugía"
+    },
+    {
+      "target_id": "VOC043",
+      "category": "Los médicos y el hospital",
+      "spanish": "el/la cirujano/a",
+      "english": "surgeon",
+      "english_context": "I hope that the surgeon arrives soon.",
+      "spanish_context": "Espero que el cirujano llegue pronto.",
+      "target_span": "cirujano"
+    },
+    {
+      "target_id": "VOC044",
+      "category": "Los médicos y el hospital",
+      "spanish": "la consulta",
+      "english": "doctor's appointment",
+      "english_context": "The doctor recommends that you go to the appointment.",
+      "spanish_context": "El médico recomienda que vayas a la consulta.",
+      "target_span": "la consulta"
+    },
+    {
+      "target_id": "VOC045",
+      "category": "Los médicos y el hospital",
+      "spanish": "el consultorio",
+      "english": "doctor's office",
+      "english_context": "I hope that the doctor's office is open.",
+      "spanish_context": "Espero que el consultorio esté abierto.",
+      "target_span": "el consultorio"
+    },
+    {
+      "target_id": "VOC046",
+      "category": "Los médicos y el hospital",
+      "spanish": "la operación",
+      "english": "operation",
+      "english_context": "It is possible that you need the operation.",
+      "spanish_context": "Es posible que necesites la operación.",
+      "target_span": "la operación"
+    },
+    {
+      "target_id": "VOC047",
+      "category": "Los médicos y el hospital",
+      "spanish": "los primeros auxilios",
+      "english": "first aid",
+      "english_context": "It is important that you learn first aid.",
+      "spanish_context": "Es importante que aprendas los primeros auxilios.",
+      "target_span": "los primeros auxilios"
+    },
+    {
+      "target_id": "VOC048",
+      "category": "Los médicos y el hospital",
+      "spanish": "la sala de emergencias",
+      "english": "emergency room",
+      "english_context": "The doctor wants you to go to the emergency room.",
+      "spanish_context": "El médico quiere que vayas a la sala de emergencias.",
+      "target_span": "la sala de emergencias"
+    },
+    {
+      "target_id": "VOC049",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "el analgésico",
+      "english": "painkiller",
+      "english_context": "The doctor recommends that you take the painkiller.",
+      "spanish_context": "El médico recomienda que tomes el analgésico.",
+      "target_span": "el analgésico"
+    },
+    {
+      "target_id": "VOC050",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "la aspirina",
+      "english": "aspirin",
+      "english_context": "The doctor recommends that you take the aspirin.",
+      "spanish_context": "El médico recomienda que tomes la aspirina.",
+      "target_span": "la aspirina"
+    },
+    {
+      "target_id": "VOC051",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "el calmante",
+      "english": "sedative; painkiller",
+      "english_context": "The doctor wants you to take the painkiller.",
+      "spanish_context": "El médico quiere que tomes el calmante.",
+      "target_span": "el calmante"
+    },
+    {
+      "target_id": "VOC052",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "los efectos secundarios",
+      "english": "side effects",
+      "english_context": "It is important that you know the side effects.",
+      "spanish_context": "Es importante que conozcas los efectos secundarios.",
+      "target_span": "los efectos secundarios"
+    },
+    {
+      "target_id": "VOC053",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "el jarabe",
+      "english": "syrup",
+      "english_context": "The doctor wants you to take the syrup.",
+      "spanish_context": "El médico quiere que tomes el jarabe.",
+      "target_span": "el jarabe"
+    },
+    {
+      "target_id": "VOC054",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "la pastilla",
+      "english": "pill",
+      "english_context": "The doctor wants you to take the pill.",
+      "spanish_context": "El médico quiere que tomes la pastilla.",
+      "target_span": "la pastilla"
+    },
+    {
+      "target_id": "VOC055",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "la receta",
+      "english": "prescription",
+      "english_context": "It is important that you have the prescription.",
+      "spanish_context": "Es importante que tengas la receta.",
+      "target_span": "la receta"
+    },
+    {
+      "target_id": "VOC056",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "el tratamiento",
+      "english": "treatment",
+      "english_context": "The doctor recommends that you follow the treatment.",
+      "spanish_context": "El médico recomienda que sigas el tratamiento.",
+      "target_span": "el tratamiento"
+    },
+    {
+      "target_id": "VOC057",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "la vacuna",
+      "english": "vaccine",
+      "english_context": "It is important that you receive the vaccine.",
+      "spanish_context": "Es importante que recibas la vacuna.",
+      "target_span": "la vacuna"
+    },
+    {
+      "target_id": "VOC058",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "la venda",
+      "english": "bandage",
+      "english_context": "The doctor wants you to use the bandage.",
+      "spanish_context": "El médico quiere que uses la venda.",
+      "target_span": "la venda"
+    },
+    {
+      "target_id": "VOC059",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "el yeso",
+      "english": "cast",
+      "english_context": "It is possible that you need the cast.",
+      "spanish_context": "Es posible que necesites el yeso.",
+      "target_span": "el yeso"
+    },
+    {
+      "target_id": "VOC060",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "curarse",
+      "english": "to heal; to be cured",
+      "english_context": "I hope that you heal soon.",
+      "spanish_context": "Espero que te cures pronto.",
+      "target_span": "te cures"
+    },
+    {
+      "target_id": "VOC061",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "poner(se) una inyección",
+      "english": "to give/get a shot",
+      "english_context": "The doctor recommends that you get a shot.",
+      "spanish_context": "El médico recomienda que te pongas una inyección.",
+      "target_span": "una inyección"
+    },
+    {
+      "target_id": "VOC062",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "recuperarse",
+      "english": "to recover",
+      "english_context": "I hope that you recover soon.",
+      "spanish_context": "Espero que te recuperes pronto.",
+      "target_span": "te recuperes"
+    },
+    {
+      "target_id": "VOC063",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "sanar",
+      "english": "to heal",
+      "english_context": "I hope that you heal soon.",
+      "spanish_context": "Espero que sanes pronto.",
+      "target_span": "sanes"
+    },
+    {
+      "target_id": "VOC064",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "tratar",
+      "english": "to treat",
+      "english_context": "It is important that the doctor treat the infection.",
+      "spanish_context": "Es importante que el médico trate la infección.",
+      "target_span": "trate"
+    },
+    {
+      "target_id": "VOC065",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "vacunar(se)",
+      "english": "to vaccinate/to get vaccinated",
+      "english_context": "The doctor recommends that you get vaccinated.",
+      "spanish_context": "El médico recomienda que te vacunes.",
+      "target_span": "te vacunes"
+    },
+    {
+      "target_id": "VOC066",
+      "category": "Las medicinas y los tratamientos",
+      "spanish": "curativo/a",
+      "english": "healing",
+      "english_context": "I hope that the treatment is healing.",
+      "spanish_context": "Espero que el tratamiento sea curativo.",
+      "target_span": "curativo"
+    },
+    {
+      "target_id": "VOC067",
+      "category": "Cinemateca",
+      "spanish": "el ataque cardíaco",
+      "english": "heart attack",
+      "english_context": "I hope that the film explains the heart attack.",
+      "spanish_context": "Espero que la película explique el ataque cardíaco.",
+      "target_span": "el ataque cardíaco"
+    },
+    {
+      "target_id": "VOC068",
+      "category": "Cinemateca",
+      "spanish": "la camilla",
+      "english": "stretcher",
+      "english_context": "It is possible that the scene shows the stretcher.",
+      "spanish_context": "Es posible que la escena muestre la camilla.",
+      "target_span": "la camilla"
+    },
+    {
+      "target_id": "VOC069",
+      "category": "Cinemateca",
+      "spanish": "el cielorraso",
+      "english": "ceiling",
+      "english_context": "I hope that the scene shows the ceiling.",
+      "spanish_context": "Espero que la escena muestre el cielorraso.",
+      "target_span": "el cielorraso"
+    },
+    {
+      "target_id": "VOC070",
+      "category": "Cinemateca",
+      "spanish": "el embarazo",
+      "english": "pregnancy",
+      "english_context": "It is possible that the film mentions the pregnancy.",
+      "spanish_context": "Es posible que la película mencione el embarazo.",
+      "target_span": "el embarazo"
+    },
+    {
+      "target_id": "VOC071",
+      "category": "Cinemateca",
+      "spanish": "el/la enfermero/a",
+      "english": "nurse",
+      "english_context": "I hope that the nurse arrives soon.",
+      "spanish_context": "Espero que la enfermera llegue pronto.",
+      "target_span": "enfermera"
+    },
+    {
+      "target_id": "VOC072",
+      "category": "Cinemateca",
+      "spanish": "la mesa de noche",
+      "english": "nightstand",
+      "english_context": "It is possible that the scene shows the nightstand.",
+      "spanish_context": "Es posible que la escena muestre la mesa de noche.",
+      "target_span": "la mesa de noche"
+    },
+    {
+      "target_id": "VOC073",
+      "category": "Cinemateca",
+      "spanish": "el parto",
+      "english": "birth",
+      "english_context": "I hope that the film explains the birth.",
+      "spanish_context": "Espero que la película explique el parto.",
+      "target_span": "el parto"
+    },
+    {
+      "target_id": "VOC074",
+      "category": "Cinemateca",
+      "spanish": "el pedido",
+      "english": "order",
+      "english_context": "It is possible that the character changes the order.",
+      "spanish_context": "Es posible que el personaje cambie el pedido.",
+      "target_span": "el pedido"
+    },
+    {
+      "target_id": "VOC075",
+      "category": "Cinemateca",
+      "spanish": "dar(le) vueltas a un asunto",
+      "english": "to beat around the bush",
+      "english_context": "I do not want you to beat around the bush.",
+      "spanish_context": "No quiero que le des vueltas al asunto.",
+      "target_span": "des vueltas al asunto"
+    },
+    {
+      "target_id": "VOC076",
+      "category": "Cinemateca",
+      "spanish": "ponerse para las cosas (Cub.)",
+      "english": "to get your act together",
+      "english_context": "It is important that you get your act together.",
+      "spanish_context": "Es importante que te pongas para las cosas.",
+      "target_span": "te pongas para las cosas"
+    },
+    {
+      "target_id": "VOC077",
+      "category": "Cinemateca",
+      "spanish": "regañar",
+      "english": "to scold",
+      "english_context": "I do not want you to scold the child.",
+      "spanish_context": "No quiero que regañes al niño.",
+      "target_span": "regañes"
+    },
+    {
+      "target_id": "VOC078",
+      "category": "Literatura",
+      "spanish": "los adelantos",
+      "english": "advances",
+      "english_context": "I hope that the text explains the advances.",
+      "spanish_context": "Espero que el texto explique los adelantos.",
+      "target_span": "los adelantos"
+    },
+    {
+      "target_id": "VOC079",
+      "category": "Literatura",
+      "spanish": "la aguja",
+      "english": "needle",
+      "english_context": "It is possible that the story mentions the needle.",
+      "spanish_context": "Es posible que el cuento mencione la aguja.",
+      "target_span": "la aguja"
+    },
+    {
+      "target_id": "VOC080",
+      "category": "Literatura",
+      "spanish": "la cordura",
+      "english": "sanity",
+      "english_context": "I hope that the character recovers his sanity.",
+      "spanish_context": "Espero que el personaje recupere la cordura.",
+      "target_span": "la cordura"
+    },
+    {
+      "target_id": "VOC081",
+      "category": "Literatura",
+      "spanish": "el/la enfermero/a",
+      "english": "nurse",
+      "english_context": "I hope that the nurse helps the patient.",
+      "spanish_context": "Espero que la enfermera ayude al paciente.",
+      "target_span": "enfermera"
+    },
+    {
+      "target_id": "VOC082",
+      "category": "Literatura",
+      "spanish": "el hallazgo",
+      "english": "discovery",
+      "english_context": "It is possible that the text explains the discovery.",
+      "spanish_context": "Es posible que el texto explique el hallazgo.",
+      "target_span": "el hallazgo"
+    },
+    {
+      "target_id": "VOC083",
+      "category": "Literatura",
+      "spanish": "la insensatez",
+      "english": "senselessness",
+      "english_context": "I hope that the author criticizes the senselessness.",
+      "spanish_context": "Espero que el autor critique la insensatez.",
+      "target_span": "la insensatez"
+    },
+    {
+      "target_id": "VOC084",
+      "category": "Literatura",
+      "spanish": "el ombligo",
+      "english": "navel",
+      "english_context": "It is possible that the text mentions the navel.",
+      "spanish_context": "Es posible que el texto mencione el ombligo.",
+      "target_span": "el ombligo"
+    },
+    {
+      "target_id": "VOC085",
+      "category": "Literatura",
+      "spanish": "la pena",
+      "english": "sorrow",
+      "english_context": "I hope that the character overcomes the sorrow.",
+      "spanish_context": "Espero que el personaje supere la pena.",
+      "target_span": "la pena"
+    },
+    {
+      "target_id": "VOC086",
+      "category": "Literatura",
+      "spanish": "el regocijo",
+      "english": "joy",
+      "english_context": "I am glad that the character feels joy.",
+      "spanish_context": "Me alegra que el personaje sienta regocijo.",
+      "target_span": "regocijo"
+    },
+    {
+      "target_id": "VOC087",
+      "category": "Literatura",
+      "spanish": "la terapia intensiva",
+      "english": "intensive care",
+      "english_context": "It is possible that the patient needs intensive care.",
+      "spanish_context": "Es posible que el paciente necesite terapia intensiva.",
+      "target_span": "terapia intensiva"
+    },
+    {
+      "target_id": "VOC088",
+      "category": "Literatura",
+      "spanish": "latir",
+      "english": "to beat",
+      "english_context": "I hope that the heart beats normally.",
+      "spanish_context": "Espero que el corazón lata normalmente.",
+      "target_span": "lata"
+    },
+    {
+      "target_id": "VOC089",
+      "category": "Literatura",
+      "spanish": "desafiante",
+      "english": "challenging",
+      "english_context": "It is possible that the situation is challenging.",
+      "spanish_context": "Es posible que la situación sea desafiante.",
+      "target_span": "desafiante"
+    },
+    {
+      "target_id": "VOC090",
+      "category": "Cultura",
+      "spanish": "la aldea",
+      "english": "village",
+      "english_context": "I hope that the class studies the village.",
+      "spanish_context": "Espero que la clase estudie la aldea.",
+      "target_span": "la aldea"
+    },
+    {
+      "target_id": "VOC091",
+      "category": "Cultura",
+      "spanish": "la batalla",
+      "english": "battle",
+      "english_context": "It is important that the class understands the battle.",
+      "spanish_context": "Es importante que la clase comprenda la batalla.",
+      "target_span": "la batalla"
+    },
+    {
+      "target_id": "VOC092",
+      "category": "Cultura",
+      "spanish": "la ceguera",
+      "english": "blindness",
+      "english_context": "I hope that the text explains the blindness.",
+      "spanish_context": "Espero que el texto explique la ceguera.",
+      "target_span": "la ceguera"
+    },
+    {
+      "target_id": "VOC093",
+      "category": "Cultura",
+      "spanish": "el chiripazo",
+      "english": "coincidence",
+      "english_context": "It is possible that the story includes a coincidence.",
+      "spanish_context": "Es posible que el cuento incluya un chiripazo.",
+      "target_span": "chiripazo"
+    },
+    {
+      "target_id": "VOC094",
+      "category": "Cultura",
+      "spanish": "el ciclo vital",
+      "english": "life cycle",
+      "english_context": "It is important that the class understands the life cycle.",
+      "spanish_context": "Es importante que la clase comprenda el ciclo vital.",
+      "target_span": "el ciclo vital"
+    },
+    {
+      "target_id": "VOC095",
+      "category": "Cultura",
+      "spanish": "de hecho",
+      "english": "in fact",
+      "english_context": "I hope that, in fact, the situation improves.",
+      "spanish_context": "Espero que, de hecho, la situación mejore.",
+      "target_span": "de hecho"
+    },
+    {
+      "target_id": "VOC096",
+      "category": "Cultura",
+      "spanish": "el estibador de puerto",
+      "english": "longshoreman",
+      "english_context": "I hope that the class studies the longshoreman.",
+      "spanish_context": "Espero que la clase estudie al estibador de puerto.",
+      "target_span": "estibador de puerto"
+    },
+    {
+      "target_id": "VOC097",
+      "category": "Cultura",
+      "spanish": "los gusanos",
+      "english": "worms",
+      "english_context": "It is possible that the text mentions the worms.",
+      "spanish_context": "Es posible que el texto mencione los gusanos.",
+      "target_span": "los gusanos"
+    },
+    {
+      "target_id": "VOC098",
+      "category": "Cultura",
+      "spanish": "la mosca",
+      "english": "fly",
+      "english_context": "I hope that the class explains the fly.",
+      "spanish_context": "Espero que la clase explique la mosca.",
+      "target_span": "la mosca"
+    },
+    {
+      "target_id": "VOC099",
+      "category": "Cultura",
+      "spanish": "el oro",
+      "english": "gold",
+      "english_context": "It is possible that the text mentions the gold.",
+      "spanish_context": "Es posible que el texto mencione el oro.",
+      "target_span": "el oro"
+    },
+    {
+      "target_id": "VOC100",
+      "category": "Cultura",
+      "spanish": "la picadura",
+      "english": "bite",
+      "english_context": "I hope that the bite does not get worse.",
+      "spanish_context": "Espero que la picadura no empeore.",
+      "target_span": "la picadura"
+    },
+    {
+      "target_id": "VOC101",
+      "category": "Cultura",
+      "spanish": "el tráfico de esclavos",
+      "english": "slave trade",
+      "english_context": "It is important that the class studies the slave trade.",
+      "spanish_context": "Es importante que la clase estudie el tráfico de esclavos.",
+      "target_span": "el tráfico de esclavos"
+    },
+    {
+      "target_id": "VOC102",
+      "category": "Cultura",
+      "spanish": "rascar(se)",
+      "english": "to scratch (oneself)",
+      "english_context": "I do not want you to scratch yourself.",
+      "spanish_context": "No quiero que te rasques.",
+      "target_span": "te rasques"
+    }
+  ],
+  "review_contexts": [
+    {
+      "context_id": "VOC001-R1",
+      "target_id": "VOC001",
+      "english": "I want the doctor to explain depression.",
+      "spanish": "Quiero que el médico explique la depresión.",
+      "target_span": "la depresión"
+    },
+    {
+      "context_id": "VOC001-R2",
+      "target_id": "VOC001",
+      "english": "It is important that we understand depression.",
+      "spanish": "Es importante que entendamos la depresión.",
+      "target_span": "la depresión"
+    },
+    {
+      "context_id": "VOC002-R1",
+      "target_id": "VOC002",
+      "english": "I want the doctor to explain disease; illness.",
+      "spanish": "Quiero que el médico explique la enfermedad.",
+      "target_span": "la enfermedad"
+    },
+    {
+      "context_id": "VOC002-R2",
+      "target_id": "VOC002",
+      "english": "It is important that we understand disease; illness.",
+      "spanish": "Es importante que entendamos la enfermedad.",
+      "target_span": "la enfermedad"
+    },
+    {
+      "context_id": "VOC003-R1",
+      "target_id": "VOC003",
+      "english": "I want the doctor to explain flu.",
+      "spanish": "Quiero que el médico explique la gripe.",
+      "target_span": "la gripe"
+    },
+    {
+      "context_id": "VOC003-R2",
+      "target_id": "VOC003",
+      "english": "It is important that we understand flu.",
+      "spanish": "Es importante que entendamos la gripe.",
+      "target_span": "la gripe"
+    },
+    {
+      "context_id": "VOC004-R1",
+      "target_id": "VOC004",
+      "english": "I want the doctor to explain injury.",
+      "spanish": "Quiero que el médico explique la herida.",
+      "target_span": "la herida"
+    },
+    {
+      "context_id": "VOC004-R2",
+      "target_id": "VOC004",
+      "english": "It is important that we understand injury.",
+      "spanish": "Es importante que entendamos la herida.",
+      "target_span": "la herida"
+    },
+    {
+      "context_id": "VOC005-R1",
+      "target_id": "VOC005",
+      "english": "I want the doctor to explain discomfort.",
+      "spanish": "Quiero que el médico explique el malestar.",
+      "target_span": "el malestar"
+    },
+    {
+      "context_id": "VOC005-R2",
+      "target_id": "VOC005",
+      "english": "It is important that we understand discomfort.",
+      "spanish": "Es importante que entendamos el malestar.",
+      "target_span": "el malestar"
+    },
+    {
+      "context_id": "VOC006-R1",
+      "target_id": "VOC006",
+      "english": "I want the doctor to explain obesity.",
+      "spanish": "Quiero que el médico explique la obesidad.",
+      "target_span": "la obesidad"
+    },
+    {
+      "context_id": "VOC006-R2",
+      "target_id": "VOC006",
+      "english": "It is important that we understand obesity.",
+      "spanish": "Es importante que entendamos la obesidad.",
+      "target_span": "la obesidad"
+    },
+    {
+      "context_id": "VOC007-R1",
+      "target_id": "VOC007",
+      "english": "I want the doctor to explain cold.",
+      "spanish": "Quiero que el médico explique el resfriado.",
+      "target_span": "el resfriado"
+    },
+    {
+      "context_id": "VOC007-R2",
+      "target_id": "VOC007",
+      "english": "It is important that we understand cold.",
+      "spanish": "Es importante que entendamos el resfriado.",
+      "target_span": "el resfriado"
+    },
+    {
+      "context_id": "VOC008-R1",
+      "target_id": "VOC008",
+      "english": "I want the doctor to explain breathing.",
+      "spanish": "Quiero que el médico explique la respiración.",
+      "target_span": "la respiración"
+    },
+    {
+      "context_id": "VOC008-R2",
+      "target_id": "VOC008",
+      "english": "It is important that we understand breathing.",
+      "spanish": "Es importante que entendamos la respiración.",
+      "target_span": "la respiración"
+    },
+    {
+      "context_id": "VOC009-R1",
+      "target_id": "VOC009",
+      "english": "It is important that the doctor check the blood pressure.",
+      "spanish": "Es importante que el médico revise la tensión.",
+      "target_span": "la tensión"
+    },
+    {
+      "context_id": "VOC009-R2",
+      "target_id": "VOC009",
+      "english": "I hope that the blood pressure is normal.",
+      "spanish": "Espero que la tensión sea normal.",
+      "target_span": "la tensión"
+    },
+    {
+      "context_id": "VOC010-R1",
+      "target_id": "VOC010",
+      "english": "I want the doctor to explain cough.",
+      "spanish": "Quiero que el médico explique la tos.",
+      "target_span": "la tos"
+    },
+    {
+      "context_id": "VOC010-R2",
+      "target_id": "VOC010",
+      "english": "It is important that we understand cough.",
+      "spanish": "Es importante que entendamos la tos.",
+      "target_span": "la tos"
+    },
+    {
+      "context_id": "VOC011-R1",
+      "target_id": "VOC011",
+      "english": "I want the doctor to explain virus.",
+      "spanish": "Quiero que el médico explique el virus.",
+      "target_span": "el virus"
+    },
+    {
+      "context_id": "VOC011-R2",
+      "target_id": "VOC011",
+      "english": "It is important that we understand virus.",
+      "spanish": "Es importante que entendamos el virus.",
+      "target_span": "el virus"
+    },
+    {
+      "context_id": "VOC012-R1",
+      "target_id": "VOC012",
+      "english": "I do not think that you will become infected.",
+      "spanish": "No creo que te contagies.",
+      "target_span": "te contagies"
+    },
+    {
+      "context_id": "VOC012-R2",
+      "target_id": "VOC012",
+      "english": "It is possible that you become infected here.",
+      "spanish": "Es posible que te contagies aquí.",
+      "target_span": "te contagies"
+    },
+    {
+      "context_id": "VOC013-R1",
+      "target_id": "VOC013",
+      "english": "I do not want you to faint.",
+      "spanish": "No quiero que te desmayes.",
+      "target_span": "te desmayes"
+    },
+    {
+      "context_id": "VOC013-R2",
+      "target_id": "VOC013",
+      "english": "It is possible that you will faint if you do not eat.",
+      "spanish": "Es posible que te desmayes si no comes.",
+      "target_span": "te desmayes"
+    },
+    {
+      "context_id": "VOC014-R1",
+      "target_id": "VOC014",
+      "english": "I hope that the symptoms do not get worse.",
+      "spanish": "Espero que los síntomas no empeoren.",
+      "target_span": "empeoren"
+    },
+    {
+      "context_id": "VOC014-R2",
+      "target_id": "VOC014",
+      "english": "I doubt that you will get worse today.",
+      "spanish": "Dudo que empeores hoy.",
+      "target_span": "empeores"
+    },
+    {
+      "context_id": "VOC015-R1",
+      "target_id": "VOC015",
+      "english": "I do not want you to get sick.",
+      "spanish": "No quiero que te enfermes.",
+      "target_span": "te enfermes"
+    },
+    {
+      "context_id": "VOC015-R2",
+      "target_id": "VOC015",
+      "english": "It is possible that you will get sick if you do not rest.",
+      "spanish": "Es posible que te enfermes si no descansas.",
+      "target_span": "te enfermes"
+    },
+    {
+      "context_id": "VOC016-R1",
+      "target_id": "VOC016",
+      "english": "I am sorry that you have a cold.",
+      "spanish": "Siento que estés resfriado.",
+      "target_span": "resfriado"
+    },
+    {
+      "context_id": "VOC016-R2",
+      "target_id": "VOC016",
+      "english": "I hope that you are no longer sick tomorrow.",
+      "spanish": "Espero que mañana ya no estés resfriado.",
+      "target_span": "resfriado"
+    },
+    {
+      "context_id": "VOC017-R1",
+      "target_id": "VOC017",
+      "english": "I do not want you to get hurt.",
+      "spanish": "No quiero que te lastimes.",
+      "target_span": "te lastimes"
+    },
+    {
+      "context_id": "VOC017-R2",
+      "target_id": "VOC017",
+      "english": "I hope that you do not get hurt at work.",
+      "spanish": "Espero que no te lastimes en el trabajo.",
+      "target_span": "te lastimes"
+    },
+    {
+      "context_id": "VOC018-R1",
+      "target_id": "VOC018",
+      "english": "I want you to remain calm.",
+      "spanish": "Quiero que permanezcas tranquilo.",
+      "target_span": "permanezcas"
+    },
+    {
+      "context_id": "VOC018-R2",
+      "target_id": "VOC018",
+      "english": "It is important that you remain here.",
+      "spanish": "Es importante que permanezcas aquí.",
+      "target_span": "permanezcas"
+    },
+    {
+      "context_id": "VOC019-R1",
+      "target_id": "VOC019",
+      "english": "I am glad that you are getting well.",
+      "spanish": "Me alegra que te pongas bien.",
+      "target_span": "te pongas bien"
+    },
+    {
+      "context_id": "VOC019-R2",
+      "target_id": "VOC019",
+      "english": "I hope that you get well before Monday.",
+      "spanish": "Espero que te pongas bien antes del lunes.",
+      "target_span": "te pongas bien"
+    },
+    {
+      "context_id": "VOC020-R1",
+      "target_id": "VOC020",
+      "english": "I do not want you to suffer from pain.",
+      "spanish": "No quiero que sufras de dolor.",
+      "target_span": "sufras"
+    },
+    {
+      "context_id": "VOC020-R2",
+      "target_id": "VOC020",
+      "english": "I hope that you do not suffer from stress.",
+      "spanish": "Espero que no sufras de estrés.",
+      "target_span": "sufras"
+    },
+    {
+      "context_id": "VOC021-R1",
+      "target_id": "VOC021",
+      "english": "I am glad that you look healthy.",
+      "spanish": "Me alegra que tengas buen aspecto.",
+      "target_span": "buen aspecto"
+    },
+    {
+      "context_id": "VOC021-R2",
+      "target_id": "VOC021",
+      "english": "I hope that you continue to look healthy.",
+      "spanish": "Espero que sigas teniendo buen aspecto.",
+      "target_span": "buen aspecto"
+    },
+    {
+      "context_id": "VOC022-R1",
+      "target_id": "VOC022",
+      "english": "I am sorry that you have a fever.",
+      "spanish": "Siento que tengas fiebre.",
+      "target_span": "tengas fiebre"
+    },
+    {
+      "context_id": "VOC022-R2",
+      "target_id": "VOC022",
+      "english": "I hope that you do not have a fever tomorrow.",
+      "spanish": "Espero que mañana no tengas fiebre.",
+      "target_span": "tengas fiebre"
+    },
+    {
+      "context_id": "VOC023-R1",
+      "target_id": "VOC023",
+      "english": "I do not want you to cough during the test.",
+      "spanish": "No quiero que tosas durante el examen.",
+      "target_span": "tosas"
+    },
+    {
+      "context_id": "VOC023-R2",
+      "target_id": "VOC023",
+      "english": "I hope that you cough less tomorrow.",
+      "spanish": "Espero que tosas menos mañana.",
+      "target_span": "tosas"
+    },
+    {
+      "context_id": "VOC024-R1",
+      "target_id": "VOC024",
+      "english": "I am sorry that you are exhausted.",
+      "spanish": "Siento que estés agotado.",
+      "target_span": "agotado"
+    },
+    {
+      "context_id": "VOC024-R2",
+      "target_id": "VOC024",
+      "english": "I hope that you are not exhausted tomorrow.",
+      "spanish": "Espero que mañana no estés agotado.",
+      "target_span": "agotado"
+    },
+    {
+      "context_id": "VOC025-R1",
+      "target_id": "VOC025",
+      "english": "I hope that the knee is not inflamed.",
+      "spanish": "Espero que la rodilla no esté inflamada.",
+      "target_span": "inflamada"
+    },
+    {
+      "context_id": "VOC025-R2",
+      "target_id": "VOC025",
+      "english": "It is possible that the area is inflamed.",
+      "spanish": "Es posible que la zona esté inflamada.",
+      "target_span": "inflamada"
+    },
+    {
+      "context_id": "VOC026-R1",
+      "target_id": "VOC026",
+      "english": "I am sorry that you are dizzy.",
+      "spanish": "Siento que estés mareado.",
+      "target_span": "mareado"
+    },
+    {
+      "context_id": "VOC026-R2",
+      "target_id": "VOC026",
+      "english": "I hope that you are not dizzy after lunch.",
+      "spanish": "Espero que no estés mareado después del almuerzo.",
+      "target_span": "mareado"
+    },
+    {
+      "context_id": "VOC027-R1",
+      "target_id": "VOC027",
+      "english": "I hope that the doctor talks about diet (nutrition).",
+      "spanish": "Espero que el médico hable de la alimentación.",
+      "target_span": "la alimentación"
+    },
+    {
+      "context_id": "VOC027-R2",
+      "target_id": "VOC027",
+      "english": "It is important that we understand diet (nutrition).",
+      "spanish": "Es importante que entendamos la alimentación.",
+      "target_span": "la alimentación"
+    },
+    {
+      "context_id": "VOC028-R1",
+      "target_id": "VOC028",
+      "english": "I hope that the doctor talks about self-esteem.",
+      "spanish": "Espero que el médico hable de la autoestima.",
+      "target_span": "la autoestima"
+    },
+    {
+      "context_id": "VOC028-R2",
+      "target_id": "VOC028",
+      "english": "It is important that we understand self-esteem.",
+      "spanish": "Es importante que entendamos la autoestima.",
+      "target_span": "la autoestima"
+    },
+    {
+      "context_id": "VOC029-R1",
+      "target_id": "VOC029",
+      "english": "I hope that the doctor talks about well-being.",
+      "spanish": "Espero que el médico hable de el bienestar.",
+      "target_span": "el bienestar"
+    },
+    {
+      "context_id": "VOC029-R2",
+      "target_id": "VOC029",
+      "english": "It is important that we understand well-being.",
+      "spanish": "Es importante que entendamos el bienestar.",
+      "target_span": "el bienestar"
+    },
+    {
+      "context_id": "VOC030-R1",
+      "target_id": "VOC030",
+      "english": "I hope that the doctor talks about mood.",
+      "spanish": "Espero que el médico hable de el estado de ánimo.",
+      "target_span": "el estado de ánimo"
+    },
+    {
+      "context_id": "VOC030-R2",
+      "target_id": "VOC030",
+      "english": "It is important that we understand mood.",
+      "spanish": "Es importante que entendamos el estado de ánimo.",
+      "target_span": "el estado de ánimo"
+    },
+    {
+      "context_id": "VOC031-R1",
+      "target_id": "VOC031",
+      "english": "I hope that the doctor talks about health.",
+      "spanish": "Espero que el médico hable de la salud.",
+      "target_span": "la salud"
+    },
+    {
+      "context_id": "VOC031-R2",
+      "target_id": "VOC031",
+      "english": "It is important that we understand health.",
+      "spanish": "Es importante que entendamos la salud.",
+      "target_span": "la salud"
+    },
+    {
+      "context_id": "VOC032-R1",
+      "target_id": "VOC032",
+      "english": "The doctor recommends that you lose weight slowly.",
+      "spanish": "El médico recomienda que adelgaces lentamente.",
+      "target_span": "adelgaces"
+    },
+    {
+      "context_id": "VOC032-R2",
+      "target_id": "VOC032",
+      "english": "It is important that you lose weight safely.",
+      "spanish": "Es importante que adelgaces de manera segura.",
+      "target_span": "adelgaces"
+    },
+    {
+      "context_id": "VOC033-R1",
+      "target_id": "VOC033",
+      "english": "I hope that you quit smoking this year.",
+      "spanish": "Espero que dejes de fumar este año.",
+      "target_span": "dejes de fumar"
+    },
+    {
+      "context_id": "VOC033-R2",
+      "target_id": "VOC033",
+      "english": "It is important that you quit smoking.",
+      "spanish": "Es importante que dejes de fumar.",
+      "target_span": "dejes de fumar"
+    },
+    {
+      "context_id": "VOC034-R1",
+      "target_id": "VOC034",
+      "english": "The doctor recommends that you rest.",
+      "spanish": "El médico recomienda que descanses.",
+      "target_span": "descanses"
+    },
+    {
+      "context_id": "VOC034-R2",
+      "target_id": "VOC034",
+      "english": "I hope that you rest this afternoon.",
+      "spanish": "Espero que descanses esta tarde.",
+      "target_span": "descanses"
+    },
+    {
+      "context_id": "VOC035-R1",
+      "target_id": "VOC035",
+      "english": "I do not want you to gain more weight.",
+      "spanish": "No quiero que engordes más.",
+      "target_span": "engordes"
+    },
+    {
+      "context_id": "VOC035-R2",
+      "target_id": "VOC035",
+      "english": "It is possible that you gain weight if you eat more.",
+      "spanish": "Es posible que engordes si comes más.",
+      "target_span": "engordes"
+    },
+    {
+      "context_id": "VOC036-R1",
+      "target_id": "VOC036",
+      "english": "I hope that you are not on a diet for too long.",
+      "spanish": "Espero que no estés a dieta por mucho tiempo.",
+      "target_span": "estés a dieta"
+    },
+    {
+      "context_id": "VOC036-R2",
+      "target_id": "VOC036",
+      "english": "The doctor recommends that you be on a diet for one week.",
+      "spanish": "El médico recomienda que estés a dieta por una semana.",
+      "target_span": "estés a dieta"
+    },
+    {
+      "context_id": "VOC037-R1",
+      "target_id": "VOC037",
+      "english": "I am glad that you are improving.",
+      "spanish": "Me alegra que mejores.",
+      "target_span": "mejores"
+    },
+    {
+      "context_id": "VOC037-R2",
+      "target_id": "VOC037",
+      "english": "I hope that you improve this week.",
+      "spanish": "Espero que mejores esta semana.",
+      "target_span": "mejores"
+    },
+    {
+      "context_id": "VOC038-R1",
+      "target_id": "VOC038",
+      "english": "The doctor wants you to prevent another infection.",
+      "spanish": "El médico quiere que prevengas otra infección.",
+      "target_span": "prevengas"
+    },
+    {
+      "context_id": "VOC038-R2",
+      "target_id": "VOC038",
+      "english": "It is important that you prevent problems.",
+      "spanish": "Es importante que prevengas problemas.",
+      "target_span": "prevengas"
+    },
+    {
+      "context_id": "VOC039-R1",
+      "target_id": "VOC039",
+      "english": "It is important that you relax tonight.",
+      "spanish": "Es importante que te relajes esta noche.",
+      "target_span": "te relajes"
+    },
+    {
+      "context_id": "VOC039-R2",
+      "target_id": "VOC039",
+      "english": "I hope that you relax after work.",
+      "spanish": "Espero que te relajes después del trabajo.",
+      "target_span": "te relajes"
+    },
+    {
+      "context_id": "VOC040-R1",
+      "target_id": "VOC040",
+      "english": "I hope that you do not stay up all night tonight.",
+      "spanish": "Espero que no trasnoches esta noche.",
+      "target_span": "trasnoches"
+    },
+    {
+      "context_id": "VOC040-R2",
+      "target_id": "VOC040",
+      "english": "The doctor does not want you to stay up all night.",
+      "spanish": "El médico no quiere que trasnoches.",
+      "target_span": "trasnoches"
+    },
+    {
+      "context_id": "VOC041-R1",
+      "target_id": "VOC041",
+      "english": "I am glad that you are healthy.",
+      "spanish": "Me alegra que estés sano.",
+      "target_span": "sano"
+    },
+    {
+      "context_id": "VOC041-R2",
+      "target_id": "VOC041",
+      "english": "It is important that you stay healthy.",
+      "spanish": "Es importante que sigas sano.",
+      "target_span": "sano"
+    },
+    {
+      "context_id": "VOC042-R1",
+      "target_id": "VOC042",
+      "english": "I hope that the doctor explains surgery.",
+      "spanish": "Espero que el médico explique la cirugía.",
+      "target_span": "la cirugía"
+    },
+    {
+      "context_id": "VOC042-R2",
+      "target_id": "VOC042",
+      "english": "It is important that you know about surgery.",
+      "spanish": "Es importante que conozcas la cirugía.",
+      "target_span": "la cirugía"
+    },
+    {
+      "context_id": "VOC043-R1",
+      "target_id": "VOC043",
+      "english": "I hope that the surgeon can help.",
+      "spanish": "Espero que el cirujano pueda ayudar.",
+      "target_span": "cirujano"
+    },
+    {
+      "context_id": "VOC043-R2",
+      "target_id": "VOC043",
+      "english": "It is important that the surgeon arrives early.",
+      "spanish": "Es importante que el cirujano llegue temprano.",
+      "target_span": "cirujano"
+    },
+    {
+      "context_id": "VOC044-R1",
+      "target_id": "VOC044",
+      "english": "I hope that the doctor explains doctor's appointment.",
+      "spanish": "Espero que el médico explique la consulta.",
+      "target_span": "la consulta"
+    },
+    {
+      "context_id": "VOC044-R2",
+      "target_id": "VOC044",
+      "english": "It is important that you know about doctor's appointment.",
+      "spanish": "Es importante que conozcas la consulta.",
+      "target_span": "la consulta"
+    },
+    {
+      "context_id": "VOC045-R1",
+      "target_id": "VOC045",
+      "english": "I hope that the doctor explains doctor's office.",
+      "spanish": "Espero que el médico explique el consultorio.",
+      "target_span": "el consultorio"
+    },
+    {
+      "context_id": "VOC045-R2",
+      "target_id": "VOC045",
+      "english": "It is important that you know about doctor's office.",
+      "spanish": "Es importante que conozcas el consultorio.",
+      "target_span": "el consultorio"
+    },
+    {
+      "context_id": "VOC046-R1",
+      "target_id": "VOC046",
+      "english": "I hope that the doctor explains operation.",
+      "spanish": "Espero que el médico explique la operación.",
+      "target_span": "la operación"
+    },
+    {
+      "context_id": "VOC046-R2",
+      "target_id": "VOC046",
+      "english": "It is important that you know about operation.",
+      "spanish": "Es importante que conozcas la operación.",
+      "target_span": "la operación"
+    },
+    {
+      "context_id": "VOC047-R1",
+      "target_id": "VOC047",
+      "english": "I hope that the doctor explains first aid.",
+      "spanish": "Espero que el médico explique los primeros auxilios.",
+      "target_span": "los primeros auxilios"
+    },
+    {
+      "context_id": "VOC047-R2",
+      "target_id": "VOC047",
+      "english": "It is important that you know about first aid.",
+      "spanish": "Es importante que conozcas los primeros auxilios.",
+      "target_span": "los primeros auxilios"
+    },
+    {
+      "context_id": "VOC048-R1",
+      "target_id": "VOC048",
+      "english": "I hope that the doctor explains emergency room.",
+      "spanish": "Espero que el médico explique la sala de emergencias.",
+      "target_span": "la sala de emergencias"
+    },
+    {
+      "context_id": "VOC048-R2",
+      "target_id": "VOC048",
+      "english": "It is important that you know about emergency room.",
+      "spanish": "Es importante que conozcas la sala de emergencias.",
+      "target_span": "la sala de emergencias"
+    },
+    {
+      "context_id": "VOC049-R1",
+      "target_id": "VOC049",
+      "english": "I want the doctor to explain painkiller.",
+      "spanish": "Quiero que el médico explique el analgésico.",
+      "target_span": "el analgésico"
+    },
+    {
+      "context_id": "VOC049-R2",
+      "target_id": "VOC049",
+      "english": "It is important that you know about painkiller.",
+      "spanish": "Es importante que conozcas el analgésico.",
+      "target_span": "el analgésico"
+    },
+    {
+      "context_id": "VOC050-R1",
+      "target_id": "VOC050",
+      "english": "I want the doctor to explain aspirin.",
+      "spanish": "Quiero que el médico explique la aspirina.",
+      "target_span": "la aspirina"
+    },
+    {
+      "context_id": "VOC050-R2",
+      "target_id": "VOC050",
+      "english": "It is important that you know about aspirin.",
+      "spanish": "Es importante que conozcas la aspirina.",
+      "target_span": "la aspirina"
+    },
+    {
+      "context_id": "VOC051-R1",
+      "target_id": "VOC051",
+      "english": "I want the doctor to explain sedative; painkiller.",
+      "spanish": "Quiero que el médico explique el calmante.",
+      "target_span": "el calmante"
+    },
+    {
+      "context_id": "VOC051-R2",
+      "target_id": "VOC051",
+      "english": "It is important that you know about sedative; painkiller.",
+      "spanish": "Es importante que conozcas el calmante.",
+      "target_span": "el calmante"
+    },
+    {
+      "context_id": "VOC052-R1",
+      "target_id": "VOC052",
+      "english": "I want the doctor to explain side effects.",
+      "spanish": "Quiero que el médico explique los efectos secundarios.",
+      "target_span": "los efectos secundarios"
+    },
+    {
+      "context_id": "VOC052-R2",
+      "target_id": "VOC052",
+      "english": "It is important that you know about side effects.",
+      "spanish": "Es importante que conozcas los efectos secundarios.",
+      "target_span": "los efectos secundarios"
+    },
+    {
+      "context_id": "VOC053-R1",
+      "target_id": "VOC053",
+      "english": "I want the doctor to explain syrup.",
+      "spanish": "Quiero que el médico explique el jarabe.",
+      "target_span": "el jarabe"
+    },
+    {
+      "context_id": "VOC053-R2",
+      "target_id": "VOC053",
+      "english": "It is important that you know about syrup.",
+      "spanish": "Es importante que conozcas el jarabe.",
+      "target_span": "el jarabe"
+    },
+    {
+      "context_id": "VOC054-R1",
+      "target_id": "VOC054",
+      "english": "I want the doctor to explain pill.",
+      "spanish": "Quiero que el médico explique la pastilla.",
+      "target_span": "la pastilla"
+    },
+    {
+      "context_id": "VOC054-R2",
+      "target_id": "VOC054",
+      "english": "It is important that you know about pill.",
+      "spanish": "Es importante que conozcas la pastilla.",
+      "target_span": "la pastilla"
+    },
+    {
+      "context_id": "VOC055-R1",
+      "target_id": "VOC055",
+      "english": "I want the doctor to explain prescription.",
+      "spanish": "Quiero que el médico explique la receta.",
+      "target_span": "la receta"
+    },
+    {
+      "context_id": "VOC055-R2",
+      "target_id": "VOC055",
+      "english": "It is important that you know about prescription.",
+      "spanish": "Es importante que conozcas la receta.",
+      "target_span": "la receta"
+    },
+    {
+      "context_id": "VOC056-R1",
+      "target_id": "VOC056",
+      "english": "I want the doctor to explain treatment.",
+      "spanish": "Quiero que el médico explique el tratamiento.",
+      "target_span": "el tratamiento"
+    },
+    {
+      "context_id": "VOC056-R2",
+      "target_id": "VOC056",
+      "english": "It is important that you know about treatment.",
+      "spanish": "Es importante que conozcas el tratamiento.",
+      "target_span": "el tratamiento"
+    },
+    {
+      "context_id": "VOC057-R1",
+      "target_id": "VOC057",
+      "english": "I want the doctor to explain vaccine.",
+      "spanish": "Quiero que el médico explique la vacuna.",
+      "target_span": "la vacuna"
+    },
+    {
+      "context_id": "VOC057-R2",
+      "target_id": "VOC057",
+      "english": "It is important that you know about vaccine.",
+      "spanish": "Es importante que conozcas la vacuna.",
+      "target_span": "la vacuna"
+    },
+    {
+      "context_id": "VOC058-R1",
+      "target_id": "VOC058",
+      "english": "I want the doctor to explain bandage.",
+      "spanish": "Quiero que el médico explique la venda.",
+      "target_span": "la venda"
+    },
+    {
+      "context_id": "VOC058-R2",
+      "target_id": "VOC058",
+      "english": "It is important that you know about bandage.",
+      "spanish": "Es importante que conozcas la venda.",
+      "target_span": "la venda"
+    },
+    {
+      "context_id": "VOC059-R1",
+      "target_id": "VOC059",
+      "english": "I want the doctor to explain cast.",
+      "spanish": "Quiero que el médico explique el yeso.",
+      "target_span": "el yeso"
+    },
+    {
+      "context_id": "VOC059-R2",
+      "target_id": "VOC059",
+      "english": "It is important that you know about cast.",
+      "spanish": "Es importante que conozcas el yeso.",
+      "target_span": "el yeso"
+    },
+    {
+      "context_id": "VOC060-R1",
+      "target_id": "VOC060",
+      "english": "I am glad that you are healing.",
+      "spanish": "Me alegra que te cures.",
+      "target_span": "te cures"
+    },
+    {
+      "context_id": "VOC060-R2",
+      "target_id": "VOC060",
+      "english": "I hope that you heal completely.",
+      "spanish": "Espero que te cures por completo.",
+      "target_span": "te cures"
+    },
+    {
+      "context_id": "VOC061-R1",
+      "target_id": "VOC061",
+      "english": "It is possible that you need a shot.",
+      "spanish": "Es posible que necesites una inyección.",
+      "target_span": "una inyección"
+    },
+    {
+      "context_id": "VOC061-R2",
+      "target_id": "VOC061",
+      "english": "I want the nurse to give you a shot.",
+      "spanish": "Quiero que la enfermera te ponga una inyección.",
+      "target_span": "una inyección"
+    },
+    {
+      "context_id": "VOC062-R1",
+      "target_id": "VOC062",
+      "english": "I am glad that you are recovering.",
+      "spanish": "Me alegra que te recuperes.",
+      "target_span": "te recuperes"
+    },
+    {
+      "context_id": "VOC062-R2",
+      "target_id": "VOC062",
+      "english": "I hope that you recover at home.",
+      "spanish": "Espero que te recuperes en casa.",
+      "target_span": "te recuperes"
+    },
+    {
+      "context_id": "VOC063-R1",
+      "target_id": "VOC063",
+      "english": "I hope that the wound heals.",
+      "spanish": "Espero que la herida sane.",
+      "target_span": "sane"
+    },
+    {
+      "context_id": "VOC063-R2",
+      "target_id": "VOC063",
+      "english": "It is important that you heal before returning to work.",
+      "spanish": "Es importante que sanes antes de volver al trabajo.",
+      "target_span": "sanes"
+    },
+    {
+      "context_id": "VOC064-R1",
+      "target_id": "VOC064",
+      "english": "I want the doctor to treat the problem.",
+      "spanish": "Quiero que el médico trate el problema.",
+      "target_span": "trate"
+    },
+    {
+      "context_id": "VOC064-R2",
+      "target_id": "VOC064",
+      "english": "It is important that the doctor treat the patient today.",
+      "spanish": "Es importante que el médico trate al paciente hoy.",
+      "target_span": "trate"
+    },
+    {
+      "context_id": "VOC065-R1",
+      "target_id": "VOC065",
+      "english": "I hope that you get vaccinated this week.",
+      "spanish": "Espero que te vacunes esta semana.",
+      "target_span": "te vacunes"
+    },
+    {
+      "context_id": "VOC065-R2",
+      "target_id": "VOC065",
+      "english": "It is important that you get vaccinated before the trip.",
+      "spanish": "Es importante que te vacunes antes del viaje.",
+      "target_span": "te vacunes"
+    },
+    {
+      "context_id": "VOC066-R1",
+      "target_id": "VOC066",
+      "english": "It is possible that the medicine is healing.",
+      "spanish": "Es posible que la medicina sea curativa.",
+      "target_span": "curativa"
+    },
+    {
+      "context_id": "VOC066-R2",
+      "target_id": "VOC066",
+      "english": "I hope that the treatment is healing.",
+      "spanish": "Espero que el tratamiento sea curativo.",
+      "target_span": "curativo"
+    },
+    {
+      "context_id": "VOC067-R1",
+      "target_id": "VOC067",
+      "english": "I hope that the film mentions heart attack.",
+      "spanish": "Espero que la película mencione el ataque cardíaco.",
+      "target_span": "el ataque cardíaco"
+    },
+    {
+      "context_id": "VOC067-R2",
+      "target_id": "VOC067",
+      "english": "It is possible that the scene shows heart attack.",
+      "spanish": "Es posible que la escena muestre el ataque cardíaco.",
+      "target_span": "el ataque cardíaco"
+    },
+    {
+      "context_id": "VOC068-R1",
+      "target_id": "VOC068",
+      "english": "I hope that the film mentions stretcher.",
+      "spanish": "Espero que la película mencione la camilla.",
+      "target_span": "la camilla"
+    },
+    {
+      "context_id": "VOC068-R2",
+      "target_id": "VOC068",
+      "english": "It is possible that the scene shows stretcher.",
+      "spanish": "Es posible que la escena muestre la camilla.",
+      "target_span": "la camilla"
+    },
+    {
+      "context_id": "VOC069-R1",
+      "target_id": "VOC069",
+      "english": "I hope that the film mentions ceiling.",
+      "spanish": "Espero que la película mencione el cielorraso.",
+      "target_span": "el cielorraso"
+    },
+    {
+      "context_id": "VOC069-R2",
+      "target_id": "VOC069",
+      "english": "It is possible that the scene shows ceiling.",
+      "spanish": "Es posible que la escena muestre el cielorraso.",
+      "target_span": "el cielorraso"
+    },
+    {
+      "context_id": "VOC070-R1",
+      "target_id": "VOC070",
+      "english": "I hope that the film mentions pregnancy.",
+      "spanish": "Espero que la película mencione el embarazo.",
+      "target_span": "el embarazo"
+    },
+    {
+      "context_id": "VOC070-R2",
+      "target_id": "VOC070",
+      "english": "It is possible that the scene shows pregnancy.",
+      "spanish": "Es posible que la escena muestre el embarazo.",
+      "target_span": "el embarazo"
+    },
+    {
+      "context_id": "VOC071-R1",
+      "target_id": "VOC071",
+      "english": "I hope that the nurse can help.",
+      "spanish": "Espero que la enfermera pueda ayudar.",
+      "target_span": "enfermera"
+    },
+    {
+      "context_id": "VOC071-R2",
+      "target_id": "VOC071",
+      "english": "It is important that the nurse arrives early.",
+      "spanish": "Es importante que la enfermera llegue temprano.",
+      "target_span": "enfermera"
+    },
+    {
+      "context_id": "VOC072-R1",
+      "target_id": "VOC072",
+      "english": "I hope that the film mentions nightstand.",
+      "spanish": "Espero que la película mencione la mesa de noche.",
+      "target_span": "la mesa de noche"
+    },
+    {
+      "context_id": "VOC072-R2",
+      "target_id": "VOC072",
+      "english": "It is possible that the scene shows nightstand.",
+      "spanish": "Es posible que la escena muestre la mesa de noche.",
+      "target_span": "la mesa de noche"
+    },
+    {
+      "context_id": "VOC073-R1",
+      "target_id": "VOC073",
+      "english": "I hope that the film mentions birth.",
+      "spanish": "Espero que la película mencione el parto.",
+      "target_span": "el parto"
+    },
+    {
+      "context_id": "VOC073-R2",
+      "target_id": "VOC073",
+      "english": "It is possible that the scene shows birth.",
+      "spanish": "Es posible que la escena muestre el parto.",
+      "target_span": "el parto"
+    },
+    {
+      "context_id": "VOC074-R1",
+      "target_id": "VOC074",
+      "english": "I hope that the film mentions order.",
+      "spanish": "Espero que la película mencione el pedido.",
+      "target_span": "el pedido"
+    },
+    {
+      "context_id": "VOC074-R2",
+      "target_id": "VOC074",
+      "english": "It is possible that the scene shows order.",
+      "spanish": "Es posible que la escena muestre el pedido.",
+      "target_span": "el pedido"
+    },
+    {
+      "context_id": "VOC075-R1",
+      "target_id": "VOC075",
+      "english": "I hope that you do not beat around the bush.",
+      "spanish": "Espero que no le des vueltas al asunto.",
+      "target_span": "des vueltas al asunto"
+    },
+    {
+      "context_id": "VOC075-R2",
+      "target_id": "VOC075",
+      "english": "It is better that you not beat around the bush.",
+      "spanish": "Es mejor que no le des vueltas al asunto.",
+      "target_span": "des vueltas al asunto"
+    },
+    {
+      "context_id": "VOC076-R1",
+      "target_id": "VOC076",
+      "english": "I hope that you get your act together soon.",
+      "spanish": "Espero que te pongas para las cosas pronto.",
+      "target_span": "te pongas para las cosas"
+    },
+    {
+      "context_id": "VOC076-R2",
+      "target_id": "VOC076",
+      "english": "It is good that you get your act together.",
+      "spanish": "Es bueno que te pongas para las cosas.",
+      "target_span": "te pongas para las cosas"
+    },
+    {
+      "context_id": "VOC077-R1",
+      "target_id": "VOC077",
+      "english": "I do not want you to scold her.",
+      "spanish": "No quiero que la regañes.",
+      "target_span": "regañes"
+    },
+    {
+      "context_id": "VOC077-R2",
+      "target_id": "VOC077",
+      "english": "It is possible that the teacher scolds him.",
+      "spanish": "Es posible que la profesora lo regañe.",
+      "target_span": "regañe"
+    },
+    {
+      "context_id": "VOC078-R1",
+      "target_id": "VOC078",
+      "english": "I hope that the text explains advances.",
+      "spanish": "Espero que el texto explique los adelantos.",
+      "target_span": "los adelantos"
+    },
+    {
+      "context_id": "VOC078-R2",
+      "target_id": "VOC078",
+      "english": "It is possible that the story mentions advances.",
+      "spanish": "Es posible que el cuento mencione los adelantos.",
+      "target_span": "los adelantos"
+    },
+    {
+      "context_id": "VOC079-R1",
+      "target_id": "VOC079",
+      "english": "I hope that the text explains needle.",
+      "spanish": "Espero que el texto explique la aguja.",
+      "target_span": "la aguja"
+    },
+    {
+      "context_id": "VOC079-R2",
+      "target_id": "VOC079",
+      "english": "It is possible that the story mentions needle.",
+      "spanish": "Es posible que el cuento mencione la aguja.",
+      "target_span": "la aguja"
+    },
+    {
+      "context_id": "VOC080-R1",
+      "target_id": "VOC080",
+      "english": "I hope that the text explains sanity.",
+      "spanish": "Espero que el texto explique la cordura.",
+      "target_span": "la cordura"
+    },
+    {
+      "context_id": "VOC080-R2",
+      "target_id": "VOC080",
+      "english": "It is possible that the story mentions sanity.",
+      "spanish": "Es posible que el cuento mencione la cordura.",
+      "target_span": "la cordura"
+    },
+    {
+      "context_id": "VOC081-R1",
+      "target_id": "VOC081",
+      "english": "I hope that the nurse can help.",
+      "spanish": "Espero que la enfermera pueda ayudar.",
+      "target_span": "enfermera"
+    },
+    {
+      "context_id": "VOC081-R2",
+      "target_id": "VOC081",
+      "english": "It is important that the nurse arrives early.",
+      "spanish": "Es importante que la enfermera llegue temprano.",
+      "target_span": "enfermera"
+    },
+    {
+      "context_id": "VOC082-R1",
+      "target_id": "VOC082",
+      "english": "I hope that the text explains discovery.",
+      "spanish": "Espero que el texto explique el hallazgo.",
+      "target_span": "el hallazgo"
+    },
+    {
+      "context_id": "VOC082-R2",
+      "target_id": "VOC082",
+      "english": "It is possible that the story mentions discovery.",
+      "spanish": "Es posible que el cuento mencione el hallazgo.",
+      "target_span": "el hallazgo"
+    },
+    {
+      "context_id": "VOC083-R1",
+      "target_id": "VOC083",
+      "english": "I hope that the text explains senselessness.",
+      "spanish": "Espero que el texto explique la insensatez.",
+      "target_span": "la insensatez"
+    },
+    {
+      "context_id": "VOC083-R2",
+      "target_id": "VOC083",
+      "english": "It is possible that the story mentions senselessness.",
+      "spanish": "Es posible que el cuento mencione la insensatez.",
+      "target_span": "la insensatez"
+    },
+    {
+      "context_id": "VOC084-R1",
+      "target_id": "VOC084",
+      "english": "I hope that the text explains navel.",
+      "spanish": "Espero que el texto explique el ombligo.",
+      "target_span": "el ombligo"
+    },
+    {
+      "context_id": "VOC084-R2",
+      "target_id": "VOC084",
+      "english": "It is possible that the story mentions navel.",
+      "spanish": "Es posible que el cuento mencione el ombligo.",
+      "target_span": "el ombligo"
+    },
+    {
+      "context_id": "VOC085-R1",
+      "target_id": "VOC085",
+      "english": "I hope that the text explains sorrow.",
+      "spanish": "Espero que el texto explique la pena.",
+      "target_span": "la pena"
+    },
+    {
+      "context_id": "VOC085-R2",
+      "target_id": "VOC085",
+      "english": "It is possible that the story mentions sorrow.",
+      "spanish": "Es posible que el cuento mencione la pena.",
+      "target_span": "la pena"
+    },
+    {
+      "context_id": "VOC086-R1",
+      "target_id": "VOC086",
+      "english": "I hope that the text explains joy.",
+      "spanish": "Espero que el texto explique el regocijo.",
+      "target_span": "el regocijo"
+    },
+    {
+      "context_id": "VOC086-R2",
+      "target_id": "VOC086",
+      "english": "It is possible that the story mentions joy.",
+      "spanish": "Es posible que el cuento mencione el regocijo.",
+      "target_span": "el regocijo"
+    },
+    {
+      "context_id": "VOC087-R1",
+      "target_id": "VOC087",
+      "english": "I hope that the text explains intensive care.",
+      "spanish": "Espero que el texto explique la terapia intensiva.",
+      "target_span": "la terapia intensiva"
+    },
+    {
+      "context_id": "VOC087-R2",
+      "target_id": "VOC087",
+      "english": "It is possible that the story mentions intensive care.",
+      "spanish": "Es posible que el cuento mencione la terapia intensiva.",
+      "target_span": "la terapia intensiva"
+    },
+    {
+      "context_id": "VOC088-R1",
+      "target_id": "VOC088",
+      "english": "It is important that the heart beat normally.",
+      "spanish": "Es importante que el corazón lata normalmente.",
+      "target_span": "lata"
+    },
+    {
+      "context_id": "VOC088-R2",
+      "target_id": "VOC088",
+      "english": "I hope that the heart continues to beat.",
+      "spanish": "Espero que el corazón siga latiendo.",
+      "target_span": "latiendo"
+    },
+    {
+      "context_id": "VOC089-R1",
+      "target_id": "VOC089",
+      "english": "I am glad that the work is challenging.",
+      "spanish": "Me alegra que el trabajo sea desafiante.",
+      "target_span": "desafiante"
+    },
+    {
+      "context_id": "VOC089-R2",
+      "target_id": "VOC089",
+      "english": "It is possible that the class is challenging.",
+      "spanish": "Es posible que la clase sea desafiante.",
+      "target_span": "desafiante"
+    },
+    {
+      "context_id": "VOC090-R1",
+      "target_id": "VOC090",
+      "english": "I hope that the class discusses village.",
+      "spanish": "Espero que la clase comente la aldea.",
+      "target_span": "la aldea"
+    },
+    {
+      "context_id": "VOC090-R2",
+      "target_id": "VOC090",
+      "english": "It is important that we understand village.",
+      "spanish": "Es importante que entendamos la aldea.",
+      "target_span": "la aldea"
+    },
+    {
+      "context_id": "VOC091-R1",
+      "target_id": "VOC091",
+      "english": "I hope that the class discusses battle.",
+      "spanish": "Espero que la clase comente la batalla.",
+      "target_span": "la batalla"
+    },
+    {
+      "context_id": "VOC091-R2",
+      "target_id": "VOC091",
+      "english": "It is important that we understand battle.",
+      "spanish": "Es importante que entendamos la batalla.",
+      "target_span": "la batalla"
+    },
+    {
+      "context_id": "VOC092-R1",
+      "target_id": "VOC092",
+      "english": "I hope that the class discusses blindness.",
+      "spanish": "Espero que la clase comente la ceguera.",
+      "target_span": "la ceguera"
+    },
+    {
+      "context_id": "VOC092-R2",
+      "target_id": "VOC092",
+      "english": "It is important that we understand blindness.",
+      "spanish": "Es importante que entendamos la ceguera.",
+      "target_span": "la ceguera"
+    },
+    {
+      "context_id": "VOC093-R1",
+      "target_id": "VOC093",
+      "english": "I hope that the class discusses coincidence.",
+      "spanish": "Espero que la clase comente el chiripazo.",
+      "target_span": "el chiripazo"
+    },
+    {
+      "context_id": "VOC093-R2",
+      "target_id": "VOC093",
+      "english": "It is important that we understand coincidence.",
+      "spanish": "Es importante que entendamos el chiripazo.",
+      "target_span": "el chiripazo"
+    },
+    {
+      "context_id": "VOC094-R1",
+      "target_id": "VOC094",
+      "english": "I hope that the class discusses life cycle.",
+      "spanish": "Espero que la clase comente el ciclo vital.",
+      "target_span": "el ciclo vital"
+    },
+    {
+      "context_id": "VOC094-R2",
+      "target_id": "VOC094",
+      "english": "It is important that we understand life cycle.",
+      "spanish": "Es importante que entendamos el ciclo vital.",
+      "target_span": "el ciclo vital"
+    },
+    {
+      "context_id": "VOC095-R1",
+      "target_id": "VOC095",
+      "english": "I hope that, in fact, they understand the problem.",
+      "spanish": "Espero que, de hecho, entiendan el problema.",
+      "target_span": "de hecho"
+    },
+    {
+      "context_id": "VOC095-R2",
+      "target_id": "VOC095",
+      "english": "It is possible that, in fact, the story is true.",
+      "spanish": "Es posible que, de hecho, la historia sea cierta.",
+      "target_span": "de hecho"
+    },
+    {
+      "context_id": "VOC096-R1",
+      "target_id": "VOC096",
+      "english": "I hope that the class discusses longshoreman.",
+      "spanish": "Espero que la clase comente el estibador de puerto.",
+      "target_span": "el estibador de puerto"
+    },
+    {
+      "context_id": "VOC096-R2",
+      "target_id": "VOC096",
+      "english": "It is important that we understand longshoreman.",
+      "spanish": "Es importante que entendamos el estibador de puerto.",
+      "target_span": "el estibador de puerto"
+    },
+    {
+      "context_id": "VOC097-R1",
+      "target_id": "VOC097",
+      "english": "I hope that the class discusses worms.",
+      "spanish": "Espero que la clase comente los gusanos.",
+      "target_span": "los gusanos"
+    },
+    {
+      "context_id": "VOC097-R2",
+      "target_id": "VOC097",
+      "english": "It is important that we understand worms.",
+      "spanish": "Es importante que entendamos los gusanos.",
+      "target_span": "los gusanos"
+    },
+    {
+      "context_id": "VOC098-R1",
+      "target_id": "VOC098",
+      "english": "I hope that the class discusses fly.",
+      "spanish": "Espero que la clase comente la mosca.",
+      "target_span": "la mosca"
+    },
+    {
+      "context_id": "VOC098-R2",
+      "target_id": "VOC098",
+      "english": "It is important that we understand fly.",
+      "spanish": "Es importante que entendamos la mosca.",
+      "target_span": "la mosca"
+    },
+    {
+      "context_id": "VOC099-R1",
+      "target_id": "VOC099",
+      "english": "I hope that the class discusses gold.",
+      "spanish": "Espero que la clase comente el oro.",
+      "target_span": "el oro"
+    },
+    {
+      "context_id": "VOC099-R2",
+      "target_id": "VOC099",
+      "english": "It is important that we understand gold.",
+      "spanish": "Es importante que entendamos el oro.",
+      "target_span": "el oro"
+    },
+    {
+      "context_id": "VOC100-R1",
+      "target_id": "VOC100",
+      "english": "I hope that the class discusses bite.",
+      "spanish": "Espero que la clase comente la picadura.",
+      "target_span": "la picadura"
+    },
+    {
+      "context_id": "VOC100-R2",
+      "target_id": "VOC100",
+      "english": "It is important that we understand bite.",
+      "spanish": "Es importante que entendamos la picadura.",
+      "target_span": "la picadura"
+    },
+    {
+      "context_id": "VOC101-R1",
+      "target_id": "VOC101",
+      "english": "I hope that the class discusses slave trade.",
+      "spanish": "Espero que la clase comente el tráfico de esclavos.",
+      "target_span": "el tráfico de esclavos"
+    },
+    {
+      "context_id": "VOC101-R2",
+      "target_id": "VOC101",
+      "english": "It is important that we understand slave trade.",
+      "spanish": "Es importante que entendamos el tráfico de esclavos.",
+      "target_span": "el tráfico de esclavos"
+    },
+    {
+      "context_id": "VOC102-R1",
+      "target_id": "VOC102",
+      "english": "I hope that you do not scratch the bite.",
+      "spanish": "Espero que no te rasques la picadura.",
+      "target_span": "te rasques"
+    },
+    {
+      "context_id": "VOC102-R2",
+      "target_id": "VOC102",
+      "english": "The doctor does not want you to scratch yourself.",
+      "spanish": "El médico no quiere que te rasques.",
+      "target_span": "te rasques"
+    }
+  ]
+}

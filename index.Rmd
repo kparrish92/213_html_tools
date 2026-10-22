@@ -1,0 +1,164 @@
+---
+title: "Lección 4"
+output:
+  html_document:
+    self_contained: true
+    theme: null
+---
+
+<style>
+
+:root {
+  --blue: #355C8A;
+  --ink: #2b3035;
+  --muted: #69737c;
+  --line: #e1e5e8;
+  --bg: #f7f8fa;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.page {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 8vh 7vw;
+}
+
+h1 {
+  color: var(--blue);
+  font-size: 2.8rem;
+  line-height: 1.08;
+  margin-bottom: 0.35em;
+}
+
+.intro {
+  color: var(--muted);
+  line-height: 1.55;
+  max-width: 760px;
+  margin-bottom: 2.2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(260px, 1fr)
+  );
+  gap: 16px;
+}
+
+.card {
+  display: block;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  text-decoration: none !important;
+  color: inherit !important;
+  box-shadow: 0 2px 7px rgba(0,0,0,.035);
+  transition:
+    transform .12s ease,
+    box-shadow .12s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(0,0,0,.07);
+}
+
+.card h2 {
+  color: var(--blue);
+  font-size: 1.28rem;
+  margin: 0 0 .6em 0;
+}
+
+.card p {
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 1em;
+  padding: .35em .65em;
+  border-radius: 999px;
+  background: #eef3f8;
+  color: #506982;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .page {
+    padding: 6vh 6vw;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+}
+
+</style>
+
+<div class="page">
+
+# Lección 4
+
+<div class="intro">
+
+Choose an activity.
+
+</div>
+
+<div class="grid">
+
+<a class="card" href="subjunctive_teaching.html">
+
+## Present Subjunctive
+
+Present subjunctive forms and health-related practice.
+
+
+
+</a>
+
+<a class="card" href="vocabulary_isolated.html">
+
+## Vocabulary · Isolation
+
+English → Spanish vocabulary practice.
+
+
+
+</a>
+
+<a class="card" href="vocabulary_contextualized.html">
+
+## Vocabulary · Context
+
+Vocabulary practice in short sentence contexts.
+
+
+
+</a>
+
+</div>
+
+</div>
