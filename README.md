@@ -1,71 +1,23 @@
-# Lección 4 HTML bundle
+# Lección 4 · Minimal HTML trainers
 
-This bundle contains three independently linkable pages:
+This folder contains **five** independent HTML practice pages and both `index.html` and editable `index.Rmd` landing pages.
 
-1. `subjunctive_teaching.html`
-   - Scaffolded present-subjunctive teaching sequence.
-   - Explanation-free.
-   - Clickable forms for extra review.
+- `subjunctive_teaching.html` — original trainer (unchanged; visual reference).
+- `commands_practice.html` — **minimal version**, aligned to the original subjunctive trainer.
+- `irregular_subjunctive_practice.html` — **minimal version**, aligned to the original subjunctive trainer.
+- `vocabulary_isolated.html` and `vocabulary_contextualized.html` — original vocabulary trainers (unchanged).
 
-2. `vocabulary_isolated.html`
-   - All 102 vocabulary items.
-   - Direct English → Spanish retrieval.
-   - Flagged items receive two unseen contextual review examples.
+## Visual design
 
-3. `vocabulary_contextualized.html`
-   - The same 102 vocabulary items.
-   - Each target appears inside a meaningful sentence that recycles an easy subjunctive pattern.
-   - Flagged items receive two unseen contextual review examples.
+The two revised trainers match `subjunctive_teaching.html`: white full-screen slides, centered blue English prompts and red Spanish answers, tiny progress and edge navigation, a small 10/20/30/all selector, audio on/off, and underlined clickable forms. They open directly on the first practice prompt. Small italic-free gray infinitive/person cues appear under English prompts only to disambiguate the intended form. There are no headings, extra help panels, group labels, or large toolbars on practice slides.
 
-`index.html` links to all three.
+### Extra practice
 
-All three practice pages retain slide numbering and back/forward navigation.
+Click the underlined command to request two new prompts from that **command group**; click the underlined subjunctive form to request two new prompts using **that verb**. Review order is shuffled.
 
-## Student-facing start behavior
+### Editing JSON and rebuilding HTML
 
-All three activities now open directly on a trial. There is no title/start screen.
+- Edit `source/commands_lesson.json`; run `python build_commands.py`.
+- Edit `source/irregular_subjunctive_lesson.json`; run `python build_irregular_subjunctive.py`.
 
-- The subjunctive activity begins with the first English sentence prompt.
-- Both vocabulary activities begin immediately with a randomized vocabulary prompt.
-- Vocabulary sessions include the full item bank; the instructor/student can stop at any point.
-
-
-## Practice subsets
-
-All three practice pages now include a small selector in the upper-right corner for:
-
-- 10 items
-- 20 items
-- 30 items
-- All items
-
-Use `New set` to draw another subset. The subjunctive lesson uses a contiguous block from the fixed progression so local scaffolding is preserved. The vocabulary pages use a fresh random sample of the chosen size.
-
-
-## Extra-practice order
-
-Only the extra-practice/review phase is randomized. Each time review begins,
-the unseen examples for flagged items are reshuffled into a fresh order.
-Main-practice behavior is unchanged.
-
-
-## Spanish audio
-
-All three SPN 213 activities now use the browser's built-in Speech Synthesis API.
-
-- Every Spanish answer has a `🔊` replay button.
-- `Audio: Off / On` is available in the upper-right corner.
-- Audio is off by default.
-- When Auto Audio is on, revealing a Spanish answer reads it aloud automatically.
-- Isolated vocabulary reads the vocabulary item.
-- Contextualized vocabulary and subjunctive practice read the full Spanish sentence.
-- Extra-practice/review slides also include audio.
-- The browser selects an available Spanish voice, preferring Mexican/US Spanish when available and falling back to another Spanish voice.
-
-
-## Vocabulary audio fix
-
-The vocabulary pages now place the speaker button directly beside the Spanish answer.
-Automatic playback is invoked synchronously when the answer is revealed, which is
-more compatible with browser user-gesture restrictions. If Speech Synthesis is not
-available, the button displays a disabled speaker icon instead of silently failing.
+The HTML files embed the data for simple GitHub Pages hosting and local offline use. Editing JSON alone will not change the site until the associated build script is run. All other original files in the bundle are left unchanged.

@@ -1,0 +1,1523 @@
+{
+  "title": "Lección 4.2 · Commands",
+  "source": "Facetas 6e, Lección 4, Estructura 4.2, p. 140",
+  "format_version": 1,
+  "instructions": "Read the English prompt and the Spanish infinitive cue; produce the command before revealing the Spanish answer. Click the underlined command to flag its grammar group for two extra examples.",
+  "stages": [
+    {
+      "stage_id": "UD_AFF",
+      "title": "Usted · affirmative",
+      "person": "usted",
+      "polarity": "affirmative",
+      "note": "",
+      "main_ids": [
+        "CMD.01-001",
+        "CMD.01-002",
+        "CMD.01-003",
+        "CMD.01-004",
+        "CMD.01-005",
+        "CMD.01-006",
+        "CMD.01-007",
+        "CMD.01-008"
+      ],
+      "review_ids": [
+        "CMD.01-R01",
+        "CMD.01-R02"
+      ]
+    },
+    {
+      "stage_id": "UD_NEG",
+      "title": "Usted · negative",
+      "person": "usted",
+      "polarity": "negative",
+      "note": "",
+      "main_ids": [
+        "CMD.02-001",
+        "CMD.02-002",
+        "CMD.02-003",
+        "CMD.02-004",
+        "CMD.02-005",
+        "CMD.02-006",
+        "CMD.02-007",
+        "CMD.02-008"
+      ],
+      "review_ids": [
+        "CMD.02-R01",
+        "CMD.02-R02"
+      ]
+    },
+    {
+      "stage_id": "UDS_AFF",
+      "title": "Ustedes · affirmative",
+      "person": "ustedes",
+      "polarity": "affirmative",
+      "note": "",
+      "main_ids": [
+        "CMD.03-001",
+        "CMD.03-002",
+        "CMD.03-003",
+        "CMD.03-004",
+        "CMD.03-005",
+        "CMD.03-006",
+        "CMD.03-007",
+        "CMD.03-008"
+      ],
+      "review_ids": [
+        "CMD.03-R01",
+        "CMD.03-R02"
+      ]
+    },
+    {
+      "stage_id": "UDS_NEG",
+      "title": "Ustedes · negative",
+      "person": "ustedes",
+      "polarity": "negative",
+      "note": "",
+      "main_ids": [
+        "CMD.04-001",
+        "CMD.04-002",
+        "CMD.04-003",
+        "CMD.04-004",
+        "CMD.04-005",
+        "CMD.04-006",
+        "CMD.04-007",
+        "CMD.04-008"
+      ],
+      "review_ids": [
+        "CMD.04-R01",
+        "CMD.04-R02"
+      ]
+    },
+    {
+      "stage_id": "TU_AFF",
+      "title": "Tú · affirmative regular / stem-changing",
+      "person": "tú",
+      "polarity": "affirmative",
+      "note": "",
+      "main_ids": [
+        "CMD.05-001",
+        "CMD.05-002",
+        "CMD.05-003",
+        "CMD.05-004",
+        "CMD.05-005",
+        "CMD.05-006",
+        "CMD.05-007",
+        "CMD.05-008",
+        "CMD.05-009",
+        "CMD.05-010"
+      ],
+      "review_ids": [
+        "CMD.05-R01",
+        "CMD.05-R02"
+      ]
+    },
+    {
+      "stage_id": "TU_NEG",
+      "title": "Tú · negative regular / stem-changing",
+      "person": "tú",
+      "polarity": "negative",
+      "note": "",
+      "main_ids": [
+        "CMD.06-001",
+        "CMD.06-002",
+        "CMD.06-003",
+        "CMD.06-004",
+        "CMD.06-005",
+        "CMD.06-006",
+        "CMD.06-007",
+        "CMD.06-008",
+        "CMD.06-009",
+        "CMD.06-010"
+      ],
+      "review_ids": [
+        "CMD.06-R01",
+        "CMD.06-R02"
+      ]
+    },
+    {
+      "stage_id": "TU_IRR_AFF",
+      "title": "Tú · eight irregular affirmatives",
+      "person": "tú",
+      "polarity": "affirmative",
+      "note": "",
+      "main_ids": [
+        "CMD.07-001",
+        "CMD.07-002",
+        "CMD.07-003",
+        "CMD.07-004",
+        "CMD.07-005",
+        "CMD.07-006",
+        "CMD.07-007",
+        "CMD.07-008"
+      ],
+      "review_ids": [
+        "CMD.07-R01",
+        "CMD.07-R02"
+      ]
+    },
+    {
+      "stage_id": "TU_IRR_NEG",
+      "title": "Tú · negatives of irregular verbs",
+      "person": "tú",
+      "polarity": "negative",
+      "note": "",
+      "main_ids": [
+        "CMD.08-001",
+        "CMD.08-002",
+        "CMD.08-003",
+        "CMD.08-004",
+        "CMD.08-005",
+        "CMD.08-006",
+        "CMD.08-007",
+        "CMD.08-008"
+      ],
+      "review_ids": [
+        "CMD.08-R01",
+        "CMD.08-R02"
+      ]
+    },
+    {
+      "stage_id": "TU_REFL",
+      "title": "Tú · reflexive commands",
+      "person": "tú",
+      "polarity": "both",
+      "note": "",
+      "main_ids": [
+        "CMD.09-001",
+        "CMD.09-002",
+        "CMD.09-003",
+        "CMD.09-004",
+        "CMD.09-005",
+        "CMD.09-006",
+        "CMD.09-007",
+        "CMD.09-008",
+        "CMD.09-009",
+        "CMD.09-010"
+      ],
+      "review_ids": [
+        "CMD.09-R01",
+        "CMD.09-R02"
+      ]
+    },
+    {
+      "stage_id": "VOSOTROS",
+      "title": "Vosotros · Spain (including reflexives)",
+      "person": "vosotros",
+      "polarity": "both",
+      "note": "Vosotros is used primarily in Spain. The book gives idos / no os vayáis for irse.",
+      "main_ids": [
+        "CMD.10-001",
+        "CMD.10-002",
+        "CMD.10-003",
+        "CMD.10-004",
+        "CMD.10-005",
+        "CMD.10-006",
+        "CMD.10-007",
+        "CMD.10-008"
+      ],
+      "review_ids": [
+        "CMD.10-R01",
+        "CMD.10-R02"
+      ]
+    },
+    {
+      "stage_id": "MIXED",
+      "title": "Mixed commands · in context",
+      "person": "mixed",
+      "polarity": "both",
+      "note": "",
+      "main_ids": [
+        "CMD.11-001",
+        "CMD.11-002",
+        "CMD.11-003",
+        "CMD.11-004",
+        "CMD.11-005",
+        "CMD.11-006",
+        "CMD.11-007",
+        "CMD.11-008"
+      ],
+      "review_ids": [
+        "CMD.11-R01",
+        "CMD.11-R02"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "CMD.01-001",
+      "stage_id": "UD_AFF",
+      "kind": "main",
+      "english": "Tell one patient: Take the medicine.",
+      "infinitive": "tomar la medicina",
+      "spanish": "Tome la medicina.",
+      "target_span": "Tome",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.01-002",
+      "stage_id": "UD_AFF",
+      "kind": "main",
+      "english": "Tell one patient: Come back tomorrow.",
+      "infinitive": "volver mañana",
+      "spanish": "Vuelva mañana.",
+      "target_span": "Vuelva",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.01-003",
+      "stage_id": "UD_AFF",
+      "kind": "main",
+      "english": "Tell one patient: Leave early.",
+      "infinitive": "salir temprano",
+      "spanish": "Salga temprano.",
+      "target_span": "Salga",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.01-004",
+      "stage_id": "UD_AFF",
+      "kind": "main",
+      "english": "Tell one patient: Drink more water.",
+      "infinitive": "beber más agua",
+      "spanish": "Beba más agua.",
+      "target_span": "Beba",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.01-005",
+      "stage_id": "UD_AFF",
+      "kind": "main",
+      "english": "Tell one patient: Eat vegetables.",
+      "infinitive": "comer verduras",
+      "spanish": "Coma verduras.",
+      "target_span": "Coma",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.01-006",
+      "stage_id": "UD_AFF",
+      "kind": "main",
+      "english": "Tell one patient: Rest at home.",
+      "infinitive": "descansar en casa",
+      "spanish": "Descanse en casa.",
+      "target_span": "Descanse",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.01-007",
+      "stage_id": "UD_AFF",
+      "kind": "main",
+      "english": "Tell one patient: Write down the symptoms.",
+      "infinitive": "escribir los síntomas",
+      "spanish": "Escriba los síntomas.",
+      "target_span": "Escriba",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.01-008",
+      "stage_id": "UD_AFF",
+      "kind": "main",
+      "english": "Tell one patient: Do the exercise.",
+      "infinitive": "hacer el ejercicio",
+      "spanish": "Haga el ejercicio.",
+      "target_span": "Haga",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.01-R01",
+      "stage_id": "UD_AFF",
+      "kind": "review",
+      "english": "Tell one patient: Call the doctor.",
+      "infinitive": "llamar al médico",
+      "spanish": "Llame al médico.",
+      "target_span": "Llame",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.01-R02",
+      "stage_id": "UD_AFF",
+      "kind": "review",
+      "english": "Tell one patient: Put the medicine here.",
+      "infinitive": "poner la medicina aquí",
+      "spanish": "Ponga la medicina aquí.",
+      "target_span": "Ponga",
+      "person": "usted",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.02-001",
+      "stage_id": "UD_NEG",
+      "kind": "main",
+      "english": "Tell one patient: Do not take this medicine.",
+      "infinitive": "no tomar esta medicina",
+      "spanish": "No tome esta medicina.",
+      "target_span": "tome",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.02-002",
+      "stage_id": "UD_NEG",
+      "kind": "main",
+      "english": "Tell one patient: Do not come back today.",
+      "infinitive": "no volver hoy",
+      "spanish": "No vuelva hoy.",
+      "target_span": "vuelva",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.02-003",
+      "stage_id": "UD_NEG",
+      "kind": "main",
+      "english": "Tell one patient: Do not leave yet.",
+      "infinitive": "no salir todavía",
+      "spanish": "No salga todavía.",
+      "target_span": "salga",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.02-004",
+      "stage_id": "UD_NEG",
+      "kind": "main",
+      "english": "Tell one patient: Do not eat so much sugar.",
+      "infinitive": "no comer tanto azúcar",
+      "spanish": "No coma tanto azúcar.",
+      "target_span": "coma",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.02-005",
+      "stage_id": "UD_NEG",
+      "kind": "main",
+      "english": "Tell one patient: Do not drink coffee tonight.",
+      "infinitive": "no beber café esta noche",
+      "spanish": "No beba café esta noche.",
+      "target_span": "beba",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.02-006",
+      "stage_id": "UD_NEG",
+      "kind": "main",
+      "english": "Tell one patient: Do not work today.",
+      "infinitive": "no trabajar hoy",
+      "spanish": "No trabaje hoy.",
+      "target_span": "trabaje",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.02-007",
+      "stage_id": "UD_NEG",
+      "kind": "main",
+      "english": "Tell one patient: Do not write on this paper.",
+      "infinitive": "no escribir en este papel",
+      "spanish": "No escriba en este papel.",
+      "target_span": "escriba",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.02-008",
+      "stage_id": "UD_NEG",
+      "kind": "main",
+      "english": "Tell one patient: Do not be afraid.",
+      "infinitive": "no tener miedo",
+      "spanish": "No tenga miedo.",
+      "target_span": "tenga",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.02-R01",
+      "stage_id": "UD_NEG",
+      "kind": "review",
+      "english": "Tell one patient: Do not drive today.",
+      "infinitive": "no conducir hoy",
+      "spanish": "No conduzca hoy.",
+      "target_span": "conduzca",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.02-R02",
+      "stage_id": "UD_NEG",
+      "kind": "review",
+      "english": "Tell one patient: Do not put the pills there.",
+      "infinitive": "no poner las pastillas allí",
+      "spanish": "No ponga las pastillas allí.",
+      "target_span": "ponga",
+      "person": "usted",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.03-001",
+      "stage_id": "UDS_AFF",
+      "kind": "main",
+      "english": "Tell several patients: Take the medicine.",
+      "infinitive": "tomar la medicina",
+      "spanish": "Tomen la medicina.",
+      "target_span": "Tomen",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.03-002",
+      "stage_id": "UDS_AFF",
+      "kind": "main",
+      "english": "Tell several patients: Come back tomorrow.",
+      "infinitive": "volver mañana",
+      "spanish": "Vuelvan mañana.",
+      "target_span": "Vuelvan",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.03-003",
+      "stage_id": "UDS_AFF",
+      "kind": "main",
+      "english": "Tell several patients: Leave now.",
+      "infinitive": "salir ahora",
+      "spanish": "Salgan ahora.",
+      "target_span": "Salgan",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.03-004",
+      "stage_id": "UDS_AFF",
+      "kind": "main",
+      "english": "Tell several patients: Eat more fruit.",
+      "infinitive": "comer más fruta",
+      "spanish": "Coman más fruta.",
+      "target_span": "Coman",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.03-005",
+      "stage_id": "UDS_AFF",
+      "kind": "main",
+      "english": "Tell several patients: Drink water.",
+      "infinitive": "beber agua",
+      "spanish": "Beban agua.",
+      "target_span": "Beban",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.03-006",
+      "stage_id": "UDS_AFF",
+      "kind": "main",
+      "english": "Tell several patients: Write your names.",
+      "infinitive": "escribir sus nombres",
+      "spanish": "Escriban sus nombres.",
+      "target_span": "Escriban",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.03-007",
+      "stage_id": "UDS_AFF",
+      "kind": "main",
+      "english": "Tell several patients: Come to the clinic.",
+      "infinitive": "venir a la clínica",
+      "spanish": "Vengan a la clínica.",
+      "target_span": "Vengan",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.03-008",
+      "stage_id": "UDS_AFF",
+      "kind": "main",
+      "english": "Tell several patients: Open the door.",
+      "infinitive": "abrir la puerta",
+      "spanish": "Abran la puerta.",
+      "target_span": "Abran",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.03-R01",
+      "stage_id": "UDS_AFF",
+      "kind": "review",
+      "english": "Tell several patients: Listen to the instructions.",
+      "infinitive": "escuchar las instrucciones",
+      "spanish": "Escuchen las instrucciones.",
+      "target_span": "Escuchen",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.03-R02",
+      "stage_id": "UDS_AFF",
+      "kind": "review",
+      "english": "Tell several patients: Do the exercises.",
+      "infinitive": "hacer los ejercicios",
+      "spanish": "Hagan los ejercicios.",
+      "target_span": "Hagan",
+      "person": "ustedes",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.04-001",
+      "stage_id": "UDS_NEG",
+      "kind": "main",
+      "english": "Tell several patients: Do not take this medicine.",
+      "infinitive": "no tomar esta medicina",
+      "spanish": "No tomen esta medicina.",
+      "target_span": "tomen",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.04-002",
+      "stage_id": "UDS_NEG",
+      "kind": "main",
+      "english": "Tell several patients: Do not come back today.",
+      "infinitive": "no volver hoy",
+      "spanish": "No vuelvan hoy.",
+      "target_span": "vuelvan",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.04-003",
+      "stage_id": "UDS_NEG",
+      "kind": "main",
+      "english": "Tell several patients: Do not leave yet.",
+      "infinitive": "no salir todavía",
+      "spanish": "No salgan todavía.",
+      "target_span": "salgan",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.04-004",
+      "stage_id": "UDS_NEG",
+      "kind": "main",
+      "english": "Tell several patients: Do not drink coffee.",
+      "infinitive": "no beber café",
+      "spanish": "No beban café.",
+      "target_span": "beban",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.04-005",
+      "stage_id": "UDS_NEG",
+      "kind": "main",
+      "english": "Tell several patients: Do not eat here.",
+      "infinitive": "no comer aquí",
+      "spanish": "No coman aquí.",
+      "target_span": "coman",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.04-006",
+      "stage_id": "UDS_NEG",
+      "kind": "main",
+      "english": "Tell several patients: Do not open the window.",
+      "infinitive": "no abrir la ventana",
+      "spanish": "No abran la ventana.",
+      "target_span": "abran",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.04-007",
+      "stage_id": "UDS_NEG",
+      "kind": "main",
+      "english": "Tell several patients: Do not make noise.",
+      "infinitive": "no hacer ruido",
+      "spanish": "No hagan ruido.",
+      "target_span": "hagan",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.04-008",
+      "stage_id": "UDS_NEG",
+      "kind": "main",
+      "english": "Tell several patients: Do not come tomorrow.",
+      "infinitive": "no venir mañana",
+      "spanish": "No vengan mañana.",
+      "target_span": "vengan",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.04-R01",
+      "stage_id": "UDS_NEG",
+      "kind": "review",
+      "english": "Tell several patients: Do not wait outside.",
+      "infinitive": "no esperar afuera",
+      "spanish": "No esperen afuera.",
+      "target_span": "esperen",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.04-R02",
+      "stage_id": "UDS_NEG",
+      "kind": "review",
+      "english": "Tell several patients: Do not put the bags there.",
+      "infinitive": "no poner las bolsas allí",
+      "spanish": "No pongan las bolsas allí.",
+      "target_span": "pongan",
+      "person": "ustedes",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.05-001",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Travel tomorrow.",
+      "infinitive": "viajar mañana",
+      "spanish": "Viaja mañana.",
+      "target_span": "Viaja",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-002",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Start now.",
+      "infinitive": "empezar ahora",
+      "spanish": "Empieza ahora.",
+      "target_span": "Empieza",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-003",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Ask for help.",
+      "infinitive": "pedir ayuda",
+      "spanish": "Pide ayuda.",
+      "target_span": "Pide",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-004",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Drink water.",
+      "infinitive": "beber agua",
+      "spanish": "Bebe agua.",
+      "target_span": "Bebe",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-005",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Write the answer.",
+      "infinitive": "escribir la respuesta",
+      "spanish": "Escribe la respuesta.",
+      "target_span": "Escribe",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-006",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Take a break.",
+      "infinitive": "tomar un descanso",
+      "spanish": "Toma un descanso.",
+      "target_span": "Toma",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-007",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Come back soon.",
+      "infinitive": "volver pronto",
+      "spanish": "Vuelve pronto.",
+      "target_span": "Vuelve",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-008",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Sleep eight hours.",
+      "infinitive": "dormir ocho horas",
+      "spanish": "Duerme ocho horas.",
+      "target_span": "Duerme",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-009",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Think about your health.",
+      "infinitive": "pensar en tu salud",
+      "spanish": "Piensa en tu salud.",
+      "target_span": "Piensa",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-010",
+      "stage_id": "TU_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Open the window.",
+      "infinitive": "abrir la ventana",
+      "spanish": "Abre la ventana.",
+      "target_span": "Abre",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-R01",
+      "stage_id": "TU_AFF",
+      "kind": "review",
+      "english": "Tell a friend: Close the door.",
+      "infinitive": "cerrar la puerta",
+      "spanish": "Cierra la puerta.",
+      "target_span": "Cierra",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.05-R02",
+      "stage_id": "TU_AFF",
+      "kind": "review",
+      "english": "Tell a friend: Repeat the exercise.",
+      "infinitive": "repetir el ejercicio",
+      "spanish": "Repite el ejercicio.",
+      "target_span": "Repite",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.06-001",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not travel tomorrow.",
+      "infinitive": "no viajar mañana",
+      "spanish": "No viajes mañana.",
+      "target_span": "viajes",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-002",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not start yet.",
+      "infinitive": "no empezar todavía",
+      "spanish": "No empieces todavía.",
+      "target_span": "empieces",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-003",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not ask for more.",
+      "infinitive": "no pedir más",
+      "spanish": "No pidas más.",
+      "target_span": "pidas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-004",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not drink coffee.",
+      "infinitive": "no beber café",
+      "spanish": "No bebas café.",
+      "target_span": "bebas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-005",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not write here.",
+      "infinitive": "no escribir aquí",
+      "spanish": "No escribas aquí.",
+      "target_span": "escribas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-006",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not take this medicine.",
+      "infinitive": "no tomar esta medicina",
+      "spanish": "No tomes esta medicina.",
+      "target_span": "tomes",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-007",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not come back late.",
+      "infinitive": "no volver tarde",
+      "spanish": "No vuelvas tarde.",
+      "target_span": "vuelvas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-008",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not sleep now.",
+      "infinitive": "no dormir ahora",
+      "spanish": "No duermas ahora.",
+      "target_span": "duermas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-009",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not think about work.",
+      "infinitive": "no pensar en el trabajo",
+      "spanish": "No pienses en el trabajo.",
+      "target_span": "pienses",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-010",
+      "stage_id": "TU_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not open the window.",
+      "infinitive": "no abrir la ventana",
+      "spanish": "No abras la ventana.",
+      "target_span": "abras",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-R01",
+      "stage_id": "TU_NEG",
+      "kind": "review",
+      "english": "Tell a friend: Do not close the door.",
+      "infinitive": "no cerrar la puerta",
+      "spanish": "No cierres la puerta.",
+      "target_span": "cierres",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.06-R02",
+      "stage_id": "TU_NEG",
+      "kind": "review",
+      "english": "Tell a friend: Do not repeat the mistake.",
+      "infinitive": "no repetir el error",
+      "spanish": "No repitas el error.",
+      "target_span": "repitas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.07-001",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Say the truth.",
+      "infinitive": "decir la verdad",
+      "spanish": "Di la verdad.",
+      "target_span": "Di",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.07-002",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Do the homework.",
+      "infinitive": "hacer la tarea",
+      "spanish": "Haz la tarea.",
+      "target_span": "Haz",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.07-003",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Go to the doctor.",
+      "infinitive": "ir al médico",
+      "spanish": "Ve al médico.",
+      "target_span": "Ve",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.07-004",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Put the book here.",
+      "infinitive": "poner el libro aquí",
+      "spanish": "Pon el libro aquí.",
+      "target_span": "Pon",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.07-005",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Leave now.",
+      "infinitive": "salir ahora",
+      "spanish": "Sal ahora.",
+      "target_span": "Sal",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.07-006",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Be patient.",
+      "infinitive": "ser paciente",
+      "spanish": "Sé paciente.",
+      "target_span": "Sé",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.07-007",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Be careful.",
+      "infinitive": "tener cuidado",
+      "spanish": "Ten cuidado.",
+      "target_span": "Ten",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.07-008",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "main",
+      "english": "Tell a friend: Come with me.",
+      "infinitive": "venir conmigo",
+      "spanish": "Ven conmigo.",
+      "target_span": "Ven",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.07-R01",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "review",
+      "english": "Tell a friend: Tell me the answer.",
+      "infinitive": "decir la respuesta",
+      "spanish": "Di la respuesta.",
+      "target_span": "Di",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.07-R02",
+      "stage_id": "TU_IRR_AFF",
+      "kind": "review",
+      "english": "Tell a friend: Put the phone away.",
+      "infinitive": "poner el teléfono en la mochila",
+      "spanish": "Pon el teléfono en la mochila.",
+      "target_span": "Pon",
+      "person": "tú",
+      "polarity": "affirmative"
+    },
+    {
+      "item_id": "CMD.08-001",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not say that.",
+      "infinitive": "no decir eso",
+      "spanish": "No digas eso.",
+      "target_span": "digas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.08-002",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not do that.",
+      "infinitive": "no hacer eso",
+      "spanish": "No hagas eso.",
+      "target_span": "hagas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.08-003",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not go alone.",
+      "infinitive": "no ir solo",
+      "spanish": "No vayas solo.",
+      "target_span": "vayas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.08-004",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not put it here.",
+      "infinitive": "no ponerlo aquí",
+      "spanish": "No lo pongas aquí.",
+      "target_span": "lo pongas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.08-005",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not leave now.",
+      "infinitive": "no salir ahora",
+      "spanish": "No salgas ahora.",
+      "target_span": "salgas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.08-006",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not be impatient.",
+      "infinitive": "no ser impaciente",
+      "spanish": "No seas impaciente.",
+      "target_span": "seas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.08-007",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not be afraid.",
+      "infinitive": "no tener miedo",
+      "spanish": "No tengas miedo.",
+      "target_span": "tengas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.08-008",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "main",
+      "english": "Tell a friend: Do not come late.",
+      "infinitive": "no venir tarde",
+      "spanish": "No vengas tarde.",
+      "target_span": "vengas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.08-R01",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "review",
+      "english": "Tell a friend: Do not tell a lie.",
+      "infinitive": "no decir una mentira",
+      "spanish": "No digas una mentira.",
+      "target_span": "digas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.08-R02",
+      "stage_id": "TU_IRR_NEG",
+      "kind": "review",
+      "english": "Tell a friend: Do not leave without water.",
+      "infinitive": "no salir sin agua",
+      "spanish": "No salgas sin agua.",
+      "target_span": "salgas",
+      "person": "tú",
+      "polarity": "negative"
+    },
+    {
+      "item_id": "CMD.09-001",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Get up early.",
+      "infinitive": "levantarse temprano",
+      "spanish": "Levántate temprano.",
+      "target_span": "Levántate",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-002",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Do not get up yet.",
+      "infinitive": "no levantarse todavía",
+      "spanish": "No te levantes todavía.",
+      "target_span": "te levantes",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-003",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Sit down here.",
+      "infinitive": "sentarse aquí",
+      "spanish": "Siéntate aquí.",
+      "target_span": "Siéntate",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-004",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Do not sit there.",
+      "infinitive": "no sentarse allí",
+      "spanish": "No te sientes allí.",
+      "target_span": "te sientes",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-005",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Go to bed early.",
+      "infinitive": "acostarse temprano",
+      "spanish": "Acuéstate temprano.",
+      "target_span": "Acuéstate",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-006",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Do not go to bed late.",
+      "infinitive": "no acostarse tarde",
+      "spanish": "No te acuestes tarde.",
+      "target_span": "te acuestes",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-007",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Put on a jacket.",
+      "infinitive": "ponerse una chaqueta",
+      "spanish": "Ponte una chaqueta.",
+      "target_span": "Ponte",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-008",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Do not put on that shirt.",
+      "infinitive": "no ponerse esa camisa",
+      "spanish": "No te pongas esa camisa.",
+      "target_span": "te pongas",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-009",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Wash your hands.",
+      "infinitive": "lavarse las manos",
+      "spanish": "Lávate las manos.",
+      "target_span": "Lávate",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-010",
+      "stage_id": "TU_REFL",
+      "kind": "main",
+      "english": "Tell a friend: Do not wash your face now.",
+      "infinitive": "no lavarse la cara ahora",
+      "spanish": "No te laves la cara ahora.",
+      "target_span": "te laves",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-R01",
+      "stage_id": "TU_REFL",
+      "kind": "review",
+      "english": "Tell a friend: Get dressed quickly.",
+      "infinitive": "vestirse rápido",
+      "spanish": "Vístete rápido.",
+      "target_span": "Vístete",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.09-R02",
+      "stage_id": "TU_REFL",
+      "kind": "review",
+      "english": "Tell a friend: Do not get dressed yet.",
+      "infinitive": "no vestirse todavía",
+      "spanish": "No te vistas todavía.",
+      "target_span": "te vistas",
+      "person": "tú",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-001",
+      "stage_id": "VOSOTROS",
+      "kind": "main",
+      "english": "Tell a group of friends in Spain: Dance with us.",
+      "infinitive": "bailar con nosotros",
+      "spanish": "Bailad con nosotros.",
+      "target_span": "Bailad",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-002",
+      "stage_id": "VOSOTROS",
+      "kind": "main",
+      "english": "Tell a group of friends in Spain: Do not dance now.",
+      "infinitive": "no bailar ahora",
+      "spanish": "No bailéis ahora.",
+      "target_span": "bailéis",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-003",
+      "stage_id": "VOSOTROS",
+      "kind": "main",
+      "english": "Tell a group of friends in Spain: Eat more fruit.",
+      "infinitive": "comer más fruta",
+      "spanish": "Comed más fruta.",
+      "target_span": "Comed",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-004",
+      "stage_id": "VOSOTROS",
+      "kind": "main",
+      "english": "Tell a group of friends in Spain: Do not eat so much.",
+      "infinitive": "no comer tanto",
+      "spanish": "No comáis tanto.",
+      "target_span": "comáis",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-005",
+      "stage_id": "VOSOTROS",
+      "kind": "main",
+      "english": "Tell a group of friends in Spain: Get up early.",
+      "infinitive": "levantarse temprano",
+      "spanish": "Levantaos temprano.",
+      "target_span": "Levantaos",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-006",
+      "stage_id": "VOSOTROS",
+      "kind": "main",
+      "english": "Tell a group of friends in Spain: Do not get up late.",
+      "infinitive": "no levantarse tarde",
+      "spanish": "No os levantéis tarde.",
+      "target_span": "os levantéis",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-007",
+      "stage_id": "VOSOTROS",
+      "kind": "main",
+      "english": "Tell a group of friends in Spain: Go home.",
+      "infinitive": "irse a casa",
+      "spanish": "Idos a casa.",
+      "target_span": "Idos",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-008",
+      "stage_id": "VOSOTROS",
+      "kind": "main",
+      "english": "Tell a group of friends in Spain: Do not go away.",
+      "infinitive": "no irse",
+      "spanish": "No os vayáis.",
+      "target_span": "os vayáis",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-R01",
+      "stage_id": "VOSOTROS",
+      "kind": "review",
+      "english": "Tell a group of friends in Spain: Drink water.",
+      "infinitive": "beber agua",
+      "spanish": "Bebed agua.",
+      "target_span": "Bebed",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.10-R02",
+      "stage_id": "VOSOTROS",
+      "kind": "review",
+      "english": "Tell a group of friends in Spain: Do not open the door.",
+      "infinitive": "no abrir la puerta",
+      "spanish": "No abráis la puerta.",
+      "target_span": "abráis",
+      "person": "vosotros",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-001",
+      "stage_id": "MIXED",
+      "kind": "main",
+      "english": "Tell one patient: Come to the clinic tomorrow.",
+      "infinitive": "venir a la clínica mañana",
+      "spanish": "Venga a la clínica mañana.",
+      "target_span": "Venga",
+      "person": "mixed",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-002",
+      "stage_id": "MIXED",
+      "kind": "main",
+      "english": "Tell a friend: Do not take that pill.",
+      "infinitive": "no tomar esa pastilla",
+      "spanish": "No tomes esa pastilla.",
+      "target_span": "tomes",
+      "person": "mixed",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-003",
+      "stage_id": "MIXED",
+      "kind": "main",
+      "english": "Tell several patients: Write down the symptoms.",
+      "infinitive": "escribir los síntomas",
+      "spanish": "Escriban los síntomas.",
+      "target_span": "Escriban",
+      "person": "mixed",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-004",
+      "stage_id": "MIXED",
+      "kind": "main",
+      "english": "Tell a friend: Be patient.",
+      "infinitive": "ser paciente",
+      "spanish": "Sé paciente.",
+      "target_span": "Sé",
+      "person": "mixed",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-005",
+      "stage_id": "MIXED",
+      "kind": "main",
+      "english": "Tell one patient: Do not leave the clinic.",
+      "infinitive": "no salir de la clínica",
+      "spanish": "No salga de la clínica.",
+      "target_span": "salga",
+      "person": "mixed",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-006",
+      "stage_id": "MIXED",
+      "kind": "main",
+      "english": "Tell a friend: Lie down here.",
+      "infinitive": "acostarse aquí",
+      "spanish": "Acuéstate aquí.",
+      "target_span": "Acuéstate",
+      "person": "mixed",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-007",
+      "stage_id": "MIXED",
+      "kind": "main",
+      "english": "Tell several patients: Do not drink coffee.",
+      "infinitive": "no beber café",
+      "spanish": "No beban café.",
+      "target_span": "beban",
+      "person": "mixed",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-008",
+      "stage_id": "MIXED",
+      "kind": "main",
+      "english": "Tell a friend: Come back tomorrow.",
+      "infinitive": "volver mañana",
+      "spanish": "Vuelve mañana.",
+      "target_span": "Vuelve",
+      "person": "mixed",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-R01",
+      "stage_id": "MIXED",
+      "kind": "review",
+      "english": "Tell a friend: Do not come late.",
+      "infinitive": "no venir tarde",
+      "spanish": "No vengas tarde.",
+      "target_span": "vengas",
+      "person": "mixed",
+      "polarity": "both"
+    },
+    {
+      "item_id": "CMD.11-R02",
+      "stage_id": "MIXED",
+      "kind": "review",
+      "english": "Tell one patient: Do the exercise.",
+      "infinitive": "hacer el ejercicio",
+      "spanish": "Haga el ejercicio.",
+      "target_span": "Haga",
+      "person": "mixed",
+      "polarity": "both"
+    }
+  ]
+}

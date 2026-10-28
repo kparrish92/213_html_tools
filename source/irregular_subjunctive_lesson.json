@@ -1,0 +1,2004 @@
+{
+  "title": "Lección 4 · Irregular Present Subjunctive",
+  "format_version": 1,
+  "source": "Expanded practice based on existing SPN 213 Lección 4 subjunctive_lesson.json (stem changers, irregular yo stems); fully irregular forms and additional prompts newly authored.",
+  "instructions": "Read the English prompt and infinitive/person cue; produce the Spanish sentence before revealing the answer. Click the underlined verb form to request two extra examples of that verb.",
+  "groups": {
+    "fully_irregular": {
+      "title": "Fully irregular · ser, ir, estar, dar, saber, haber",
+      "description": "The present-subjunctive forms are not obtained from the usual present indicative yo-stem rule."
+    },
+    "yo_stem": {
+      "title": "Irregular yo stems · tenga, haga, ponga…",
+      "description": "Use the irregular present indicative yo stem to form the subjunctive."
+    },
+    "stem_change": {
+      "title": "Stem changers · duerma/durmamos, pida/pidamos…",
+      "description": "Watch the nosotros forms, especially of -ir verbs."
+    }
+  },
+  "stages": [
+    {
+      "stage_id": "SUBIRR_SER",
+      "title": "ser",
+      "group": "fully_irregular",
+      "main_ids": [
+        "SUBIRR.SER-01",
+        "SUBIRR.SER-02",
+        "SUBIRR.SER-03",
+        "SUBIRR.SER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.SER-05",
+        "SUBIRR.SER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_IR",
+      "title": "ir",
+      "group": "fully_irregular",
+      "main_ids": [
+        "SUBIRR.IR-01",
+        "SUBIRR.IR-02",
+        "SUBIRR.IR-03",
+        "SUBIRR.IR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.IR-05",
+        "SUBIRR.IR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_ESTAR",
+      "title": "estar",
+      "group": "fully_irregular",
+      "main_ids": [
+        "SUBIRR.ESTAR-01",
+        "SUBIRR.ESTAR-02",
+        "SUBIRR.ESTAR-03",
+        "SUBIRR.ESTAR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.ESTAR-05",
+        "SUBIRR.ESTAR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_DAR",
+      "title": "dar",
+      "group": "fully_irregular",
+      "main_ids": [
+        "SUBIRR.DAR-01",
+        "SUBIRR.DAR-02",
+        "SUBIRR.DAR-03",
+        "SUBIRR.DAR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.DAR-05",
+        "SUBIRR.DAR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_SABER",
+      "title": "saber",
+      "group": "fully_irregular",
+      "main_ids": [
+        "SUBIRR.SABER-01",
+        "SUBIRR.SABER-02",
+        "SUBIRR.SABER-03",
+        "SUBIRR.SABER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.SABER-05",
+        "SUBIRR.SABER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_HABER",
+      "title": "haber (impersonal)",
+      "group": "fully_irregular",
+      "main_ids": [
+        "SUBIRR.HABER-01",
+        "SUBIRR.HABER-02",
+        "SUBIRR.HABER-03",
+        "SUBIRR.HABER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.HABER-05",
+        "SUBIRR.HABER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_TENER",
+      "title": "tener",
+      "group": "yo_stem",
+      "main_ids": [
+        "SUBIRR.TENER-01",
+        "SUBIRR.TENER-02",
+        "SUBIRR.TENER-03",
+        "SUBIRR.TENER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.TENER-05",
+        "SUBIRR.TENER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_HACER",
+      "title": "hacer",
+      "group": "yo_stem",
+      "main_ids": [
+        "SUBIRR.HACER-01",
+        "SUBIRR.HACER-02",
+        "SUBIRR.HACER-03",
+        "SUBIRR.HACER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.HACER-05",
+        "SUBIRR.HACER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_PONER",
+      "title": "poner",
+      "group": "yo_stem",
+      "main_ids": [
+        "SUBIRR.PONER-01",
+        "SUBIRR.PONER-02",
+        "SUBIRR.PONER-03",
+        "SUBIRR.PONER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.PONER-05",
+        "SUBIRR.PONER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_VENIR",
+      "title": "venir",
+      "group": "yo_stem",
+      "main_ids": [
+        "SUBIRR.VENIR-01",
+        "SUBIRR.VENIR-02",
+        "SUBIRR.VENIR-03",
+        "SUBIRR.VENIR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.VENIR-05",
+        "SUBIRR.VENIR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_DECIR",
+      "title": "decir",
+      "group": "yo_stem",
+      "main_ids": [
+        "SUBIRR.DECIR-01",
+        "SUBIRR.DECIR-02",
+        "SUBIRR.DECIR-03",
+        "SUBIRR.DECIR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.DECIR-05",
+        "SUBIRR.DECIR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_SALIR",
+      "title": "salir",
+      "group": "yo_stem",
+      "main_ids": [
+        "SUBIRR.SALIR-01",
+        "SUBIRR.SALIR-02",
+        "SUBIRR.SALIR-03",
+        "SUBIRR.SALIR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.SALIR-05",
+        "SUBIRR.SALIR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_CONOCER",
+      "title": "conocer",
+      "group": "yo_stem",
+      "main_ids": [
+        "SUBIRR.CONOCER-01",
+        "SUBIRR.CONOCER-02",
+        "SUBIRR.CONOCER-03",
+        "SUBIRR.CONOCER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.CONOCER-05",
+        "SUBIRR.CONOCER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_TRAER",
+      "title": "traer",
+      "group": "yo_stem",
+      "main_ids": [
+        "SUBIRR.TRAER-01",
+        "SUBIRR.TRAER-02",
+        "SUBIRR.TRAER-03",
+        "SUBIRR.TRAER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.TRAER-05",
+        "SUBIRR.TRAER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_DORMIR",
+      "title": "dormir",
+      "group": "stem_change",
+      "main_ids": [
+        "SUBIRR.DORMIR-01",
+        "SUBIRR.DORMIR-02",
+        "SUBIRR.DORMIR-03",
+        "SUBIRR.DORMIR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.DORMIR-05",
+        "SUBIRR.DORMIR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_PEDIR",
+      "title": "pedir",
+      "group": "stem_change",
+      "main_ids": [
+        "SUBIRR.PEDIR-01",
+        "SUBIRR.PEDIR-02",
+        "SUBIRR.PEDIR-03",
+        "SUBIRR.PEDIR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.PEDIR-05",
+        "SUBIRR.PEDIR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_SENTIR",
+      "title": "sentir",
+      "group": "stem_change",
+      "main_ids": [
+        "SUBIRR.SENTIR-01",
+        "SUBIRR.SENTIR-02",
+        "SUBIRR.SENTIR-03",
+        "SUBIRR.SENTIR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.SENTIR-05",
+        "SUBIRR.SENTIR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_VOLVER",
+      "title": "volver",
+      "group": "stem_change",
+      "main_ids": [
+        "SUBIRR.VOLVER-01",
+        "SUBIRR.VOLVER-02",
+        "SUBIRR.VOLVER-03",
+        "SUBIRR.VOLVER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.VOLVER-05",
+        "SUBIRR.VOLVER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_PODER",
+      "title": "poder",
+      "group": "stem_change",
+      "main_ids": [
+        "SUBIRR.PODER-01",
+        "SUBIRR.PODER-02",
+        "SUBIRR.PODER-03",
+        "SUBIRR.PODER-04"
+      ],
+      "review_ids": [
+        "SUBIRR.PODER-05",
+        "SUBIRR.PODER-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_PENSAR",
+      "title": "pensar",
+      "group": "stem_change",
+      "main_ids": [
+        "SUBIRR.PENSAR-01",
+        "SUBIRR.PENSAR-02",
+        "SUBIRR.PENSAR-03",
+        "SUBIRR.PENSAR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.PENSAR-05",
+        "SUBIRR.PENSAR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_PREFERIR",
+      "title": "preferir",
+      "group": "stem_change",
+      "main_ids": [
+        "SUBIRR.PREFERIR-01",
+        "SUBIRR.PREFERIR-02",
+        "SUBIRR.PREFERIR-03",
+        "SUBIRR.PREFERIR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.PREFERIR-05",
+        "SUBIRR.PREFERIR-06"
+      ]
+    },
+    {
+      "stage_id": "SUBIRR_ENCONTRAR",
+      "title": "encontrar",
+      "group": "stem_change",
+      "main_ids": [
+        "SUBIRR.ENCONTRAR-01",
+        "SUBIRR.ENCONTRAR-02",
+        "SUBIRR.ENCONTRAR-03",
+        "SUBIRR.ENCONTRAR-04"
+      ],
+      "review_ids": [
+        "SUBIRR.ENCONTRAR-05",
+        "SUBIRR.ENCONTRAR-06"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "SUBIRR.SER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_SER",
+      "group": "fully_irregular",
+      "infinitive": "ser",
+      "person": "tú",
+      "english": "I hope you are patient.",
+      "spanish": "Espero que seas paciente.",
+      "target_span": "seas",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_SER",
+      "group": "fully_irregular",
+      "infinitive": "ser",
+      "person": "yo",
+      "english": "My family wants me to be responsible.",
+      "spanish": "Mi familia quiere que yo sea responsable.",
+      "target_span": "sea",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_SER",
+      "group": "fully_irregular",
+      "infinitive": "ser",
+      "person": "nosotros",
+      "english": "It is important that we be careful.",
+      "spanish": "Es importante que nosotros seamos cuidadosos.",
+      "target_span": "seamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_SER",
+      "group": "fully_irregular",
+      "infinitive": "ser",
+      "person": "ellos",
+      "english": "The doctor hopes they are honest.",
+      "spanish": "El médico espera que ellos sean honestos.",
+      "target_span": "sean",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_SER",
+      "group": "fully_irregular",
+      "infinitive": "ser",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to be patient.",
+      "spanish": "La enfermera quiere que usted sea paciente.",
+      "target_span": "sea",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_SER",
+      "group": "fully_irregular",
+      "infinitive": "ser",
+      "person": "ella",
+      "english": "It is important that she be sincere.",
+      "spanish": "Es importante que ella sea sincera.",
+      "target_span": "sea",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.IR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_IR",
+      "group": "fully_irregular",
+      "infinitive": "ir",
+      "person": "tú",
+      "english": "I hope you go to the pharmacy.",
+      "spanish": "Espero que vayas a la farmacia.",
+      "target_span": "vayas",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.IR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_IR",
+      "group": "fully_irregular",
+      "infinitive": "ir",
+      "person": "yo",
+      "english": "My family wants me to go to the doctor.",
+      "spanish": "Mi familia quiere que yo vaya al médico.",
+      "target_span": "vaya",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.IR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_IR",
+      "group": "fully_irregular",
+      "infinitive": "ir",
+      "person": "nosotros",
+      "english": "It is important that we go to the clinic.",
+      "spanish": "Es importante que nosotros vayamos al consultorio.",
+      "target_span": "vayamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.IR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_IR",
+      "group": "fully_irregular",
+      "infinitive": "ir",
+      "person": "ellos",
+      "english": "The doctor hopes they go to the hospital.",
+      "spanish": "El médico espera que ellos vayan al hospital.",
+      "target_span": "vayan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.IR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_IR",
+      "group": "fully_irregular",
+      "infinitive": "ir",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to go to the appointment.",
+      "spanish": "La enfermera quiere que usted vaya a la consulta.",
+      "target_span": "vaya",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.IR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_IR",
+      "group": "fully_irregular",
+      "infinitive": "ir",
+      "person": "ella",
+      "english": "It is important that she go to the dentist.",
+      "spanish": "Es importante que ella vaya al dentista.",
+      "target_span": "vaya",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ESTAR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_ESTAR",
+      "group": "fully_irregular",
+      "infinitive": "estar",
+      "person": "tú",
+      "english": "I hope you feel better.",
+      "spanish": "Espero que estés mejor.",
+      "target_span": "estés",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ESTAR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_ESTAR",
+      "group": "fully_irregular",
+      "infinitive": "estar",
+      "person": "yo",
+      "english": "My family wants me to be well.",
+      "spanish": "Mi familia quiere que yo esté bien.",
+      "target_span": "esté",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ESTAR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_ESTAR",
+      "group": "fully_irregular",
+      "infinitive": "estar",
+      "person": "nosotros",
+      "english": "It is important that we be prepared.",
+      "spanish": "Es importante que nosotros estemos preparados.",
+      "target_span": "estemos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ESTAR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_ESTAR",
+      "group": "fully_irregular",
+      "infinitive": "estar",
+      "person": "ellos",
+      "english": "The doctor hopes they are comfortable.",
+      "spanish": "El médico espera que ellos estén cómodos.",
+      "target_span": "estén",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ESTAR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_ESTAR",
+      "group": "fully_irregular",
+      "infinitive": "estar",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to be well.",
+      "spanish": "La enfermera quiere que usted esté bien.",
+      "target_span": "esté",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ESTAR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_ESTAR",
+      "group": "fully_irregular",
+      "infinitive": "estar",
+      "person": "ella",
+      "english": "It is important that she be calm.",
+      "spanish": "Es importante que ella esté tranquila.",
+      "target_span": "esté",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DAR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_DAR",
+      "group": "fully_irregular",
+      "infinitive": "dar",
+      "person": "tú",
+      "english": "I hope you give the doctor more information.",
+      "spanish": "Espero que des más información al médico.",
+      "target_span": "des",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DAR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_DAR",
+      "group": "fully_irregular",
+      "infinitive": "dar",
+      "person": "yo",
+      "english": "My family wants me to give an explanation.",
+      "spanish": "Mi familia quiere que yo dé una explicación.",
+      "target_span": "dé",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DAR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_DAR",
+      "group": "fully_irregular",
+      "infinitive": "dar",
+      "person": "nosotros",
+      "english": "It is important that we give the correct answer.",
+      "spanish": "Es importante que nosotros demos la respuesta correcta.",
+      "target_span": "demos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DAR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_DAR",
+      "group": "fully_irregular",
+      "infinitive": "dar",
+      "person": "ellos",
+      "english": "The doctor hopes they give the nurse the results.",
+      "spanish": "El médico espera que ellos den los resultados a la enfermera.",
+      "target_span": "den",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DAR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_DAR",
+      "group": "fully_irregular",
+      "infinitive": "dar",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to give your phone number.",
+      "spanish": "La enfermera quiere que usted dé su número de teléfono.",
+      "target_span": "dé",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DAR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_DAR",
+      "group": "fully_irregular",
+      "infinitive": "dar",
+      "person": "ella",
+      "english": "It is important that she give her opinion.",
+      "spanish": "Es importante que ella dé su opinión.",
+      "target_span": "dé",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SABER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_SABER",
+      "group": "fully_irregular",
+      "infinitive": "saber",
+      "person": "tú",
+      "english": "I hope you know what to do.",
+      "spanish": "Espero que sepas qué hacer.",
+      "target_span": "sepas",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SABER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_SABER",
+      "group": "fully_irregular",
+      "infinitive": "saber",
+      "person": "yo",
+      "english": "My family wants me to know the truth.",
+      "spanish": "Mi familia quiere que yo sepa la verdad.",
+      "target_span": "sepa",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SABER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_SABER",
+      "group": "fully_irregular",
+      "infinitive": "saber",
+      "person": "nosotros",
+      "english": "It is important that we know the symptoms.",
+      "spanish": "Es importante que nosotros sepamos los síntomas.",
+      "target_span": "sepamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SABER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_SABER",
+      "group": "fully_irregular",
+      "infinitive": "saber",
+      "person": "ellos",
+      "english": "The doctor hopes they know the instructions.",
+      "spanish": "El médico espera que ellos sepan las instrucciones.",
+      "target_span": "sepan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SABER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_SABER",
+      "group": "fully_irregular",
+      "infinitive": "saber",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to know the address.",
+      "spanish": "La enfermera quiere que usted sepa la dirección.",
+      "target_span": "sepa",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SABER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_SABER",
+      "group": "fully_irregular",
+      "infinitive": "saber",
+      "person": "ella",
+      "english": "It is important that she know the results.",
+      "spanish": "Es importante que ella sepa los resultados.",
+      "target_span": "sepa",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HABER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_HABER",
+      "group": "fully_irregular",
+      "infinitive": "haber (impersonal)",
+      "person": "impersonal",
+      "english": "I hope there is enough time for the appointment.",
+      "spanish": "Espero que haya suficiente tiempo para la cita.",
+      "target_span": "haya",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HABER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_HABER",
+      "group": "fully_irregular",
+      "infinitive": "haber (impersonal)",
+      "person": "impersonal",
+      "english": "It is important that there be medicine at the clinic.",
+      "spanish": "Es importante que haya medicina en el consultorio.",
+      "target_span": "haya",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HABER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_HABER",
+      "group": "fully_irregular",
+      "infinitive": "haber (impersonal)",
+      "person": "impersonal",
+      "english": "The doctor hopes there is room for everyone.",
+      "spanish": "El médico espera que haya espacio para todos.",
+      "target_span": "haya",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HABER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_HABER",
+      "group": "fully_irregular",
+      "infinitive": "haber (impersonal)",
+      "person": "impersonal",
+      "english": "I hope there are no more problems.",
+      "spanish": "Espero que no haya más problemas.",
+      "target_span": "haya",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HABER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_HABER",
+      "group": "fully_irregular",
+      "infinitive": "haber (impersonal)",
+      "person": "impersonal",
+      "english": "The nurse wants there to be more information.",
+      "spanish": "La enfermera quiere que haya más información.",
+      "target_span": "haya",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HABER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_HABER",
+      "group": "fully_irregular",
+      "infinitive": "haber (impersonal)",
+      "person": "impersonal",
+      "english": "It is possible that there are other options.",
+      "spanish": "Es posible que haya otras opciones.",
+      "target_span": "haya",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TENER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_TENER",
+      "group": "yo_stem",
+      "infinitive": "tener",
+      "person": "tú",
+      "english": "I hope you do not have a fever.",
+      "spanish": "Espero que no tengas fiebre.",
+      "target_span": "tengas",
+      "source": "reused_original_subjunctive_lesson",
+      "original_id": "SUB.40-002"
+    },
+    {
+      "item_id": "SUBIRR.TENER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_TENER",
+      "group": "yo_stem",
+      "infinitive": "tener",
+      "person": "yo",
+      "english": "My family wants me to have time to rest.",
+      "spanish": "Mi familia quiere que yo tenga tiempo para descansar.",
+      "target_span": "tenga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TENER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_TENER",
+      "group": "yo_stem",
+      "infinitive": "tener",
+      "person": "nosotros",
+      "english": "It is important that we have the medicine.",
+      "spanish": "Es importante que nosotros tengamos la medicina.",
+      "target_span": "tengamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TENER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_TENER",
+      "group": "yo_stem",
+      "infinitive": "tener",
+      "person": "ellos",
+      "english": "The doctor hopes they have enough information.",
+      "spanish": "El médico espera que ellos tengan suficiente información.",
+      "target_span": "tengan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TENER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_TENER",
+      "group": "yo_stem",
+      "infinitive": "tener",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to have an appointment.",
+      "spanish": "La enfermera quiere que usted tenga una cita.",
+      "target_span": "tenga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TENER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_TENER",
+      "group": "yo_stem",
+      "infinitive": "tener",
+      "person": "ella",
+      "english": "It is important that she have the results.",
+      "spanish": "Es importante que ella tenga los resultados.",
+      "target_span": "tenga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HACER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_HACER",
+      "group": "yo_stem",
+      "infinitive": "hacer",
+      "person": "tú",
+      "english": "The doctor recommends that you do the exercise.",
+      "spanish": "El médico recomienda que hagas el ejercicio.",
+      "target_span": "hagas",
+      "source": "reused_original_subjunctive_lesson",
+      "original_id": "SUB.40-004"
+    },
+    {
+      "item_id": "SUBIRR.HACER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_HACER",
+      "group": "yo_stem",
+      "infinitive": "hacer",
+      "person": "yo",
+      "english": "My family wants me to do the homework.",
+      "spanish": "Mi familia quiere que yo haga la tarea.",
+      "target_span": "haga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HACER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_HACER",
+      "group": "yo_stem",
+      "infinitive": "hacer",
+      "person": "nosotros",
+      "english": "It is important that we do the test.",
+      "spanish": "Es importante que nosotros hagamos la prueba.",
+      "target_span": "hagamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HACER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_HACER",
+      "group": "yo_stem",
+      "infinitive": "hacer",
+      "person": "ellos",
+      "english": "The doctor hopes they do more exercise.",
+      "spanish": "El médico espera que ellos hagan más ejercicio.",
+      "target_span": "hagan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HACER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_HACER",
+      "group": "yo_stem",
+      "infinitive": "hacer",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to do this activity.",
+      "spanish": "La enfermera quiere que usted haga esta actividad.",
+      "target_span": "haga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.HACER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_HACER",
+      "group": "yo_stem",
+      "infinitive": "hacer",
+      "person": "ella",
+      "english": "It is important that she do the research.",
+      "spanish": "Es importante que ella haga la investigación.",
+      "target_span": "haga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PONER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_PONER",
+      "group": "yo_stem",
+      "infinitive": "poner",
+      "person": "tú",
+      "english": "I want you to put on a bandage.",
+      "spanish": "Quiero que te pongas una venda.",
+      "target_span": "pongas",
+      "source": "reused_original_subjunctive_lesson",
+      "original_id": "SUB.40-006"
+    },
+    {
+      "item_id": "SUBIRR.PONER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_PONER",
+      "group": "yo_stem",
+      "infinitive": "poner",
+      "person": "yo",
+      "english": "My family wants me to put the book on the table.",
+      "spanish": "Mi familia quiere que yo ponga el libro sobre la mesa.",
+      "target_span": "ponga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PONER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_PONER",
+      "group": "yo_stem",
+      "infinitive": "poner",
+      "person": "nosotros",
+      "english": "It is important that we put the water in the refrigerator.",
+      "spanish": "Es importante que nosotros pongamos el agua en el refrigerador.",
+      "target_span": "pongamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PONER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_PONER",
+      "group": "yo_stem",
+      "infinitive": "poner",
+      "person": "ellos",
+      "english": "The organizer hopes they put the chairs in the room.",
+      "spanish": "La organizadora espera que ellos pongan las sillas en la sala.",
+      "target_span": "pongan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PONER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_PONER",
+      "group": "yo_stem",
+      "infinitive": "poner",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to put the instructions on the desk.",
+      "spanish": "La enfermera quiere que usted ponga las instrucciones sobre el escritorio.",
+      "target_span": "ponga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PONER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_PONER",
+      "group": "yo_stem",
+      "infinitive": "poner",
+      "person": "ella",
+      "english": "It is important that she put the documents in the folder.",
+      "spanish": "Es importante que ella ponga los documentos en la carpeta.",
+      "target_span": "ponga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VENIR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_VENIR",
+      "group": "yo_stem",
+      "infinitive": "venir",
+      "person": "tú",
+      "english": "I want you to come to the doctor's office.",
+      "spanish": "Quiero que vengas al consultorio.",
+      "target_span": "vengas",
+      "source": "reused_original_subjunctive_lesson",
+      "original_id": "SUB.40-008"
+    },
+    {
+      "item_id": "SUBIRR.VENIR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_VENIR",
+      "group": "yo_stem",
+      "infinitive": "venir",
+      "person": "yo",
+      "english": "My family wants me to come to the clinic.",
+      "spanish": "Mi familia quiere que yo venga al consultorio.",
+      "target_span": "venga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VENIR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_VENIR",
+      "group": "yo_stem",
+      "infinitive": "venir",
+      "person": "nosotros",
+      "english": "It is important that we come early.",
+      "spanish": "Es importante que nosotros vengamos temprano.",
+      "target_span": "vengamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VENIR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_VENIR",
+      "group": "yo_stem",
+      "infinitive": "venir",
+      "person": "ellos",
+      "english": "The teacher hopes they come to class tomorrow.",
+      "spanish": "El profesor espera que ellos vengan a clase mañana.",
+      "target_span": "vengan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VENIR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_VENIR",
+      "group": "yo_stem",
+      "infinitive": "venir",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to come to the office.",
+      "spanish": "La enfermera quiere que usted venga a la oficina.",
+      "target_span": "venga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VENIR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_VENIR",
+      "group": "yo_stem",
+      "infinitive": "venir",
+      "person": "ella",
+      "english": "It is important that she come on Monday.",
+      "spanish": "Es importante que ella venga el lunes.",
+      "target_span": "venga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DECIR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_DECIR",
+      "group": "yo_stem",
+      "infinitive": "decir",
+      "person": "tú",
+      "english": "I hope you say how you feel.",
+      "spanish": "Espero que digas cómo te sientes.",
+      "target_span": "digas",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DECIR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_DECIR",
+      "group": "yo_stem",
+      "infinitive": "decir",
+      "person": "yo",
+      "english": "My family wants me to tell the doctor the truth.",
+      "spanish": "Mi familia quiere que yo diga la verdad al médico.",
+      "target_span": "diga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DECIR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_DECIR",
+      "group": "yo_stem",
+      "infinitive": "decir",
+      "person": "nosotros",
+      "english": "It is important that we say what happened.",
+      "spanish": "Es importante que nosotros digamos qué pasó.",
+      "target_span": "digamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DECIR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_DECIR",
+      "group": "yo_stem",
+      "infinitive": "decir",
+      "person": "ellos",
+      "english": "The doctor hopes they say the right words.",
+      "spanish": "El médico espera que ellos digan las palabras correctas.",
+      "target_span": "digan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DECIR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_DECIR",
+      "group": "yo_stem",
+      "infinitive": "decir",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to say your name.",
+      "spanish": "La enfermera quiere que usted diga su nombre.",
+      "target_span": "diga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DECIR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_DECIR",
+      "group": "yo_stem",
+      "infinitive": "decir",
+      "person": "ella",
+      "english": "It is important that she tell us the answer.",
+      "spanish": "Es importante que ella diga la respuesta.",
+      "target_span": "diga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SALIR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_SALIR",
+      "group": "yo_stem",
+      "infinitive": "salir",
+      "person": "tú",
+      "english": "I hope you go out for a walk.",
+      "spanish": "Espero que salgas a caminar.",
+      "target_span": "salgas",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SALIR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_SALIR",
+      "group": "yo_stem",
+      "infinitive": "salir",
+      "person": "yo",
+      "english": "My family wants me to leave the house early.",
+      "spanish": "Mi familia quiere que yo salga de casa temprano.",
+      "target_span": "salga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SALIR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_SALIR",
+      "group": "yo_stem",
+      "infinitive": "salir",
+      "person": "nosotros",
+      "english": "It is important that we go outside more often.",
+      "spanish": "Es importante que nosotros salgamos con más frecuencia.",
+      "target_span": "salgamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SALIR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_SALIR",
+      "group": "yo_stem",
+      "infinitive": "salir",
+      "person": "ellos",
+      "english": "The doctor hopes they leave the clinic together.",
+      "spanish": "El médico espera que ellos salgan juntos del consultorio.",
+      "target_span": "salgan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SALIR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_SALIR",
+      "group": "yo_stem",
+      "infinitive": "salir",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to leave on time.",
+      "spanish": "La enfermera quiere que usted salga a tiempo.",
+      "target_span": "salga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SALIR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_SALIR",
+      "group": "yo_stem",
+      "infinitive": "salir",
+      "person": "ella",
+      "english": "It is important that she leave work early.",
+      "spanish": "Es importante que ella salga del trabajo temprano.",
+      "target_span": "salga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.CONOCER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_CONOCER",
+      "group": "yo_stem",
+      "infinitive": "conocer",
+      "person": "tú",
+      "english": "I hope you meet the new doctor.",
+      "spanish": "Espero que conozcas al médico nuevo.",
+      "target_span": "conozcas",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.CONOCER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_CONOCER",
+      "group": "yo_stem",
+      "infinitive": "conocer",
+      "person": "yo",
+      "english": "My family wants me to meet the specialist.",
+      "spanish": "Mi familia quiere que yo conozca al especialista.",
+      "target_span": "conozca",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.CONOCER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_CONOCER",
+      "group": "yo_stem",
+      "infinitive": "conocer",
+      "person": "nosotros",
+      "english": "It is important that we know the new procedures.",
+      "spanish": "Es importante que nosotros conozcamos los nuevos procedimientos.",
+      "target_span": "conozcamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.CONOCER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_CONOCER",
+      "group": "yo_stem",
+      "infinitive": "conocer",
+      "person": "ellos",
+      "english": "The guide hopes they get to know the neighborhood.",
+      "spanish": "La guía espera que ellos conozcan el barrio.",
+      "target_span": "conozcan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.CONOCER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_CONOCER",
+      "group": "yo_stem",
+      "infinitive": "conocer",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to meet the staff.",
+      "spanish": "La enfermera quiere que usted conozca al personal.",
+      "target_span": "conozca",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.CONOCER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_CONOCER",
+      "group": "yo_stem",
+      "infinitive": "conocer",
+      "person": "ella",
+      "english": "It is important that she meet the nurse.",
+      "spanish": "Es importante que ella conozca a la enfermera.",
+      "target_span": "conozca",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TRAER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_TRAER",
+      "group": "yo_stem",
+      "infinitive": "traer",
+      "person": "tú",
+      "english": "I hope you bring the medical records.",
+      "spanish": "Espero que traigas los expedientes médicos.",
+      "target_span": "traigas",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TRAER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_TRAER",
+      "group": "yo_stem",
+      "infinitive": "traer",
+      "person": "yo",
+      "english": "My family wants me to bring the prescription.",
+      "spanish": "Mi familia quiere que yo traiga la receta.",
+      "target_span": "traiga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TRAER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_TRAER",
+      "group": "yo_stem",
+      "infinitive": "traer",
+      "person": "nosotros",
+      "english": "It is important that we bring the materials.",
+      "spanish": "Es importante que nosotros traigamos los materiales.",
+      "target_span": "traigamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TRAER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_TRAER",
+      "group": "yo_stem",
+      "infinitive": "traer",
+      "person": "ellos",
+      "english": "The doctor hopes they bring enough water.",
+      "spanish": "El médico espera que ellos traigan suficiente agua.",
+      "target_span": "traigan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TRAER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_TRAER",
+      "group": "yo_stem",
+      "infinitive": "traer",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to bring your identification.",
+      "spanish": "La enfermera quiere que usted traiga su identificación.",
+      "target_span": "traiga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.TRAER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_TRAER",
+      "group": "yo_stem",
+      "infinitive": "traer",
+      "person": "ella",
+      "english": "It is important that she bring the forms.",
+      "spanish": "Es importante que ella traiga los formularios.",
+      "target_span": "traiga",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DORMIR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_DORMIR",
+      "group": "stem_change",
+      "infinitive": "dormir",
+      "person": "tú",
+      "english": "I recommend that you sleep eight hours.",
+      "spanish": "Recomiendo que duermas ocho horas.",
+      "target_span": "duermas",
+      "source": "reused_original_subjunctive_lesson",
+      "original_id": "SUB.30-002"
+    },
+    {
+      "item_id": "SUBIRR.DORMIR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_DORMIR",
+      "group": "stem_change",
+      "infinitive": "dormir",
+      "person": "yo",
+      "english": "My family wants me to sleep better.",
+      "spanish": "Mi familia quiere que yo duerma mejor.",
+      "target_span": "duerma",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DORMIR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_DORMIR",
+      "group": "stem_change",
+      "infinitive": "dormir",
+      "person": "nosotros",
+      "english": "It is important that we sleep more.",
+      "spanish": "Es importante que nosotros durmamos más.",
+      "target_span": "durmamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DORMIR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_DORMIR",
+      "group": "stem_change",
+      "infinitive": "dormir",
+      "person": "ellos",
+      "english": "The doctor hopes they sleep well tonight.",
+      "spanish": "El médico espera que ellos duerman bien esta noche.",
+      "target_span": "duerman",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DORMIR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_DORMIR",
+      "group": "stem_change",
+      "infinitive": "dormir",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to sleep enough.",
+      "spanish": "La enfermera quiere que usted duerma lo suficiente.",
+      "target_span": "duerma",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.DORMIR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_DORMIR",
+      "group": "stem_change",
+      "infinitive": "dormir",
+      "person": "ella",
+      "english": "It is important that she sleep without interruptions.",
+      "spanish": "Es importante que ella duerma sin interrupciones.",
+      "target_span": "duerma",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PEDIR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_PEDIR",
+      "group": "stem_change",
+      "infinitive": "pedir",
+      "person": "tú",
+      "english": "It is important that you ask for a doctor's appointment.",
+      "spanish": "Es importante que pidas una consulta.",
+      "target_span": "pidas",
+      "source": "reused_original_subjunctive_lesson",
+      "original_id": "SUB.30-004"
+    },
+    {
+      "item_id": "SUBIRR.PEDIR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_PEDIR",
+      "group": "stem_change",
+      "infinitive": "pedir",
+      "person": "yo",
+      "english": "My family wants me to ask for help.",
+      "spanish": "Mi familia quiere que yo pida ayuda.",
+      "target_span": "pida",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PEDIR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_PEDIR",
+      "group": "stem_change",
+      "infinitive": "pedir",
+      "person": "nosotros",
+      "english": "It is important that we request more information.",
+      "spanish": "Es importante que nosotros pidamos más información.",
+      "target_span": "pidamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PEDIR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_PEDIR",
+      "group": "stem_change",
+      "infinitive": "pedir",
+      "person": "ellos",
+      "english": "The doctor hopes they ask for the results.",
+      "spanish": "El médico espera que ellos pidan los resultados.",
+      "target_span": "pidan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PEDIR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_PEDIR",
+      "group": "stem_change",
+      "infinitive": "pedir",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to ask for directions.",
+      "spanish": "La enfermera quiere que usted pida indicaciones.",
+      "target_span": "pida",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PEDIR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_PEDIR",
+      "group": "stem_change",
+      "infinitive": "pedir",
+      "person": "ella",
+      "english": "It is important that she ask for a second opinion.",
+      "spanish": "Es importante que ella pida una segunda opinión.",
+      "target_span": "pida",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SENTIR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_SENTIR",
+      "group": "stem_change",
+      "infinitive": "sentir",
+      "person": "tú",
+      "english": "I hope you feel better.",
+      "spanish": "Espero que te sientas mejor.",
+      "target_span": "sientas",
+      "source": "reused_original_subjunctive_lesson",
+      "original_id": "SUB.30-006"
+    },
+    {
+      "item_id": "SUBIRR.SENTIR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_SENTIR",
+      "group": "stem_change",
+      "infinitive": "sentir",
+      "person": "yo",
+      "english": "My family wants me to feel relief.",
+      "spanish": "Mi familia quiere que yo sienta alivio.",
+      "target_span": "sienta",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SENTIR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_SENTIR",
+      "group": "stem_change",
+      "infinitive": "sentir",
+      "person": "nosotros",
+      "english": "It is important that we feel more confidence.",
+      "spanish": "Es importante que nosotros sintamos más confianza.",
+      "target_span": "sintamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SENTIR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_SENTIR",
+      "group": "stem_change",
+      "infinitive": "sentir",
+      "person": "ellos",
+      "english": "The doctor hopes they feel less stress.",
+      "spanish": "El médico espera que ellos sientan menos estrés.",
+      "target_span": "sientan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SENTIR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_SENTIR",
+      "group": "stem_change",
+      "infinitive": "sentir",
+      "person": "usted",
+      "english": "The nurse hopes you (usted) feel less pain.",
+      "spanish": "La enfermera espera que usted sienta menos dolor.",
+      "target_span": "sienta",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.SENTIR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_SENTIR",
+      "group": "stem_change",
+      "infinitive": "sentir",
+      "person": "ella",
+      "english": "It is important that she feel a change.",
+      "spanish": "Es importante que ella sienta un cambio.",
+      "target_span": "sienta",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VOLVER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_VOLVER",
+      "group": "stem_change",
+      "infinitive": "volver",
+      "person": "tú",
+      "english": "I hope you return to the clinic.",
+      "spanish": "Espero que vuelvas al consultorio.",
+      "target_span": "vuelvas",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VOLVER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_VOLVER",
+      "group": "stem_change",
+      "infinitive": "volver",
+      "person": "yo",
+      "english": "My family wants me to return home early.",
+      "spanish": "Mi familia quiere que yo vuelva a casa temprano.",
+      "target_span": "vuelva",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VOLVER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_VOLVER",
+      "group": "stem_change",
+      "infinitive": "volver",
+      "person": "nosotros",
+      "english": "It is important that we come back tomorrow.",
+      "spanish": "Es importante que nosotros volvamos mañana.",
+      "target_span": "volvamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VOLVER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_VOLVER",
+      "group": "stem_change",
+      "infinitive": "volver",
+      "person": "ellos",
+      "english": "The doctor hopes they return to the same doctor.",
+      "spanish": "El médico espera que ellos vuelvan al mismo médico.",
+      "target_span": "vuelvan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VOLVER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_VOLVER",
+      "group": "stem_change",
+      "infinitive": "volver",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to return next week.",
+      "spanish": "La enfermera quiere que usted vuelva la próxima semana.",
+      "target_span": "vuelva",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.VOLVER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_VOLVER",
+      "group": "stem_change",
+      "infinitive": "volver",
+      "person": "ella",
+      "english": "It is important that she return to work soon.",
+      "spanish": "Es importante que ella vuelva al trabajo pronto.",
+      "target_span": "vuelva",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PODER-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_PODER",
+      "group": "stem_change",
+      "infinitive": "poder",
+      "person": "tú",
+      "english": "I hope you can rest this afternoon.",
+      "spanish": "Espero que puedas descansar esta tarde.",
+      "target_span": "puedas",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PODER-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_PODER",
+      "group": "stem_change",
+      "infinitive": "poder",
+      "person": "yo",
+      "english": "My family wants me to be able to understand the instructions.",
+      "spanish": "Mi familia quiere que yo pueda entender las instrucciones.",
+      "target_span": "pueda",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PODER-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_PODER",
+      "group": "stem_change",
+      "infinitive": "poder",
+      "person": "nosotros",
+      "english": "I hope we can finish the assignment.",
+      "spanish": "Espero que nosotros podamos terminar la tarea.",
+      "target_span": "podamos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PODER-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_PODER",
+      "group": "stem_change",
+      "infinitive": "poder",
+      "person": "ellos",
+      "english": "The doctor hopes they can attend the meeting.",
+      "spanish": "El médico espera que ellos puedan asistir a la reunión.",
+      "target_span": "puedan",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PODER-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_PODER",
+      "group": "stem_change",
+      "infinitive": "poder",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to be able to walk without pain.",
+      "spanish": "La enfermera quiere que usted pueda caminar sin dolor.",
+      "target_span": "pueda",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PODER-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_PODER",
+      "group": "stem_change",
+      "infinitive": "poder",
+      "person": "ella",
+      "english": "I hope she can leave early.",
+      "spanish": "Espero que ella pueda salir temprano.",
+      "target_span": "pueda",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PENSAR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_PENSAR",
+      "group": "stem_change",
+      "infinitive": "pensar",
+      "person": "tú",
+      "english": "I want you to think about your health.",
+      "spanish": "Quiero que pienses en tu salud.",
+      "target_span": "pienses",
+      "source": "reused_original_subjunctive_lesson",
+      "original_id": "SUB.30-010"
+    },
+    {
+      "item_id": "SUBIRR.PENSAR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_PENSAR",
+      "group": "stem_change",
+      "infinitive": "pensar",
+      "person": "yo",
+      "english": "My family wants me to think about the options.",
+      "spanish": "Mi familia quiere que yo piense en las opciones.",
+      "target_span": "piense",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PENSAR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_PENSAR",
+      "group": "stem_change",
+      "infinitive": "pensar",
+      "person": "nosotros",
+      "english": "It is important that we think about the future.",
+      "spanish": "Es importante que nosotros pensemos en el futuro.",
+      "target_span": "pensemos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PENSAR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_PENSAR",
+      "group": "stem_change",
+      "infinitive": "pensar",
+      "person": "ellos",
+      "english": "The doctor hopes they think about the results.",
+      "spanish": "El médico espera que ellos piensen en los resultados.",
+      "target_span": "piensen",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PENSAR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_PENSAR",
+      "group": "stem_change",
+      "infinitive": "pensar",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to think about this advice.",
+      "spanish": "La enfermera quiere que usted piense en este consejo.",
+      "target_span": "piense",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PENSAR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_PENSAR",
+      "group": "stem_change",
+      "infinitive": "pensar",
+      "person": "ella",
+      "english": "It is important that she think about the solution.",
+      "spanish": "Es importante que ella piense en la solución.",
+      "target_span": "piense",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PREFERIR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_PREFERIR",
+      "group": "stem_change",
+      "infinitive": "preferir",
+      "person": "tú",
+      "english": "I hope you prefer to rest.",
+      "spanish": "Espero que prefieras descansar.",
+      "target_span": "prefieras",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PREFERIR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_PREFERIR",
+      "group": "stem_change",
+      "infinitive": "preferir",
+      "person": "yo",
+      "english": "It is possible that I prefer to stay home.",
+      "spanish": "Es posible que yo prefiera quedarme en casa.",
+      "target_span": "prefiera",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PREFERIR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_PREFERIR",
+      "group": "stem_change",
+      "infinitive": "preferir",
+      "person": "nosotros",
+      "english": "It is important that we prefer to walk.",
+      "spanish": "Es importante que nosotros prefiramos caminar.",
+      "target_span": "prefiramos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PREFERIR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_PREFERIR",
+      "group": "stem_change",
+      "infinitive": "preferir",
+      "person": "ellos",
+      "english": "The nutritionist hopes they prefer to eat earlier.",
+      "spanish": "La nutricionista espera que ellos prefieran comer más temprano.",
+      "target_span": "prefieran",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PREFERIR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_PREFERIR",
+      "group": "stem_change",
+      "infinitive": "preferir",
+      "person": "usted",
+      "english": "It is possible that you (usted) prefer to speak with a specialist.",
+      "spanish": "Es posible que usted prefiera hablar con un especialista.",
+      "target_span": "prefiera",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.PREFERIR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_PREFERIR",
+      "group": "stem_change",
+      "infinitive": "preferir",
+      "person": "ella",
+      "english": "It is important that she prefer a second opinion.",
+      "spanish": "Es importante que ella prefiera una segunda opinión.",
+      "target_span": "prefiera",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ENCONTRAR-01",
+      "kind": "main",
+      "stage_id": "SUBIRR_ENCONTRAR",
+      "group": "stem_change",
+      "infinitive": "encontrar",
+      "person": "tú",
+      "english": "I hope you find the pharmacy.",
+      "spanish": "Espero que encuentres la farmacia.",
+      "target_span": "encuentres",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ENCONTRAR-02",
+      "kind": "main",
+      "stage_id": "SUBIRR_ENCONTRAR",
+      "group": "stem_change",
+      "infinitive": "encontrar",
+      "person": "yo",
+      "english": "My family wants me to find the new clinic.",
+      "spanish": "Mi familia quiere que yo encuentre el consultorio nuevo.",
+      "target_span": "encuentre",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ENCONTRAR-03",
+      "kind": "main",
+      "stage_id": "SUBIRR_ENCONTRAR",
+      "group": "stem_change",
+      "infinitive": "encontrar",
+      "person": "nosotros",
+      "english": "It is important that we find a solution.",
+      "spanish": "Es importante que nosotros encontremos una solución.",
+      "target_span": "encontremos",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ENCONTRAR-04",
+      "kind": "main",
+      "stage_id": "SUBIRR_ENCONTRAR",
+      "group": "stem_change",
+      "infinitive": "encontrar",
+      "person": "ellos",
+      "english": "The doctor hopes they find the documents.",
+      "spanish": "El médico espera que ellos encuentren los documentos.",
+      "target_span": "encuentren",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ENCONTRAR-05",
+      "kind": "review",
+      "stage_id": "SUBIRR_ENCONTRAR",
+      "group": "stem_change",
+      "infinitive": "encontrar",
+      "person": "usted",
+      "english": "The nurse wants you (usted) to find the address.",
+      "spanish": "La enfermera quiere que usted encuentre la dirección.",
+      "target_span": "encuentre",
+      "source": "new_practice"
+    },
+    {
+      "item_id": "SUBIRR.ENCONTRAR-06",
+      "kind": "review",
+      "stage_id": "SUBIRR_ENCONTRAR",
+      "group": "stem_change",
+      "infinitive": "encontrar",
+      "person": "ella",
+      "english": "It is important that she find the nurse.",
+      "spanish": "Es importante que ella encuentre a la enfermera.",
+      "target_span": "encuentre",
+      "source": "new_practice"
+    }
+  ],
+  "reference_original_examples": [
+    {
+      "item_id": "SUB.30-002",
+      "stage_id": "STEM_TU",
+      "english": "I recommend that you sleep eight hours.",
+      "spanish": "Recomiendo que duermas ocho horas.",
+      "target_span": "duermas"
+    },
+    {
+      "item_id": "SUB.30-004",
+      "stage_id": "STEM_TU",
+      "english": "It is important that you ask for a doctor's appointment.",
+      "spanish": "Es importante que pidas una consulta.",
+      "target_span": "pidas"
+    },
+    {
+      "item_id": "SUB.30-006",
+      "stage_id": "STEM_TU",
+      "english": "I hope you feel better.",
+      "spanish": "Espero que te sientas mejor.",
+      "target_span": "te sientas"
+    },
+    {
+      "item_id": "SUB.30-010",
+      "stage_id": "STEM_TU",
+      "english": "I want you to think about your health.",
+      "spanish": "Quiero que pienses en tu salud.",
+      "target_span": "pienses"
+    },
+    {
+      "item_id": "SUB.40-002",
+      "stage_id": "YO_STEM_TU",
+      "english": "I hope you do not have a fever.",
+      "spanish": "Espero que no tengas fiebre.",
+      "target_span": "tengas"
+    },
+    {
+      "item_id": "SUB.40-004",
+      "stage_id": "YO_STEM_TU",
+      "english": "The doctor recommends that you do the exercise.",
+      "spanish": "El médico recomienda que hagas el ejercicio.",
+      "target_span": "hagas"
+    },
+    {
+      "item_id": "SUB.40-006",
+      "stage_id": "YO_STEM_TU",
+      "english": "I want you to put on a bandage.",
+      "spanish": "Quiero que te pongas una venda.",
+      "target_span": "te pongas"
+    },
+    {
+      "item_id": "SUB.40-008",
+      "stage_id": "YO_STEM_TU",
+      "english": "I want you to come to the doctor's office.",
+      "spanish": "Quiero que vengas al consultorio.",
+      "target_span": "vengas"
+    }
+  ]
+}

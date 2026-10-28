@@ -139,6 +139,22 @@ Present subjunctive forms and health-related practice.
 
 </a>
 
+<a class="card" href="irregular_subjunctive_practice.html">
+
+## Subjunctive · Irregular Forms
+
+Practice irregular present-subjunctive forms: fully irregular, irregular yo stems, and stem changers.
+
+</a>
+
+<a class="card" href="commands_practice.html">
+
+## Commands · Practice
+
+Formal and familiar commands, negatives, irregulars, reflexives, and vosotros.
+
+</a>
+
 <a class="card" href="vocabulary_isolated.html">
 
 ## Vocabulary · Isolation

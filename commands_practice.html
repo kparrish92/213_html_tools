@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commands · Lección 4</title>
+<style>
+:root {
+  --blue: #355C8A;
+  --red: #B33A3A;
+  --purple: #7A5AA6;
+  --purple-bg: #F1ECF7;
+  --ink: #2b3035;
+  --muted: #8a9299;
+  --line: #e2e6e9;
+  --soft: #f7f8fa;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; width: 100%; height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white; color: var(--ink);
+}
+button, select, input { font: inherit; }
+.screen {
+  width: 100vw; height: 100vh;
+  display: none; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center; padding: 7vh 8vw 12vh;
+}
+.screen.active { display: flex; }
+.title {
+  color: var(--blue); font-size: 3rem; font-weight: 800;
+  line-height: 1.08; margin-bottom: .6em;
+}
+.subtitle {
+  color: #66717a; max-width: 780px; line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+.primary {
+  border: 0; background: var(--blue); color: white;
+  font-weight: 800; border-radius: 9px; padding: .8em 1.4em;
+  cursor: pointer;
+}
+.secondary {
+  border: 1px solid var(--blue); background: white; color: var(--blue);
+  font-weight: 800; border-radius: 9px; padding: .72em 1.2em;
+  cursor: pointer;
+}
+.prompt {
+  color: var(--blue); font-size: 3rem; font-weight: 800;
+  line-height: 1.25; max-width: 1050px;
+}
+.answer-en {
+  color: var(--blue); font-size: 1.35rem; font-weight: 650;
+  margin-bottom: 1em; max-width: 1000px; line-height: 1.3;
+}
+.answer-es {
+  color: var(--red); font-size: 2.75rem; font-weight: 800;
+  line-height: 1.28; max-width: 1100px;
+}
+.target {
+  text-decoration: underline dotted 2px;
+  text-underline-offset: .18em; cursor: pointer;
+  border-radius: .13em; padding: 0 .03em;
+}
+.target.flagged {
+  text-decoration-style: solid;
+  background: #E8EEF5;
+}
+.review-target {
+  color: var(--purple);
+  background: var(--purple-bg);
+  text-decoration: underline solid 2px;
+  text-underline-offset: .18em;
+  border-radius: .13em; padding: 0 .04em;
+}
+.section-title {
+  color: var(--red); font-size: 3rem; font-weight: 850;
+  line-height: 1.12; max-width: 1000px;
+}
+.section-kicker {
+  color: var(--muted); font-size: .95rem; font-weight: 800;
+  letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1em;
+}
+#progress {
+  position: fixed; bottom: 19px; left: 50%;
+  transform: translateX(-50%); color: var(--muted); font-size: .85rem;
+}
+.nav {
+  position: fixed; bottom: 13px; border: 0; background: transparent;
+  color: #6f777e; font-weight: 800; cursor: pointer; padding: .7em 1em;
+}
+.nav:disabled { opacity: .25; cursor: default; }
+#back { left: 14px; }
+#next { right: 14px; }
+#exit {
+  position: fixed; top: 12px; right: 16px; border: 0;
+  background: transparent; color: #a0a6aa; font-size: 1.5rem;
+  cursor: pointer;
+}
+.controls {
+  display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+  margin: .7em 0 1.2em;
+}
+.choice {
+  border: 2px solid var(--blue); color: var(--blue); background: white;
+  border-radius: 8px; padding: .55em .9em; font-weight: 800;
+  cursor: pointer;
+}
+.choice.selected { background: var(--blue); color: white; }
+select, input[type=number] {
+  border: 1px solid #adb5bc; border-radius: 7px;
+  padding: .55em .7em; min-width: 220px;
+}
+.end-detail { color: #657078; line-height: 1.5; margin-bottom: 1.2em; }
+#subset-controls {
+  position: fixed;
+  top: 12px;
+  right: 52px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  z-index: 20;
+}
+#subset-controls select,
+#subset-controls button {
+  font: inherit;
+  font-size: .78rem;
+  color: #68737c;
+  background: rgba(255,255,255,.94);
+  border: 1px solid #d7dde2;
+  border-radius: 7px;
+  padding: .42em .55em;
+}
+#subset-controls button {
+  cursor: pointer;
+  font-weight: 700;
+}
+#subset-controls button:hover {
+  border-color: #aeb8c0;
+}
+
+@media (max-width: 700px) {
+  .screen { padding: 7vh 7vw 14vh; }
+  .title { font-size: 2.15rem; }
+  .prompt { font-size: 2rem; }
+  .answer-en { font-size: 1.02rem; }
+  .answer-es { font-size: 1.9rem; }
+  .section-title { font-size: 2.2rem; }
+  #subset-controls {
+    top: 8px;
+    right: 44px;
+  }
+  #subset-controls select,
+  #subset-controls button {
+    font-size: .7rem;
+    padding: .36em .45em;
+  }
+}
+
+.audio-toggle {
+  position: fixed;
+  top: 52px;
+  right: 14px;
+  z-index: 25;
+  font: inherit;
+  font-size: .76rem;
+  font-weight: 700;
+  color: #68737c;
+  background: rgba(255,255,255,.96);
+  border: 1px solid #d7dde2;
+  border-radius: 7px;
+  padding: .42em .6em;
+  cursor: pointer;
+}
+
+.audio-toggle.on {
+  color: #355C8A;
+  border-color: #9fb2c7;
+  background: #eef3f8;
+}
+
+.audio-button {
+  margin-top: 1.15rem;
+  border: 1px solid #d7dde2;
+  background: white;
+  color: #5f6b75;
+  border-radius: 999px;
+  min-width: 44px;
+  min-height: 38px;
+  padding: .42em .75em;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.audio-button:hover {
+  border-color: #aeb8c0;
+  background: #f7f9fb;
+}
+
+@media (max-width: 700px) {
+  .audio-toggle {
+    top: 48px;
+    right: 8px;
+    font-size: .68rem;
+    padding: .36em .48em;
+  }
+
+  .audio-button {
+    margin-top: .9rem;
+    min-width: 42px;
+    min-height: 36px;
+  }
+}
+
+
+.cue {
+  color: var(--muted); font-size: .95rem; font-weight: 500;
+  margin-top: 1.25rem; line-height: 1.4;
+}
+#content { max-width: 100%; }
+.target:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
+#exit:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+@media (max-width: 700px) { .cue { font-size: .82rem; } }
+</style>
+</head>
+<body>
+<div id="lesson-screen" class="screen active">
+  <button id="audio-toggle" class="audio-toggle" type="button" aria-pressed="false">Audio: Off</button>
+  <button id="exit" type="button" aria-label="Start a new lesson">×</button>
+  <div id="subset-controls">
+    <select id="subset-size" aria-label="Practice set size">
+      <option value="10">10 items</option>
+      <option value="20">20 items</option>
+      <option value="30">30 items</option>
+      <option value="all" selected>All</option>
+    </select>
+    <button id="new-subset" type="button">New set</button>
+  </div>
+  <div id="content" aria-live="polite"></div>
+  <button id="back" class="nav" type="button">← Back</button>
+  <div id="progress"></div>
+  <button id="next" class="nav" type="button">Next →</button>
+</div>
+<div id="end-screen" class="screen">
+  <div class="title" id="end-title">Lesson complete</div>
+  <div class="end-detail" id="end-detail"></div>
+  <div class="controls">
+    <button id="review" class="primary" type="button">Extra review</button>
+    <button id="repeat" class="secondary" type="button">Repeat lesson</button>
+  </div>
+</div>
+<script>
+const DATA = {"title":"Lección 4.2 · Commands","source":"Facetas 6e, Lección 4, Estructura 4.2, p. 140","format_version":1,"instructions":"Read the English prompt and the Spanish infinitive cue; produce the command before revealing the Spanish answer. Click the underlined command to flag its grammar group for two extra examples.","stages":[{"stage_id":"UD_AFF","title":"Usted · affirmative","person":"usted","polarity":"affirmative","note":"","main_ids":["CMD.01-001","CMD.01-002","CMD.01-003","CMD.01-004","CMD.01-005","CMD.01-006","CMD.01-007","CMD.01-008"],"review_ids":["CMD.01-R01","CMD.01-R02"]},{"stage_id":"UD_NEG","title":"Usted · negative","person":"usted","polarity":"negative","note":"","main_ids":["CMD.02-001","CMD.02-002","CMD.02-003","CMD.02-004","CMD.02-005","CMD.02-006","CMD.02-007","CMD.02-008"],"review_ids":["CMD.02-R01","CMD.02-R02"]},{"stage_id":"UDS_AFF","title":"Ustedes · affirmative","person":"ustedes","polarity":"affirmative","note":"","main_ids":["CMD.03-001","CMD.03-002","CMD.03-003","CMD.03-004","CMD.03-005","CMD.03-006","CMD.03-007","CMD.03-008"],"review_ids":["CMD.03-R01","CMD.03-R02"]},{"stage_id":"UDS_NEG","title":"Ustedes · negative","person":"ustedes","polarity":"negative","note":"","main_ids":["CMD.04-001","CMD.04-002","CMD.04-003","CMD.04-004","CMD.04-005","CMD.04-006","CMD.04-007","CMD.04-008"],"review_ids":["CMD.04-R01","CMD.04-R02"]},{"stage_id":"TU_AFF","title":"Tú · affirmative regular / stem-changing","person":"tú","polarity":"affirmative","note":"","main_ids":["CMD.05-001","CMD.05-002","CMD.05-003","CMD.05-004","CMD.05-005","CMD.05-006","CMD.05-007","CMD.05-008","CMD.05-009","CMD.05-010"],"review_ids":["CMD.05-R01","CMD.05-R02"]},{"stage_id":"TU_NEG","title":"Tú · negative regular / stem-changing","person":"tú","polarity":"negative","note":"","main_ids":["CMD.06-001","CMD.06-002","CMD.06-003","CMD.06-004","CMD.06-005","CMD.06-006","CMD.06-007","CMD.06-008","CMD.06-009","CMD.06-010"],"review_ids":["CMD.06-R01","CMD.06-R02"]},{"stage_id":"TU_IRR_AFF","title":"Tú · eight irregular affirmatives","person":"tú","polarity":"affirmative","note":"","main_ids":["CMD.07-001","CMD.07-002","CMD.07-003","CMD.07-004","CMD.07-005","CMD.07-006","CMD.07-007","CMD.07-008"],"review_ids":["CMD.07-R01","CMD.07-R02"]},{"stage_id":"TU_IRR_NEG","title":"Tú · negatives of irregular verbs","person":"tú","polarity":"negative","note":"","main_ids":["CMD.08-001","CMD.08-002","CMD.08-003","CMD.08-004","CMD.08-005","CMD.08-006","CMD.08-007","CMD.08-008"],"review_ids":["CMD.08-R01","CMD.08-R02"]},{"stage_id":"TU_REFL","title":"Tú · reflexive commands","person":"tú","polarity":"both","note":"","main_ids":["CMD.09-001","CMD.09-002","CMD.09-003","CMD.09-004","CMD.09-005","CMD.09-006","CMD.09-007","CMD.09-008","CMD.09-009","CMD.09-010"],"review_ids":["CMD.09-R01","CMD.09-R02"]},{"stage_id":"VOSOTROS","title":"Vosotros · Spain (including reflexives)","person":"vosotros","polarity":"both","note":"Vosotros is used primarily in Spain. The book gives idos / no os vayáis for irse.","main_ids":["CMD.10-001","CMD.10-002","CMD.10-003","CMD.10-004","CMD.10-005","CMD.10-006","CMD.10-007","CMD.10-008"],"review_ids":["CMD.10-R01","CMD.10-R02"]},{"stage_id":"MIXED","title":"Mixed commands · in context","person":"mixed","polarity":"both","note":"","main_ids":["CMD.11-001","CMD.11-002","CMD.11-003","CMD.11-004","CMD.11-005","CMD.11-006","CMD.11-007","CMD.11-008"],"review_ids":["CMD.11-R01","CMD.11-R02"]}],"items":[{"item_id":"CMD.01-001","stage_id":"UD_AFF","kind":"main","english":"Tell one patient: Take the medicine.","infinitive":"tomar la medicina","spanish":"Tome la medicina.","target_span":"Tome","person":"usted","polarity":"affirmative"},{"item_id":"CMD.01-002","stage_id":"UD_AFF","kind":"main","english":"Tell one patient: Come back tomorrow.","infinitive":"volver mañana","spanish":"Vuelva mañana.","target_span":"Vuelva","person":"usted","polarity":"affirmative"},{"item_id":"CMD.01-003","stage_id":"UD_AFF","kind":"main","english":"Tell one patient: Leave early.","infinitive":"salir temprano","spanish":"Salga temprano.","target_span":"Salga","person":"usted","polarity":"affirmative"},{"item_id":"CMD.01-004","stage_id":"UD_AFF","kind":"main","english":"Tell one patient: Drink more water.","infinitive":"beber más agua","spanish":"Beba más agua.","target_span":"Beba","person":"usted","polarity":"affirmative"},{"item_id":"CMD.01-005","stage_id":"UD_AFF","kind":"main","english":"Tell one patient: Eat vegetables.","infinitive":"comer verduras","spanish":"Coma verduras.","target_span":"Coma","person":"usted","polarity":"affirmative"},{"item_id":"CMD.01-006","stage_id":"UD_AFF","kind":"main","english":"Tell one patient: Rest at home.","infinitive":"descansar en casa","spanish":"Descanse en casa.","target_span":"Descanse","person":"usted","polarity":"affirmative"},{"item_id":"CMD.01-007","stage_id":"UD_AFF","kind":"main","english":"Tell one patient: Write down the symptoms.","infinitive":"escribir los síntomas","spanish":"Escriba los síntomas.","target_span":"Escriba","person":"usted","polarity":"affirmative"},{"item_id":"CMD.01-008","stage_id":"UD_AFF","kind":"main","english":"Tell one patient: Do the exercise.","infinitive":"hacer el ejercicio","spanish":"Haga el ejercicio.","target_span":"Haga","person":"usted","polarity":"affirmative"},{"item_id":"CMD.01-R01","stage_id":"UD_AFF","kind":"review","english":"Tell one patient: Call the doctor.","infinitive":"llamar al médico","spanish":"Llame al médico.","target_span":"Llame","person":"usted","polarity":"affirmative"},{"item_id":"CMD.01-R02","stage_id":"UD_AFF","kind":"review","english":"Tell one patient: Put the medicine here.","infinitive":"poner la medicina aquí","spanish":"Ponga la medicina aquí.","target_span":"Ponga","person":"usted","polarity":"affirmative"},{"item_id":"CMD.02-001","stage_id":"UD_NEG","kind":"main","english":"Tell one patient: Do not take this medicine.","infinitive":"no tomar esta medicina","spanish":"No tome esta medicina.","target_span":"tome","person":"usted","polarity":"negative"},{"item_id":"CMD.02-002","stage_id":"UD_NEG","kind":"main","english":"Tell one patient: Do not come back today.","infinitive":"no volver hoy","spanish":"No vuelva hoy.","target_span":"vuelva","person":"usted","polarity":"negative"},{"item_id":"CMD.02-003","stage_id":"UD_NEG","kind":"main","english":"Tell one patient: Do not leave yet.","infinitive":"no salir todavía","spanish":"No salga todavía.","target_span":"salga","person":"usted","polarity":"negative"},{"item_id":"CMD.02-004","stage_id":"UD_NEG","kind":"main","english":"Tell one patient: Do not eat so much sugar.","infinitive":"no comer tanto azúcar","spanish":"No coma tanto azúcar.","target_span":"coma","person":"usted","polarity":"negative"},{"item_id":"CMD.02-005","stage_id":"UD_NEG","kind":"main","english":"Tell one patient: Do not drink coffee tonight.","infinitive":"no beber café esta noche","spanish":"No beba café esta noche.","target_span":"beba","person":"usted","polarity":"negative"},{"item_id":"CMD.02-006","stage_id":"UD_NEG","kind":"main","english":"Tell one patient: Do not work today.","infinitive":"no trabajar hoy","spanish":"No trabaje hoy.","target_span":"trabaje","person":"usted","polarity":"negative"},{"item_id":"CMD.02-007","stage_id":"UD_NEG","kind":"main","english":"Tell one patient: Do not write on this paper.","infinitive":"no escribir en este papel","spanish":"No escriba en este papel.","target_span":"escriba","person":"usted","polarity":"negative"},{"item_id":"CMD.02-008","stage_id":"UD_NEG","kind":"main","english":"Tell one patient: Do not be afraid.","infinitive":"no tener miedo","spanish":"No tenga miedo.","target_span":"tenga","person":"usted","polarity":"negative"},{"item_id":"CMD.02-R01","stage_id":"UD_NEG","kind":"review","english":"Tell one patient: Do not drive today.","infinitive":"no conducir hoy","spanish":"No conduzca hoy.","target_span":"conduzca","person":"usted","polarity":"negative"},{"item_id":"CMD.02-R02","stage_id":"UD_NEG","kind":"review","english":"Tell one patient: Do not put the pills there.","infinitive":"no poner las pastillas allí","spanish":"No ponga las pastillas allí.","target_span":"ponga","person":"usted","polarity":"negative"},{"item_id":"CMD.03-001","stage_id":"UDS_AFF","kind":"main","english":"Tell several patients: Take the medicine.","infinitive":"tomar la medicina","spanish":"Tomen la medicina.","target_span":"Tomen","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.03-002","stage_id":"UDS_AFF","kind":"main","english":"Tell several patients: Come back tomorrow.","infinitive":"volver mañana","spanish":"Vuelvan mañana.","target_span":"Vuelvan","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.03-003","stage_id":"UDS_AFF","kind":"main","english":"Tell several patients: Leave now.","infinitive":"salir ahora","spanish":"Salgan ahora.","target_span":"Salgan","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.03-004","stage_id":"UDS_AFF","kind":"main","english":"Tell several patients: Eat more fruit.","infinitive":"comer más fruta","spanish":"Coman más fruta.","target_span":"Coman","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.03-005","stage_id":"UDS_AFF","kind":"main","english":"Tell several patients: Drink water.","infinitive":"beber agua","spanish":"Beban agua.","target_span":"Beban","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.03-006","stage_id":"UDS_AFF","kind":"main","english":"Tell several patients: Write your names.","infinitive":"escribir sus nombres","spanish":"Escriban sus nombres.","target_span":"Escriban","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.03-007","stage_id":"UDS_AFF","kind":"main","english":"Tell several patients: Come to the clinic.","infinitive":"venir a la clínica","spanish":"Vengan a la clínica.","target_span":"Vengan","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.03-008","stage_id":"UDS_AFF","kind":"main","english":"Tell several patients: Open the door.","infinitive":"abrir la puerta","spanish":"Abran la puerta.","target_span":"Abran","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.03-R01","stage_id":"UDS_AFF","kind":"review","english":"Tell several patients: Listen to the instructions.","infinitive":"escuchar las instrucciones","spanish":"Escuchen las instrucciones.","target_span":"Escuchen","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.03-R02","stage_id":"UDS_AFF","kind":"review","english":"Tell several patients: Do the exercises.","infinitive":"hacer los ejercicios","spanish":"Hagan los ejercicios.","target_span":"Hagan","person":"ustedes","polarity":"affirmative"},{"item_id":"CMD.04-001","stage_id":"UDS_NEG","kind":"main","english":"Tell several patients: Do not take this medicine.","infinitive":"no tomar esta medicina","spanish":"No tomen esta medicina.","target_span":"tomen","person":"ustedes","polarity":"negative"},{"item_id":"CMD.04-002","stage_id":"UDS_NEG","kind":"main","english":"Tell several patients: Do not come back today.","infinitive":"no volver hoy","spanish":"No vuelvan hoy.","target_span":"vuelvan","person":"ustedes","polarity":"negative"},{"item_id":"CMD.04-003","stage_id":"UDS_NEG","kind":"main","english":"Tell several patients: Do not leave yet.","infinitive":"no salir todavía","spanish":"No salgan todavía.","target_span":"salgan","person":"ustedes","polarity":"negative"},{"item_id":"CMD.04-004","stage_id":"UDS_NEG","kind":"main","english":"Tell several patients: Do not drink coffee.","infinitive":"no beber café","spanish":"No beban café.","target_span":"beban","person":"ustedes","polarity":"negative"},{"item_id":"CMD.04-005","stage_id":"UDS_NEG","kind":"main","english":"Tell several patients: Do not eat here.","infinitive":"no comer aquí","spanish":"No coman aquí.","target_span":"coman","person":"ustedes","polarity":"negative"},{"item_id":"CMD.04-006","stage_id":"UDS_NEG","kind":"main","english":"Tell several patients: Do not open the window.","infinitive":"no abrir la ventana","spanish":"No abran la ventana.","target_span":"abran","person":"ustedes","polarity":"negative"},{"item_id":"CMD.04-007","stage_id":"UDS_NEG","kind":"main","english":"Tell several patients: Do not make noise.","infinitive":"no hacer ruido","spanish":"No hagan ruido.","target_span":"hagan","person":"ustedes","polarity":"negative"},{"item_id":"CMD.04-008","stage_id":"UDS_NEG","kind":"main","english":"Tell several patients: Do not come tomorrow.","infinitive":"no venir mañana","spanish":"No vengan mañana.","target_span":"vengan","person":"ustedes","polarity":"negative"},{"item_id":"CMD.04-R01","stage_id":"UDS_NEG","kind":"review","english":"Tell several patients: Do not wait outside.","infinitive":"no esperar afuera","spanish":"No esperen afuera.","target_span":"esperen","person":"ustedes","polarity":"negative"},{"item_id":"CMD.04-R02","stage_id":"UDS_NEG","kind":"review","english":"Tell several patients: Do not put the bags there.","infinitive":"no poner las bolsas allí","spanish":"No pongan las bolsas allí.","target_span":"pongan","person":"ustedes","polarity":"negative"},{"item_id":"CMD.05-001","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Travel tomorrow.","infinitive":"viajar mañana","spanish":"Viaja mañana.","target_span":"Viaja","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-002","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Start now.","infinitive":"empezar ahora","spanish":"Empieza ahora.","target_span":"Empieza","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-003","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Ask for help.","infinitive":"pedir ayuda","spanish":"Pide ayuda.","target_span":"Pide","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-004","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Drink water.","infinitive":"beber agua","spanish":"Bebe agua.","target_span":"Bebe","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-005","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Write the answer.","infinitive":"escribir la respuesta","spanish":"Escribe la respuesta.","target_span":"Escribe","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-006","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Take a break.","infinitive":"tomar un descanso","spanish":"Toma un descanso.","target_span":"Toma","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-007","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Come back soon.","infinitive":"volver pronto","spanish":"Vuelve pronto.","target_span":"Vuelve","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-008","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Sleep eight hours.","infinitive":"dormir ocho horas","spanish":"Duerme ocho horas.","target_span":"Duerme","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-009","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Think about your health.","infinitive":"pensar en tu salud","spanish":"Piensa en tu salud.","target_span":"Piensa","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-010","stage_id":"TU_AFF","kind":"main","english":"Tell a friend: Open the window.","infinitive":"abrir la ventana","spanish":"Abre la ventana.","target_span":"Abre","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-R01","stage_id":"TU_AFF","kind":"review","english":"Tell a friend: Close the door.","infinitive":"cerrar la puerta","spanish":"Cierra la puerta.","target_span":"Cierra","person":"tú","polarity":"affirmative"},{"item_id":"CMD.05-R02","stage_id":"TU_AFF","kind":"review","english":"Tell a friend: Repeat the exercise.","infinitive":"repetir el ejercicio","spanish":"Repite el ejercicio.","target_span":"Repite","person":"tú","polarity":"affirmative"},{"item_id":"CMD.06-001","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not travel tomorrow.","infinitive":"no viajar mañana","spanish":"No viajes mañana.","target_span":"viajes","person":"tú","polarity":"negative"},{"item_id":"CMD.06-002","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not start yet.","infinitive":"no empezar todavía","spanish":"No empieces todavía.","target_span":"empieces","person":"tú","polarity":"negative"},{"item_id":"CMD.06-003","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not ask for more.","infinitive":"no pedir más","spanish":"No pidas más.","target_span":"pidas","person":"tú","polarity":"negative"},{"item_id":"CMD.06-004","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not drink coffee.","infinitive":"no beber café","spanish":"No bebas café.","target_span":"bebas","person":"tú","polarity":"negative"},{"item_id":"CMD.06-005","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not write here.","infinitive":"no escribir aquí","spanish":"No escribas aquí.","target_span":"escribas","person":"tú","polarity":"negative"},{"item_id":"CMD.06-006","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not take this medicine.","infinitive":"no tomar esta medicina","spanish":"No tomes esta medicina.","target_span":"tomes","person":"tú","polarity":"negative"},{"item_id":"CMD.06-007","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not come back late.","infinitive":"no volver tarde","spanish":"No vuelvas tarde.","target_span":"vuelvas","person":"tú","polarity":"negative"},{"item_id":"CMD.06-008","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not sleep now.","infinitive":"no dormir ahora","spanish":"No duermas ahora.","target_span":"duermas","person":"tú","polarity":"negative"},{"item_id":"CMD.06-009","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not think about work.","infinitive":"no pensar en el trabajo","spanish":"No pienses en el trabajo.","target_span":"pienses","person":"tú","polarity":"negative"},{"item_id":"CMD.06-010","stage_id":"TU_NEG","kind":"main","english":"Tell a friend: Do not open the window.","infinitive":"no abrir la ventana","spanish":"No abras la ventana.","target_span":"abras","person":"tú","polarity":"negative"},{"item_id":"CMD.06-R01","stage_id":"TU_NEG","kind":"review","english":"Tell a friend: Do not close the door.","infinitive":"no cerrar la puerta","spanish":"No cierres la puerta.","target_span":"cierres","person":"tú","polarity":"negative"},{"item_id":"CMD.06-R02","stage_id":"TU_NEG","kind":"review","english":"Tell a friend: Do not repeat the mistake.","infinitive":"no repetir el error","spanish":"No repitas el error.","target_span":"repitas","person":"tú","polarity":"negative"},{"item_id":"CMD.07-001","stage_id":"TU_IRR_AFF","kind":"main","english":"Tell a friend: Say the truth.","infinitive":"decir la verdad","spanish":"Di la verdad.","target_span":"Di","person":"tú","polarity":"affirmative"},{"item_id":"CMD.07-002","stage_id":"TU_IRR_AFF","kind":"main","english":"Tell a friend: Do the homework.","infinitive":"hacer la tarea","spanish":"Haz la tarea.","target_span":"Haz","person":"tú","polarity":"affirmative"},{"item_id":"CMD.07-003","stage_id":"TU_IRR_AFF","kind":"main","english":"Tell a friend: Go to the doctor.","infinitive":"ir al médico","spanish":"Ve al médico.","target_span":"Ve","person":"tú","polarity":"affirmative"},{"item_id":"CMD.07-004","stage_id":"TU_IRR_AFF","kind":"main","english":"Tell a friend: Put the book here.","infinitive":"poner el libro aquí","spanish":"Pon el libro aquí.","target_span":"Pon","person":"tú","polarity":"affirmative"},{"item_id":"CMD.07-005","stage_id":"TU_IRR_AFF","kind":"main","english":"Tell a friend: Leave now.","infinitive":"salir ahora","spanish":"Sal ahora.","target_span":"Sal","person":"tú","polarity":"affirmative"},{"item_id":"CMD.07-006","stage_id":"TU_IRR_AFF","kind":"main","english":"Tell a friend: Be patient.","infinitive":"ser paciente","spanish":"Sé paciente.","target_span":"Sé","person":"tú","polarity":"affirmative"},{"item_id":"CMD.07-007","stage_id":"TU_IRR_AFF","kind":"main","english":"Tell a friend: Be careful.","infinitive":"tener cuidado","spanish":"Ten cuidado.","target_span":"Ten","person":"tú","polarity":"affirmative"},{"item_id":"CMD.07-008","stage_id":"TU_IRR_AFF","kind":"main","english":"Tell a friend: Come with me.","infinitive":"venir conmigo","spanish":"Ven conmigo.","target_span":"Ven","person":"tú","polarity":"affirmative"},{"item_id":"CMD.07-R01","stage_id":"TU_IRR_AFF","kind":"review","english":"Tell a friend: Tell me the answer.","infinitive":"decir la respuesta","spanish":"Di la respuesta.","target_span":"Di","person":"tú","polarity":"affirmative"},{"item_id":"CMD.07-R02","stage_id":"TU_IRR_AFF","kind":"review","english":"Tell a friend: Put the phone away.","infinitive":"poner el teléfono en la mochila","spanish":"Pon el teléfono en la mochila.","target_span":"Pon","person":"tú","polarity":"affirmative"},{"item_id":"CMD.08-001","stage_id":"TU_IRR_NEG","kind":"main","english":"Tell a friend: Do not say that.","infinitive":"no decir eso","spanish":"No digas eso.","target_span":"digas","person":"tú","polarity":"negative"},{"item_id":"CMD.08-002","stage_id":"TU_IRR_NEG","kind":"main","english":"Tell a friend: Do not do that.","infinitive":"no hacer eso","spanish":"No hagas eso.","target_span":"hagas","person":"tú","polarity":"negative"},{"item_id":"CMD.08-003","stage_id":"TU_IRR_NEG","kind":"main","english":"Tell a friend: Do not go alone.","infinitive":"no ir solo","spanish":"No vayas solo.","target_span":"vayas","person":"tú","polarity":"negative"},{"item_id":"CMD.08-004","stage_id":"TU_IRR_NEG","kind":"main","english":"Tell a friend: Do not put it here.","infinitive":"no ponerlo aquí","spanish":"No lo pongas aquí.","target_span":"lo pongas","person":"tú","polarity":"negative"},{"item_id":"CMD.08-005","stage_id":"TU_IRR_NEG","kind":"main","english":"Tell a friend: Do not leave now.","infinitive":"no salir ahora","spanish":"No salgas ahora.","target_span":"salgas","person":"tú","polarity":"negative"},{"item_id":"CMD.08-006","stage_id":"TU_IRR_NEG","kind":"main","english":"Tell a friend: Do not be impatient.","infinitive":"no ser impaciente","spanish":"No seas impaciente.","target_span":"seas","person":"tú","polarity":"negative"},{"item_id":"CMD.08-007","stage_id":"TU_IRR_NEG","kind":"main","english":"Tell a friend: Do not be afraid.","infinitive":"no tener miedo","spanish":"No tengas miedo.","target_span":"tengas","person":"tú","polarity":"negative"},{"item_id":"CMD.08-008","stage_id":"TU_IRR_NEG","kind":"main","english":"Tell a friend: Do not come late.","infinitive":"no venir tarde","spanish":"No vengas tarde.","target_span":"vengas","person":"tú","polarity":"negative"},{"item_id":"CMD.08-R01","stage_id":"TU_IRR_NEG","kind":"review","english":"Tell a friend: Do not tell a lie.","infinitive":"no decir una mentira","spanish":"No digas una mentira.","target_span":"digas","person":"tú","polarity":"negative"},{"item_id":"CMD.08-R02","stage_id":"TU_IRR_NEG","kind":"review","english":"Tell a friend: Do not leave without water.","infinitive":"no salir sin agua","spanish":"No salgas sin agua.","target_span":"salgas","person":"tú","polarity":"negative"},{"item_id":"CMD.09-001","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Get up early.","infinitive":"levantarse temprano","spanish":"Levántate temprano.","target_span":"Levántate","person":"tú","polarity":"both"},{"item_id":"CMD.09-002","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Do not get up yet.","infinitive":"no levantarse todavía","spanish":"No te levantes todavía.","target_span":"te levantes","person":"tú","polarity":"both"},{"item_id":"CMD.09-003","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Sit down here.","infinitive":"sentarse aquí","spanish":"Siéntate aquí.","target_span":"Siéntate","person":"tú","polarity":"both"},{"item_id":"CMD.09-004","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Do not sit there.","infinitive":"no sentarse allí","spanish":"No te sientes allí.","target_span":"te sientes","person":"tú","polarity":"both"},{"item_id":"CMD.09-005","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Go to bed early.","infinitive":"acostarse temprano","spanish":"Acuéstate temprano.","target_span":"Acuéstate","person":"tú","polarity":"both"},{"item_id":"CMD.09-006","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Do not go to bed late.","infinitive":"no acostarse tarde","spanish":"No te acuestes tarde.","target_span":"te acuestes","person":"tú","polarity":"both"},{"item_id":"CMD.09-007","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Put on a jacket.","infinitive":"ponerse una chaqueta","spanish":"Ponte una chaqueta.","target_span":"Ponte","person":"tú","polarity":"both"},{"item_id":"CMD.09-008","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Do not put on that shirt.","infinitive":"no ponerse esa camisa","spanish":"No te pongas esa camisa.","target_span":"te pongas","person":"tú","polarity":"both"},{"item_id":"CMD.09-009","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Wash your hands.","infinitive":"lavarse las manos","spanish":"Lávate las manos.","target_span":"Lávate","person":"tú","polarity":"both"},{"item_id":"CMD.09-010","stage_id":"TU_REFL","kind":"main","english":"Tell a friend: Do not wash your face now.","infinitive":"no lavarse la cara ahora","spanish":"No te laves la cara ahora.","target_span":"te laves","person":"tú","polarity":"both"},{"item_id":"CMD.09-R01","stage_id":"TU_REFL","kind":"review","english":"Tell a friend: Get dressed quickly.","infinitive":"vestirse rápido","spanish":"Vístete rápido.","target_span":"Vístete","person":"tú","polarity":"both"},{"item_id":"CMD.09-R02","stage_id":"TU_REFL","kind":"review","english":"Tell a friend: Do not get dressed yet.","infinitive":"no vestirse todavía","spanish":"No te vistas todavía.","target_span":"te vistas","person":"tú","polarity":"both"},{"item_id":"CMD.10-001","stage_id":"VOSOTROS","kind":"main","english":"Tell a group of friends in Spain: Dance with us.","infinitive":"bailar con nosotros","spanish":"Bailad con nosotros.","target_span":"Bailad","person":"vosotros","polarity":"both"},{"item_id":"CMD.10-002","stage_id":"VOSOTROS","kind":"main","english":"Tell a group of friends in Spain: Do not dance now.","infinitive":"no bailar ahora","spanish":"No bailéis ahora.","target_span":"bailéis","person":"vosotros","polarity":"both"},{"item_id":"CMD.10-003","stage_id":"VOSOTROS","kind":"main","english":"Tell a group of friends in Spain: Eat more fruit.","infinitive":"comer más fruta","spanish":"Comed más fruta.","target_span":"Comed","person":"vosotros","polarity":"both"},{"item_id":"CMD.10-004","stage_id":"VOSOTROS","kind":"main","english":"Tell a group of friends in Spain: Do not eat so much.","infinitive":"no comer tanto","spanish":"No comáis tanto.","target_span":"comáis","person":"vosotros","polarity":"both"},{"item_id":"CMD.10-005","stage_id":"VOSOTROS","kind":"main","english":"Tell a group of friends in Spain: Get up early.","infinitive":"levantarse temprano","spanish":"Levantaos temprano.","target_span":"Levantaos","person":"vosotros","polarity":"both"},{"item_id":"CMD.10-006","stage_id":"VOSOTROS","kind":"main","english":"Tell a group of friends in Spain: Do not get up late.","infinitive":"no levantarse tarde","spanish":"No os levantéis tarde.","target_span":"os levantéis","person":"vosotros","polarity":"both"},{"item_id":"CMD.10-007","stage_id":"VOSOTROS","kind":"main","english":"Tell a group of friends in Spain: Go home.","infinitive":"irse a casa","spanish":"Idos a casa.","target_span":"Idos","person":"vosotros","polarity":"both"},{"item_id":"CMD.10-008","stage_id":"VOSOTROS","kind":"main","english":"Tell a group of friends in Spain: Do not go away.","infinitive":"no irse","spanish":"No os vayáis.","target_span":"os vayáis","person":"vosotros","polarity":"both"},{"item_id":"CMD.10-R01","stage_id":"VOSOTROS","kind":"review","english":"Tell a group of friends in Spain: Drink water.","infinitive":"beber agua","spanish":"Bebed agua.","target_span":"Bebed","person":"vosotros","polarity":"both"},{"item_id":"CMD.10-R02","stage_id":"VOSOTROS","kind":"review","english":"Tell a group of friends in Spain: Do not open the door.","infinitive":"no abrir la puerta","spanish":"No abráis la puerta.","target_span":"abráis","person":"vosotros","polarity":"both"},{"item_id":"CMD.11-001","stage_id":"MIXED","kind":"main","english":"Tell one patient: Come to the clinic tomorrow.","infinitive":"venir a la clínica mañana","spanish":"Venga a la clínica mañana.","target_span":"Venga","person":"mixed","polarity":"both"},{"item_id":"CMD.11-002","stage_id":"MIXED","kind":"main","english":"Tell a friend: Do not take that pill.","infinitive":"no tomar esa pastilla","spanish":"No tomes esa pastilla.","target_span":"tomes","person":"mixed","polarity":"both"},{"item_id":"CMD.11-003","stage_id":"MIXED","kind":"main","english":"Tell several patients: Write down the symptoms.","infinitive":"escribir los síntomas","spanish":"Escriban los síntomas.","target_span":"Escriban","person":"mixed","polarity":"both"},{"item_id":"CMD.11-004","stage_id":"MIXED","kind":"main","english":"Tell a friend: Be patient.","infinitive":"ser paciente","spanish":"Sé paciente.","target_span":"Sé","person":"mixed","polarity":"both"},{"item_id":"CMD.11-005","stage_id":"MIXED","kind":"main","english":"Tell one patient: Do not leave the clinic.","infinitive":"no salir de la clínica","spanish":"No salga de la clínica.","target_span":"salga","person":"mixed","polarity":"both"},{"item_id":"CMD.11-006","stage_id":"MIXED","kind":"main","english":"Tell a friend: Lie down here.","infinitive":"acostarse aquí","spanish":"Acuéstate aquí.","target_span":"Acuéstate","person":"mixed","polarity":"both"},{"item_id":"CMD.11-007","stage_id":"MIXED","kind":"main","english":"Tell several patients: Do not drink coffee.","infinitive":"no beber café","spanish":"No beban café.","target_span":"beban","person":"mixed","polarity":"both"},{"item_id":"CMD.11-008","stage_id":"MIXED","kind":"main","english":"Tell a friend: Come back tomorrow.","infinitive":"volver mañana","spanish":"Vuelve mañana.","target_span":"Vuelve","person":"mixed","polarity":"both"},{"item_id":"CMD.11-R01","stage_id":"MIXED","kind":"review","english":"Tell a friend: Do not come late.","infinitive":"no venir tarde","spanish":"No vengas tarde.","target_span":"vengas","person":"mixed","polarity":"both"},{"item_id":"CMD.11-R02","stage_id":"MIXED","kind":"review","english":"Tell one patient: Do the exercise.","infinitive":"hacer el ejercicio","spanish":"Haga el ejercicio.","target_span":"Haga","person":"mixed","polarity":"both"}]};
+const LESSON_KIND = 'commands';
+const BASE_ITEMS = DATA.items.filter(x=>x.kind==='main');
+const BY_ID = Object.fromEntries(DATA.items.map(x=>[x.item_id,x]));
+const STAGES = Object.fromEntries(DATA.stages.map(x=>[x.stage_id,x]));
+const content = document.getElementById('content');
+const progress = document.getElementById('progress');
+const back = document.getElementById('back');
+const next = document.getElementById('next');
+const lessonScreen = document.getElementById('lesson-screen');
+const endScreen = document.getElementById('end-screen');
+const reviewBtn = document.getElementById('review');
+let mode='lesson', lessonItems=[], reviewItems=[], currentIndex=0, showingAnswer=false;
+let flagged=new Set(), autoAudio=false, spanishVoice=null;
+
+function escapeHTML(x) {
+  return String(x ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;')
+    .replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;');
+}
+function shuffle(x) {
+  let a=[...x];
+  for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+function activeItems(){return mode==='lesson'?lessonItems:reviewItems;}
+function current(){return activeItems()[currentIndex];}
+function stopAudio(){if('speechSynthesis' in window)window.speechSynthesis.cancel();}
+function chooseSpanishVoice(){
+  if(!('speechSynthesis' in window))return null;
+  const candidates=(window.speechSynthesis.getVoices()||[]).filter(v=>String(v.lang).toLowerCase().startsWith('es'));
+  spanishVoice=candidates.find(v=>/^es-(mx|us|419)/i.test(v.lang))||candidates.find(v=>/^es-es/i.test(v.lang))||candidates[0]||null;
+  return spanishVoice;
+}
+if('speechSynthesis' in window){chooseSpanishVoice();window.speechSynthesis.addEventListener?.('voiceschanged',chooseSpanishVoice);}
+function speakSpanish(t){
+  if(!t||!('speechSynthesis' in window))return;
+  stopAudio();
+  let u=new SpeechSynthesisUtterance(t),v=spanishVoice||chooseSpanishVoice();
+  if(v){u.voice=v;u.lang=v.lang;}else{u.lang='es-MX';}
+  u.rate=.92;u.pitch=1;window.speechSynthesis.speak(u);
+}
+function renderTarget(item, review){
+  const sentence=item.spanish, span=item.target_span || '';
+  const at=sentence.toLocaleLowerCase().indexOf(span.toLocaleLowerCase());
+  if(!span || at<0)return escapeHTML(sentence);
+  const isMarked=flagged.has(item.stage_id);
+  const targetText=escapeHTML(sentence.slice(at,at+span.length));
+  const el=review?`<span class="review-target">${targetText}</span>`:
+    `<span class="target${isMarked?' flagged':''}" role="button" tabindex="0" aria-pressed="${isMarked}" title="Mark for two extra examples" data-stage="${escapeHTML(item.stage_id)}">${targetText}</span>`;
+  return escapeHTML(sentence.slice(0,at))+el+escapeHTML(sentence.slice(at+span.length));
+}
+function cueFor(item){
+  const infinitive=item.infinitive || '';
+  // This single quiet line is the only departure from the original trainer's typography.
+  let cue = infinitive;
+  if (item.person) cue += ' · ' + item.person;
+  if (!cue) return '';
+  return `<div class="cue">${escapeHTML(cue)}</div>`;
+}
+function show(){
+  const item=current();
+  if(!item){finish();return;}
+  if(!showingAnswer){
+    content.innerHTML=`<div class="prompt">${escapeHTML(item.english)}</div>${cueFor(item)}`;
+  }else{
+    const isReview=mode==='review';
+    content.innerHTML=`<div class="answer-en">${escapeHTML(item.english)}</div><div class="answer-es">${renderTarget(item,isReview)}</div>`;
+    const audio=document.createElement('button');
+    audio.className='audio-button';audio.type='button';audio.textContent='🔊';
+    audio.setAttribute('aria-label','Play Spanish audio');audio.title='Play Spanish audio';
+    audio.disabled=!('speechSynthesis' in window);
+    audio.onclick=e=>{e.stopPropagation();speakSpanish(item.spanish);};
+    content.appendChild(audio);
+    if(autoAudio)speakSpanish(item.spanish);
+  }
+  const num=currentIndex*2+(showingAnswer?2:1);
+  progress.textContent=`${mode==='review'?'Review slide':'Slide'} ${num} / ${activeItems().length*2}`;
+  back.disabled=currentIndex===0&&!showingAnswer;
+  next.textContent=currentIndex===activeItems().length-1&&showingAnswer?'Finish →':'Next →';
+  document.getElementById('subset-controls').style.display=mode==='lesson'?'flex':'none';
+}
+function forward(){
+  stopAudio();
+  if(!showingAnswer){showingAnswer=true;show();return;}
+  if(currentIndex<activeItems().length-1){currentIndex++;showingAnswer=false;show();}
+  else finish();
+}
+function backward(){
+  stopAudio();
+  if(showingAnswer){showingAnswer=false;show();}
+  else if(currentIndex>0){currentIndex--;showingAnswer=true;show();}
+}
+function drawSet(){
+  const size=document.getElementById('subset-size').value;
+  if(LESSON_KIND==='irregular'){
+    const shuffled=shuffle(BASE_ITEMS);
+    return size==='all'?shuffled:shuffled.slice(0,Math.min(Number(size),shuffled.length));
+  }
+  // Commands preserve the grammar progression, as in the existing trainer.
+  if(size==='all')return [...BASE_ITEMS];
+  const n=Math.min(Number(size),BASE_ITEMS.length);
+  const start=Math.floor(Math.random()*(BASE_ITEMS.length-n+1));
+  return BASE_ITEMS.slice(start,start+n);
+}
+function newSet(){
+  stopAudio();mode='lesson';lessonItems=drawSet();reviewItems=[];
+  currentIndex=0;showingAnswer=false;flagged=new Set();
+  endScreen.classList.remove('active');lessonScreen.classList.add('active');show();
+}
+function repeatSet(){
+  stopAudio();mode='lesson';currentIndex=0;showingAnswer=false;flagged=new Set();
+  endScreen.classList.remove('active');lessonScreen.classList.add('active');show();
+}
+function finish(){
+  stopAudio();lessonScreen.classList.remove('active');endScreen.classList.add('active');
+  if(mode==='review'){
+    document.getElementById('end-title').textContent='Extra review complete';
+    document.getElementById('end-detail').textContent=`${reviewItems.length} additional examples completed.`;
+    reviewBtn.style.display='none';
+  }else{
+    const n=flagged.size;
+    document.getElementById('end-title').textContent='Lesson complete';
+    document.getElementById('end-detail').textContent=n?`${n} ${LESSON_KIND==='commands'?'command group':'verb'}${n===1?'':'s'} marked for extra practice.`:'No forms were marked for extra practice.';
+    reviewBtn.style.display=n?'inline-block':'none';
+    reviewBtn.textContent=n?`Extra review: ${n*2} items`:'Extra review';
+  }
+}
+function startReview(){
+  reviewItems=shuffle([...flagged].flatMap(stageId=>(STAGES[stageId]?.review_ids||[]).map(id=>BY_ID[id]).filter(Boolean)));
+  if(!reviewItems.length)return;
+  stopAudio();mode='review';currentIndex=0;showingAnswer=false;
+  endScreen.classList.remove('active');lessonScreen.classList.add('active');show();
+}
+function toggleTarget(stageId){
+  if(flagged.has(stageId))flagged.delete(stageId);else flagged.add(stageId);
+  content.querySelectorAll('.target').forEach(t=>{
+    const marked=flagged.has(t.dataset.stage);
+    t.classList.toggle('flagged',marked);t.setAttribute('aria-pressed',String(marked));
+  });
+}
+content.addEventListener('click',e=>{
+  const target=e.target.closest('.target');
+  if(target){e.stopPropagation();toggleTarget(target.dataset.stage);return;}
+  if(e.target.closest('.audio-button'))return;
+  forward();
+});
+content.addEventListener('keydown',e=>{
+  if((e.key==='Enter'||e.key===' ')&&e.target.matches('.target')){
+    e.preventDefault();e.stopPropagation();toggleTarget(e.target.dataset.stage);
+  }
+});
+back.onclick=backward;next.onclick=forward;
+document.getElementById('new-subset').onclick=newSet;
+document.getElementById('repeat').onclick=repeatSet;
+document.getElementById('review').onclick=startReview;
+document.getElementById('exit').onclick=newSet;
+document.getElementById('audio-toggle').onclick=()=>{
+  autoAudio=!autoAudio;
+  const btn=document.getElementById('audio-toggle');
+  btn.textContent=autoAudio?'Audio: On':'Audio: Off';
+  btn.classList.toggle('on',autoAudio);btn.setAttribute('aria-pressed',String(autoAudio));
+  if(autoAudio&&showingAnswer&&lessonScreen.classList.contains('active'))speakSpanish(current().spanish);
+  else if(!autoAudio)stopAudio();
+};
+document.addEventListener('keydown',e=>{
+  if(!lessonScreen.classList.contains('active'))return;
+  if(e.target.matches('button,select,.target'))return;
+  if(['ArrowRight',' ','Enter'].includes(e.key)){e.preventDefault();forward();}
+  if(e.key==='ArrowLeft'){e.preventDefault();backward();}
+});
+newSet();
+</script>
+</body>
+</html>
