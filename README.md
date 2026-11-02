@@ -1,23 +1,26 @@
-# Lección 4 · Minimal HTML trainers
+# SPN 213 — Lección 4: Minimal HTML practice (7 activities)
 
-This folder contains **five** independent HTML practice pages and both `index.html` and editable `index.Rmd` landing pages.
+The original five practice pages have been preserved. Two new standalone pages have been added:
 
-- `subjunctive_teaching.html` — original trainer (unchanged; visual reference).
-- `commands_practice.html` — **minimal version**, aligned to the original subjunctive trainer.
-- `irregular_subjunctive_practice.html` — **minimal version**, aligned to the original subjunctive trainer.
-- `vocabulary_isolated.html` and `vocabulary_contextualized.html` — original vocabulary trainers (unchanged).
+- `por_para_practice.html` — **Por y para**, built from original contextualized prompts covering textbook uses and expressions (Facetas 6e, pp. 144–145): 90 main examples + 36 review examples.
+- `combined_review.html` — **Combined grammar review**, randomized and balanced across commands, por/para, subjunctive, and original integrated prompts: 200 main examples + 128 review examples.
 
-## Visual design
+Both pages replicate the original `subjunctive_teaching.html` visual layout: centered blue English prompt, red answer, quiet bottom navigation, 10/20/30/all subsets, audio and optional two-item follow-up review for forms clicked on the answer slide. They open on a randomized 20-item set by default. They run offline / on GitHub Pages with NO external libraries or data requests.
 
-The two revised trainers match `subjunctive_teaching.html`: white full-screen slides, centered blue English prompts and red Spanish answers, tiny progress and edge navigation, a small 10/20/30/all selector, audio on/off, and underlined clickable forms. They open directly on the first practice prompt. Small italic-free gray infinitive/person cues appear under English prompts only to disambiguate the intended form. There are no headings, extra help panels, group labels, or large toolbars on practice slides.
+### Editing JSON
 
-### Extra practice
+Edit `source/por_para_lesson.json` and run `python build_por_para_lesson.py` (Python 3). Edit `source/combined_review_lesson.json` and run `python build_combined_review_lesson.py`. HTML files EMBED a snapshot of the data. Editing JSON by itself does not change the published HTML.
 
-Click the underlined command to request two new prompts from that **command group**; click the underlined subjunctive form to request two new prompts using **that verb**. Review order is shuffled.
+### Original pages and files
 
-### Editing JSON and rebuilding HTML
+- `subjunctive_teaching.html` — unchanged
+- `commands_practice.html` — unchanged
+- `irregular_subjunctive_practice.html` — unchanged
+- `vocabulary_isolated.html` — unchanged
+- `vocabulary_contextualized.html` — unchanged
 
-- Edit `source/commands_lesson.json`; run `python build_commands.py`.
-- Edit `source/irregular_subjunctive_lesson.json`; run `python build_irregular_subjunctive.py`.
+`index.html` and `index.Rmd` now include links to both new activities.
 
-The HTML files embed the data for simple GitHub Pages hosting and local offline use. Editing JSON alone will not change the site until the associated build script is run. All other original files in the bundle are left unchanged.
+### Source attribution
+
+The **grammar categories** for por/para follow the user's screenshot of Facetas 6e pp.144–145. All new por/para sentence prompts are instructor-generated. The combined review samples from the existing original lesson JSON and these new prompts, with additional custom integrated prompts combining two or more constructions.

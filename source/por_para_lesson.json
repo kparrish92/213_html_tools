@@ -1,0 +1,1558 @@
+{
+  "title": "Lección 4.3 · Por y para",
+  "format_version": 1,
+  "source": "New practice prompts based on usage categories and expressions in the user-supplied Facetas 6e pp. 144–145 image; not verbatim textbook exercises.",
+  "instructions": "Translate the English prompt; choose por or para in context before revealing the Spanish answer. Click the underlined preposition or expression for two extra examples from that rule.",
+  "stages": [
+    {
+      "stage_id": "PARA_DEST",
+      "title": "para · Destination / direction",
+      "preposition": "para",
+      "main_ids": [
+        "PP.PARA_DEST.M01",
+        "PP.PARA_DEST.M02",
+        "PP.PARA_DEST.M03",
+        "PP.PARA_DEST.M04",
+        "PP.PARA_DEST.M05"
+      ],
+      "review_ids": [
+        "PP.PARA_DEST.R01",
+        "PP.PARA_DEST.R02"
+      ]
+    },
+    {
+      "stage_id": "PARA_DEAD",
+      "title": "para · Deadline / future time",
+      "preposition": "para",
+      "main_ids": [
+        "PP.PARA_DEAD.M01",
+        "PP.PARA_DEAD.M02",
+        "PP.PARA_DEAD.M03",
+        "PP.PARA_DEAD.M04",
+        "PP.PARA_DEAD.M05"
+      ],
+      "review_ids": [
+        "PP.PARA_DEAD.R01",
+        "PP.PARA_DEAD.R02"
+      ]
+    },
+    {
+      "stage_id": "PARA_GOAL",
+      "title": "para · Goal · para + infinitive",
+      "preposition": "para",
+      "main_ids": [
+        "PP.PARA_GOAL.M01",
+        "PP.PARA_GOAL.M02",
+        "PP.PARA_GOAL.M03",
+        "PP.PARA_GOAL.M04",
+        "PP.PARA_GOAL.M05"
+      ],
+      "review_ids": [
+        "PP.PARA_GOAL.R01",
+        "PP.PARA_GOAL.R02"
+      ]
+    },
+    {
+      "stage_id": "PARA_PURPOSE",
+      "title": "para · Purpose / intended use",
+      "preposition": "para",
+      "main_ids": [
+        "PP.PARA_PURPOSE.M01",
+        "PP.PARA_PURPOSE.M02",
+        "PP.PARA_PURPOSE.M03",
+        "PP.PARA_PURPOSE.M04",
+        "PP.PARA_PURPOSE.M05"
+      ],
+      "review_ids": [
+        "PP.PARA_PURPOSE.R01",
+        "PP.PARA_PURPOSE.R02"
+      ]
+    },
+    {
+      "stage_id": "PARA_RECIP",
+      "title": "para · Recipient / beneficiary",
+      "preposition": "para",
+      "main_ids": [
+        "PP.PARA_RECIP.M01",
+        "PP.PARA_RECIP.M02",
+        "PP.PARA_RECIP.M03",
+        "PP.PARA_RECIP.M04",
+        "PP.PARA_RECIP.M05"
+      ],
+      "review_ids": [
+        "PP.PARA_RECIP.R01",
+        "PP.PARA_RECIP.R02"
+      ]
+    },
+    {
+      "stage_id": "PARA_OPINION",
+      "title": "para · Opinion / comparison",
+      "preposition": "para",
+      "main_ids": [
+        "PP.PARA_OPINION.M01",
+        "PP.PARA_OPINION.M02",
+        "PP.PARA_OPINION.M03",
+        "PP.PARA_OPINION.M04",
+        "PP.PARA_OPINION.M05"
+      ],
+      "review_ids": [
+        "PP.PARA_OPINION.R01",
+        "PP.PARA_OPINION.R02"
+      ]
+    },
+    {
+      "stage_id": "PARA_JOB",
+      "title": "para · Employment / working for",
+      "preposition": "para",
+      "main_ids": [
+        "PP.PARA_JOB.M01",
+        "PP.PARA_JOB.M02",
+        "PP.PARA_JOB.M03",
+        "PP.PARA_JOB.M04"
+      ],
+      "review_ids": [
+        "PP.PARA_JOB.R01",
+        "PP.PARA_JOB.R02"
+      ]
+    },
+    {
+      "stage_id": "PARA_QUE",
+      "title": "para · Para que + subjunctive",
+      "preposition": "para",
+      "main_ids": [
+        "PP.PARA_QUE.M01",
+        "PP.PARA_QUE.M02",
+        "PP.PARA_QUE.M03",
+        "PP.PARA_QUE.M04",
+        "PP.PARA_QUE.M05"
+      ],
+      "review_ids": [
+        "PP.PARA_QUE.R01",
+        "PP.PARA_QUE.R02"
+      ]
+    },
+    {
+      "stage_id": "POR_MOTION",
+      "title": "por · Motion / general location",
+      "preposition": "por",
+      "main_ids": [
+        "PP.POR_MOTION.M01",
+        "PP.POR_MOTION.M02",
+        "PP.POR_MOTION.M03",
+        "PP.POR_MOTION.M04",
+        "PP.POR_MOTION.M05"
+      ],
+      "review_ids": [
+        "PP.POR_MOTION.R01",
+        "PP.POR_MOTION.R02"
+      ]
+    },
+    {
+      "stage_id": "POR_DURATION",
+      "title": "por · Duration",
+      "preposition": "por",
+      "main_ids": [
+        "PP.POR_DURATION.M01",
+        "PP.POR_DURATION.M02",
+        "PP.POR_DURATION.M03",
+        "PP.POR_DURATION.M04",
+        "PP.POR_DURATION.M05"
+      ],
+      "review_ids": [
+        "PP.POR_DURATION.R01",
+        "PP.POR_DURATION.R02"
+      ]
+    },
+    {
+      "stage_id": "POR_REASON",
+      "title": "por · Reason / motive",
+      "preposition": "por",
+      "main_ids": [
+        "PP.POR_REASON.M01",
+        "PP.POR_REASON.M02",
+        "PP.POR_REASON.M03",
+        "PP.POR_REASON.M04",
+        "PP.POR_REASON.M05"
+      ],
+      "review_ids": [
+        "PP.POR_REASON.R01",
+        "PP.POR_REASON.R02"
+      ]
+    },
+    {
+      "stage_id": "POR_SEARCH",
+      "title": "por · Object of a search",
+      "preposition": "por",
+      "main_ids": [
+        "PP.POR_SEARCH.M01",
+        "PP.POR_SEARCH.M02",
+        "PP.POR_SEARCH.M03",
+        "PP.POR_SEARCH.M04"
+      ],
+      "review_ids": [
+        "PP.POR_SEARCH.R01",
+        "PP.POR_SEARCH.R02"
+      ]
+    },
+    {
+      "stage_id": "POR_MEANS",
+      "title": "por · Means / by way of",
+      "preposition": "por",
+      "main_ids": [
+        "PP.POR_MEANS.M01",
+        "PP.POR_MEANS.M02",
+        "PP.POR_MEANS.M03",
+        "PP.POR_MEANS.M04",
+        "PP.POR_MEANS.M05"
+      ],
+      "review_ids": [
+        "PP.POR_MEANS.R01",
+        "PP.POR_MEANS.R02"
+      ]
+    },
+    {
+      "stage_id": "POR_EXCHANGE",
+      "title": "por · Exchange / substitution",
+      "preposition": "por",
+      "main_ids": [
+        "PP.POR_EXCHANGE.M01",
+        "PP.POR_EXCHANGE.M02",
+        "PP.POR_EXCHANGE.M03",
+        "PP.POR_EXCHANGE.M04"
+      ],
+      "review_ids": [
+        "PP.POR_EXCHANGE.R01",
+        "PP.POR_EXCHANGE.R02"
+      ]
+    },
+    {
+      "stage_id": "POR_RATE",
+      "title": "por · Unit of measure / frequency",
+      "preposition": "por",
+      "main_ids": [
+        "PP.POR_RATE.M01",
+        "PP.POR_RATE.M02",
+        "PP.POR_RATE.M03",
+        "PP.POR_RATE.M04",
+        "PP.POR_RATE.M05"
+      ],
+      "review_ids": [
+        "PP.POR_RATE.R01",
+        "PP.POR_RATE.R02"
+      ]
+    },
+    {
+      "stage_id": "POR_AGENT",
+      "title": "por · Passive agent",
+      "preposition": "por",
+      "main_ids": [
+        "PP.POR_AGENT.M01",
+        "PP.POR_AGENT.M02",
+        "PP.POR_AGENT.M03",
+        "PP.POR_AGENT.M04"
+      ],
+      "review_ids": [
+        "PP.POR_AGENT.R01",
+        "PP.POR_AGENT.R02"
+      ]
+    },
+    {
+      "stage_id": "POR_EXPR",
+      "title": "por · Expressions with por",
+      "preposition": "por",
+      "main_ids": [
+        "PP.POR_EXPR.M01",
+        "PP.POR_EXPR.M02",
+        "PP.POR_EXPR.M03",
+        "PP.POR_EXPR.M04",
+        "PP.POR_EXPR.M05",
+        "PP.POR_EXPR.M06",
+        "PP.POR_EXPR.M07",
+        "PP.POR_EXPR.M08"
+      ],
+      "review_ids": [
+        "PP.POR_EXPR.R01",
+        "PP.POR_EXPR.R02"
+      ]
+    },
+    {
+      "stage_id": "PARA_EXPR",
+      "title": "para · Expressions with para",
+      "preposition": "para",
+      "main_ids": [
+        "PP.PARA_EXPR.M01",
+        "PP.PARA_EXPR.M02",
+        "PP.PARA_EXPR.M03",
+        "PP.PARA_EXPR.M04",
+        "PP.PARA_EXPR.M05",
+        "PP.PARA_EXPR.M06"
+      ],
+      "review_ids": [
+        "PP.PARA_EXPR.R01",
+        "PP.PARA_EXPR.R02"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "PP.PARA_DEST.M01",
+      "stage_id": "PARA_DEST",
+      "kind": "main",
+      "english": "We are going to the hospital.",
+      "spanish": "Vamos para el hospital.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Destination / direction"
+    },
+    {
+      "item_id": "PP.PARA_DEST.M02",
+      "stage_id": "PARA_DEST",
+      "kind": "main",
+      "english": "The ambulance is heading toward the clinic.",
+      "spanish": "La ambulancia va para la clínica.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Destination / direction"
+    },
+    {
+      "item_id": "PP.PARA_DEST.M03",
+      "stage_id": "PARA_DEST",
+      "kind": "main",
+      "english": "They are leaving for the pharmacy.",
+      "spanish": "Salen para la farmacia.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Destination / direction"
+    },
+    {
+      "item_id": "PP.PARA_DEST.M04",
+      "stage_id": "PARA_DEST",
+      "kind": "main",
+      "english": "The nurse is heading toward the waiting room.",
+      "spanish": "La enfermera va para la sala de espera.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Destination / direction"
+    },
+    {
+      "item_id": "PP.PARA_DEST.M05",
+      "stage_id": "PARA_DEST",
+      "kind": "main",
+      "english": "Tomorrow we leave for Madrid.",
+      "spanish": "Mañana salimos para Madrid.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Destination / direction"
+    },
+    {
+      "item_id": "PP.PARA_DEST.R01",
+      "stage_id": "PARA_DEST",
+      "kind": "review",
+      "english": "The nurses are heading toward the emergency room.",
+      "spanish": "Las enfermeras van para la sala de urgencias.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Destination / direction"
+    },
+    {
+      "item_id": "PP.PARA_DEST.R02",
+      "stage_id": "PARA_DEST",
+      "kind": "review",
+      "english": "The doctor left for the laboratory.",
+      "spanish": "El médico salió para el laboratorio.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Destination / direction"
+    },
+    {
+      "item_id": "PP.PARA_DEAD.M01",
+      "stage_id": "PARA_DEAD",
+      "kind": "main",
+      "english": "I need the results by Friday.",
+      "spanish": "Necesito los resultados para el viernes.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Deadline / future time"
+    },
+    {
+      "item_id": "PP.PARA_DEAD.M02",
+      "stage_id": "PARA_DEAD",
+      "kind": "main",
+      "english": "The appointment is scheduled for tomorrow.",
+      "spanish": "La cita está programada para mañana.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Deadline / future time"
+    },
+    {
+      "item_id": "PP.PARA_DEAD.M03",
+      "stage_id": "PARA_DEAD",
+      "kind": "main",
+      "english": "The report must be ready by noon.",
+      "spanish": "El informe debe estar listo para el mediodía.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Deadline / future time"
+    },
+    {
+      "item_id": "PP.PARA_DEAD.M04",
+      "stage_id": "PARA_DEAD",
+      "kind": "main",
+      "english": "Finish the paperwork by Monday.",
+      "spanish": "Termina los documentos para el lunes.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Deadline / future time"
+    },
+    {
+      "item_id": "PP.PARA_DEAD.M05",
+      "stage_id": "PARA_DEAD",
+      "kind": "main",
+      "english": "The test results will be ready by next week.",
+      "spanish": "Los resultados estarán listos para la próxima semana.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Deadline / future time"
+    },
+    {
+      "item_id": "PP.PARA_DEAD.R01",
+      "stage_id": "PARA_DEAD",
+      "kind": "review",
+      "english": "Prepare the presentation for Wednesday.",
+      "spanish": "Prepara la presentación para el miércoles.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Deadline / future time"
+    },
+    {
+      "item_id": "PP.PARA_DEAD.R02",
+      "stage_id": "PARA_DEAD",
+      "kind": "review",
+      "english": "The vaccine should arrive by tomorrow.",
+      "spanish": "La vacuna debe llegar para mañana.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Deadline / future time"
+    },
+    {
+      "item_id": "PP.PARA_GOAL.M01",
+      "stage_id": "PARA_GOAL",
+      "kind": "main",
+      "english": "She exercises to improve her health.",
+      "spanish": "Hace ejercicio para mejorar su salud.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Goal · para + infinitive"
+    },
+    {
+      "item_id": "PP.PARA_GOAL.M02",
+      "stage_id": "PARA_GOAL",
+      "kind": "main",
+      "english": "I am studying to become a nurse.",
+      "spanish": "Estudio para ser enfermero.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Goal · para + infinitive"
+    },
+    {
+      "item_id": "PP.PARA_GOAL.M03",
+      "stage_id": "PARA_GOAL",
+      "kind": "main",
+      "english": "We went to the pharmacy to buy medicine.",
+      "spanish": "Fuimos a la farmacia para comprar medicamentos.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Goal · para + infinitive"
+    },
+    {
+      "item_id": "PP.PARA_GOAL.M04",
+      "stage_id": "PARA_GOAL",
+      "kind": "main",
+      "english": "The doctor called to confirm the appointment.",
+      "spanish": "El médico llamó para confirmar la cita.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Goal · para + infinitive"
+    },
+    {
+      "item_id": "PP.PARA_GOAL.M05",
+      "stage_id": "PARA_GOAL",
+      "kind": "main",
+      "english": "They drink water to stay hydrated.",
+      "spanish": "Beben agua para mantenerse hidratados.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Goal · para + infinitive"
+    },
+    {
+      "item_id": "PP.PARA_GOAL.R01",
+      "stage_id": "PARA_GOAL",
+      "kind": "review",
+      "english": "I went to the clinic to talk to the doctor.",
+      "spanish": "Fui a la clínica para hablar con el médico.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Goal · para + infinitive"
+    },
+    {
+      "item_id": "PP.PARA_GOAL.R02",
+      "stage_id": "PARA_GOAL",
+      "kind": "review",
+      "english": "She rests to recover more quickly.",
+      "spanish": "Descansa para recuperarse más rápido.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Goal · para + infinitive"
+    },
+    {
+      "item_id": "PP.PARA_PURPOSE.M01",
+      "stage_id": "PARA_PURPOSE",
+      "kind": "main",
+      "english": "This medicine is for pain.",
+      "spanish": "Este medicamento es para el dolor.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Purpose / intended use"
+    },
+    {
+      "item_id": "PP.PARA_PURPOSE.M02",
+      "stage_id": "PARA_PURPOSE",
+      "kind": "main",
+      "english": "These gloves are for the nurses.",
+      "spanish": "Estos guantes son para las enfermeras.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Purpose / intended use"
+    },
+    {
+      "item_id": "PP.PARA_PURPOSE.M03",
+      "stage_id": "PARA_PURPOSE",
+      "kind": "main",
+      "english": "The thermometer is for measuring temperature.",
+      "spanish": "El termómetro es para medir la temperatura.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Purpose / intended use"
+    },
+    {
+      "item_id": "PP.PARA_PURPOSE.M04",
+      "stage_id": "PARA_PURPOSE",
+      "kind": "main",
+      "english": "This room is for examinations.",
+      "spanish": "Esta sala es para los exámenes médicos.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Purpose / intended use"
+    },
+    {
+      "item_id": "PP.PARA_PURPOSE.M05",
+      "stage_id": "PARA_PURPOSE",
+      "kind": "main",
+      "english": "That machine is for taking X-rays.",
+      "spanish": "Esa máquina es para sacar radiografías.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Purpose / intended use"
+    },
+    {
+      "item_id": "PP.PARA_PURPOSE.R01",
+      "stage_id": "PARA_PURPOSE",
+      "kind": "review",
+      "english": "The mask is for protecting patients.",
+      "spanish": "La mascarilla es para proteger a los pacientes.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Purpose / intended use"
+    },
+    {
+      "item_id": "PP.PARA_PURPOSE.R02",
+      "stage_id": "PARA_PURPOSE",
+      "kind": "review",
+      "english": "That chair is for people who are waiting.",
+      "spanish": "Esa silla es para las personas que esperan.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Purpose / intended use"
+    },
+    {
+      "item_id": "PP.PARA_RECIP.M01",
+      "stage_id": "PARA_RECIP",
+      "kind": "main",
+      "english": "I bought vitamins for my grandmother.",
+      "spanish": "Compré vitaminas para mi abuela.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Recipient / beneficiary"
+    },
+    {
+      "item_id": "PP.PARA_RECIP.M02",
+      "stage_id": "PARA_RECIP",
+      "kind": "main",
+      "english": "The nurse brought water for the patient.",
+      "spanish": "La enfermera trajo agua para el paciente.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Recipient / beneficiary"
+    },
+    {
+      "item_id": "PP.PARA_RECIP.M03",
+      "stage_id": "PARA_RECIP",
+      "kind": "main",
+      "english": "This prescription is for you.",
+      "spanish": "Esta receta es para ti.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Recipient / beneficiary"
+    },
+    {
+      "item_id": "PP.PARA_RECIP.M04",
+      "stage_id": "PARA_RECIP",
+      "kind": "main",
+      "english": "We prepared lunch for the volunteers.",
+      "spanish": "Preparamos el almuerzo para los voluntarios.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Recipient / beneficiary"
+    },
+    {
+      "item_id": "PP.PARA_RECIP.M05",
+      "stage_id": "PARA_RECIP",
+      "kind": "main",
+      "english": "The clinic has resources for new patients.",
+      "spanish": "La clínica tiene recursos para los pacientes nuevos.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Recipient / beneficiary"
+    },
+    {
+      "item_id": "PP.PARA_RECIP.R01",
+      "stage_id": "PARA_RECIP",
+      "kind": "review",
+      "english": "This message is for the doctor.",
+      "spanish": "Este mensaje es para el médico.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Recipient / beneficiary"
+    },
+    {
+      "item_id": "PP.PARA_RECIP.R02",
+      "stage_id": "PARA_RECIP",
+      "kind": "review",
+      "english": "The nurse prepared the bed for the child.",
+      "spanish": "La enfermera preparó la cama para el niño.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Recipient / beneficiary"
+    },
+    {
+      "item_id": "PP.PARA_OPINION.M01",
+      "stage_id": "PARA_OPINION",
+      "kind": "main",
+      "english": "For me, this exercise is easy.",
+      "spanish": "Para mí, este ejercicio es fácil.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Opinion / comparison"
+    },
+    {
+      "item_id": "PP.PARA_OPINION.M02",
+      "stage_id": "PARA_OPINION",
+      "kind": "main",
+      "english": "For her age, she is very active.",
+      "spanish": "Para su edad, es muy activa.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Opinion / comparison"
+    },
+    {
+      "item_id": "PP.PARA_OPINION.M03",
+      "stage_id": "PARA_OPINION",
+      "kind": "main",
+      "english": "In my opinion, the treatment is effective.",
+      "spanish": "Para mí, el tratamiento es eficaz.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Opinion / comparison"
+    },
+    {
+      "item_id": "PP.PARA_OPINION.M04",
+      "stage_id": "PARA_OPINION",
+      "kind": "main",
+      "english": "For a beginner, you speak Spanish very well.",
+      "spanish": "Para ser principiante, hablas español muy bien.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Opinion / comparison"
+    },
+    {
+      "item_id": "PP.PARA_OPINION.M05",
+      "stage_id": "PARA_OPINION",
+      "kind": "main",
+      "english": "For such a small clinic, they have excellent equipment.",
+      "spanish": "Para ser una clínica tan pequeña, tienen equipo excelente.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Opinion / comparison"
+    },
+    {
+      "item_id": "PP.PARA_OPINION.R01",
+      "stage_id": "PARA_OPINION",
+      "kind": "review",
+      "english": "For his age, he runs very fast.",
+      "spanish": "Para su edad, corre muy rápido.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Opinion / comparison"
+    },
+    {
+      "item_id": "PP.PARA_OPINION.R02",
+      "stage_id": "PARA_OPINION",
+      "kind": "review",
+      "english": "In our opinion, this plan is better.",
+      "spanish": "Para nosotros, este plan es mejor.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Opinion / comparison"
+    },
+    {
+      "item_id": "PP.PARA_JOB.M01",
+      "stage_id": "PARA_JOB",
+      "kind": "main",
+      "english": "My aunt works for a pharmaceutical company.",
+      "spanish": "Mi tía trabaja para una empresa farmacéutica.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Employment / working for"
+    },
+    {
+      "item_id": "PP.PARA_JOB.M02",
+      "stage_id": "PARA_JOB",
+      "kind": "main",
+      "english": "He works for the hospital.",
+      "spanish": "Trabaja para el hospital.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Employment / working for"
+    },
+    {
+      "item_id": "PP.PARA_JOB.M03",
+      "stage_id": "PARA_JOB",
+      "kind": "main",
+      "english": "The researcher works for the university.",
+      "spanish": "La investigadora trabaja para la universidad.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Employment / working for"
+    },
+    {
+      "item_id": "PP.PARA_JOB.M04",
+      "stage_id": "PARA_JOB",
+      "kind": "main",
+      "english": "I want to work for a health organization.",
+      "spanish": "Quiero trabajar para una organización de salud.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Employment / working for"
+    },
+    {
+      "item_id": "PP.PARA_JOB.R01",
+      "stage_id": "PARA_JOB",
+      "kind": "review",
+      "english": "She works for a private clinic.",
+      "spanish": "Trabaja para una clínica privada.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Employment / working for"
+    },
+    {
+      "item_id": "PP.PARA_JOB.R02",
+      "stage_id": "PARA_JOB",
+      "kind": "review",
+      "english": "We work for the same company.",
+      "spanish": "Trabajamos para la misma empresa.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Employment / working for"
+    },
+    {
+      "item_id": "PP.PARA_QUE.M01",
+      "stage_id": "PARA_QUE",
+      "kind": "main",
+      "english": "I will explain it so that you understand.",
+      "spanish": "Te lo explicaré para que entiendas.",
+      "target_span": "para que",
+      "preposition": "para",
+      "usage": "Para que + subjunctive"
+    },
+    {
+      "item_id": "PP.PARA_QUE.M02",
+      "stage_id": "PARA_QUE",
+      "kind": "main",
+      "english": "The doctor speaks slowly so that the patient understands.",
+      "spanish": "El médico habla despacio para que el paciente entienda.",
+      "target_span": "para que",
+      "preposition": "para",
+      "usage": "Para que + subjunctive"
+    },
+    {
+      "item_id": "PP.PARA_QUE.M03",
+      "stage_id": "PARA_QUE",
+      "kind": "main",
+      "english": "I am writing down the instructions so that you do not forget them.",
+      "spanish": "Anoto las instrucciones para que no las olvides.",
+      "target_span": "para que",
+      "preposition": "para",
+      "usage": "Para que + subjunctive"
+    },
+    {
+      "item_id": "PP.PARA_QUE.M04",
+      "stage_id": "PARA_QUE",
+      "kind": "main",
+      "english": "The nurses are helping so that the patients recover.",
+      "spanish": "Las enfermeras ayudan para que los pacientes se recuperen.",
+      "target_span": "para que",
+      "preposition": "para",
+      "usage": "Para que + subjunctive"
+    },
+    {
+      "item_id": "PP.PARA_QUE.M05",
+      "stage_id": "PARA_QUE",
+      "kind": "main",
+      "english": "We will call the clinic so that they give us an appointment.",
+      "spanish": "Llamaremos a la clínica para que nos den una cita.",
+      "target_span": "para que",
+      "preposition": "para",
+      "usage": "Para que + subjunctive"
+    },
+    {
+      "item_id": "PP.PARA_QUE.R01",
+      "stage_id": "PARA_QUE",
+      "kind": "review",
+      "english": "I brought water so that you can drink.",
+      "spanish": "Traje agua para que puedas beber.",
+      "target_span": "para que",
+      "preposition": "para",
+      "usage": "Para que + subjunctive"
+    },
+    {
+      "item_id": "PP.PARA_QUE.R02",
+      "stage_id": "PARA_QUE",
+      "kind": "review",
+      "english": "She closes the door so that the baby sleeps.",
+      "spanish": "Cierra la puerta para que el bebé duerma.",
+      "target_span": "para que",
+      "preposition": "para",
+      "usage": "Para que + subjunctive"
+    },
+    {
+      "item_id": "PP.POR_MOTION.M01",
+      "stage_id": "POR_MOTION",
+      "kind": "main",
+      "english": "We walked through the park.",
+      "spanish": "Caminamos por el parque.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Motion / general location"
+    },
+    {
+      "item_id": "PP.POR_MOTION.M02",
+      "stage_id": "POR_MOTION",
+      "kind": "main",
+      "english": "The nurse walked around the hospital.",
+      "spanish": "La enfermera caminó por el hospital.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Motion / general location"
+    },
+    {
+      "item_id": "PP.POR_MOTION.M03",
+      "stage_id": "POR_MOTION",
+      "kind": "main",
+      "english": "They drove through the city.",
+      "spanish": "Condujeron por la ciudad.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Motion / general location"
+    },
+    {
+      "item_id": "PP.POR_MOTION.M04",
+      "stage_id": "POR_MOTION",
+      "kind": "main",
+      "english": "I looked around the waiting room.",
+      "spanish": "Miré por la sala de espera.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Motion / general location"
+    },
+    {
+      "item_id": "PP.POR_MOTION.M05",
+      "stage_id": "POR_MOTION",
+      "kind": "main",
+      "english": "The patient walked along the corridor.",
+      "spanish": "El paciente caminó por el pasillo.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Motion / general location"
+    },
+    {
+      "item_id": "PP.POR_MOTION.R01",
+      "stage_id": "POR_MOTION",
+      "kind": "review",
+      "english": "We went through the neighborhood.",
+      "spanish": "Pasamos por el barrio.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Motion / general location"
+    },
+    {
+      "item_id": "PP.POR_MOTION.R02",
+      "stage_id": "POR_MOTION",
+      "kind": "review",
+      "english": "The doctor walked around the clinic.",
+      "spanish": "El médico caminó por la clínica.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Motion / general location"
+    },
+    {
+      "item_id": "PP.POR_DURATION.M01",
+      "stage_id": "POR_DURATION",
+      "kind": "main",
+      "english": "She slept for eight hours.",
+      "spanish": "Durmió por ocho horas.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Duration"
+    },
+    {
+      "item_id": "PP.POR_DURATION.M02",
+      "stage_id": "POR_DURATION",
+      "kind": "main",
+      "english": "We studied for two hours.",
+      "spanish": "Estudiamos por dos horas.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Duration"
+    },
+    {
+      "item_id": "PP.POR_DURATION.M03",
+      "stage_id": "POR_DURATION",
+      "kind": "main",
+      "english": "The patient stayed in bed for three days.",
+      "spanish": "El paciente se quedó en cama por tres días.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Duration"
+    },
+    {
+      "item_id": "PP.POR_DURATION.M04",
+      "stage_id": "POR_DURATION",
+      "kind": "main",
+      "english": "He worked for six months.",
+      "spanish": "Trabajó por seis meses.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Duration"
+    },
+    {
+      "item_id": "PP.POR_DURATION.M05",
+      "stage_id": "POR_DURATION",
+      "kind": "main",
+      "english": "I waited for twenty minutes.",
+      "spanish": "Esperé por veinte minutos.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Duration"
+    },
+    {
+      "item_id": "PP.POR_DURATION.R01",
+      "stage_id": "POR_DURATION",
+      "kind": "review",
+      "english": "They exercised for thirty minutes.",
+      "spanish": "Hicieron ejercicio por treinta minutos.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Duration"
+    },
+    {
+      "item_id": "PP.POR_DURATION.R02",
+      "stage_id": "POR_DURATION",
+      "kind": "review",
+      "english": "The nurse stayed there for one hour.",
+      "spanish": "La enfermera se quedó allí por una hora.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Duration"
+    },
+    {
+      "item_id": "PP.POR_REASON.M01",
+      "stage_id": "POR_REASON",
+      "kind": "main",
+      "english": "I did not go to class because of the flu.",
+      "spanish": "No fui a clase por la gripe.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Reason / motive"
+    },
+    {
+      "item_id": "PP.POR_REASON.M02",
+      "stage_id": "POR_REASON",
+      "kind": "main",
+      "english": "She cried because of the pain.",
+      "spanish": "Lloró por el dolor.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Reason / motive"
+    },
+    {
+      "item_id": "PP.POR_REASON.M03",
+      "stage_id": "POR_REASON",
+      "kind": "main",
+      "english": "We canceled the appointment because of the storm.",
+      "spanish": "Cancelamos la cita por la tormenta.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Reason / motive"
+    },
+    {
+      "item_id": "PP.POR_REASON.M04",
+      "stage_id": "POR_REASON",
+      "kind": "main",
+      "english": "He thanked the nurse for her help.",
+      "spanish": "Le dio las gracias a la enfermera por su ayuda.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Reason / motive"
+    },
+    {
+      "item_id": "PP.POR_REASON.M05",
+      "stage_id": "POR_REASON",
+      "kind": "main",
+      "english": "The clinic closed because of the snow.",
+      "spanish": "La clínica cerró por la nieve.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Reason / motive"
+    },
+    {
+      "item_id": "PP.POR_REASON.R01",
+      "stage_id": "POR_REASON",
+      "kind": "review",
+      "english": "I am worried because of the test results.",
+      "spanish": "Estoy preocupado por los resultados.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Reason / motive"
+    },
+    {
+      "item_id": "PP.POR_REASON.R02",
+      "stage_id": "POR_REASON",
+      "kind": "review",
+      "english": "She missed work because of the fever.",
+      "spanish": "Faltó al trabajo por la fiebre.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Reason / motive"
+    },
+    {
+      "item_id": "PP.POR_SEARCH.M01",
+      "stage_id": "POR_SEARCH",
+      "kind": "main",
+      "english": "I went to the pharmacy to get some aspirin.",
+      "spanish": "Fui a la farmacia por unas aspirinas.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Object of a search"
+    },
+    {
+      "item_id": "PP.POR_SEARCH.M02",
+      "stage_id": "POR_SEARCH",
+      "kind": "main",
+      "english": "She went to the store to get a thermometer.",
+      "spanish": "Fue a la tienda por un termómetro.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Object of a search"
+    },
+    {
+      "item_id": "PP.POR_SEARCH.M03",
+      "stage_id": "POR_SEARCH",
+      "kind": "main",
+      "english": "The patient came to get the results.",
+      "spanish": "El paciente vino por los resultados.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Object of a search"
+    },
+    {
+      "item_id": "PP.POR_SEARCH.M04",
+      "stage_id": "POR_SEARCH",
+      "kind": "main",
+      "english": "I went back to get my glasses.",
+      "spanish": "Regresé por mis lentes.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Object of a search"
+    },
+    {
+      "item_id": "PP.POR_SEARCH.R01",
+      "stage_id": "POR_SEARCH",
+      "kind": "review",
+      "english": "We went to the office to pick up the forms.",
+      "spanish": "Fuimos a la oficina por los formularios.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Object of a search"
+    },
+    {
+      "item_id": "PP.POR_SEARCH.R02",
+      "stage_id": "POR_SEARCH",
+      "kind": "review",
+      "english": "He came back to pick up the prescription.",
+      "spanish": "Volvió por la receta.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Object of a search"
+    },
+    {
+      "item_id": "PP.POR_MEANS.M01",
+      "stage_id": "POR_MEANS",
+      "kind": "main",
+      "english": "I spoke with the doctor by phone.",
+      "spanish": "Hablé con el médico por teléfono.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Means / by way of"
+    },
+    {
+      "item_id": "PP.POR_MEANS.M02",
+      "stage_id": "POR_MEANS",
+      "kind": "main",
+      "english": "She sent the results by email.",
+      "spanish": "Envió los resultados por correo electrónico.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Means / by way of"
+    },
+    {
+      "item_id": "PP.POR_MEANS.M03",
+      "stage_id": "POR_MEANS",
+      "kind": "main",
+      "english": "We went through the town center.",
+      "spanish": "Pasamos por el centro del pueblo.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Means / by way of"
+    },
+    {
+      "item_id": "PP.POR_MEANS.M04",
+      "stage_id": "POR_MEANS",
+      "kind": "main",
+      "english": "The clinic sent the information by mail.",
+      "spanish": "La clínica envió la información por correo.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Means / by way of"
+    },
+    {
+      "item_id": "PP.POR_MEANS.M05",
+      "stage_id": "POR_MEANS",
+      "kind": "main",
+      "english": "I contacted the nurse by text message.",
+      "spanish": "Contacté a la enfermera por mensaje de texto.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Means / by way of"
+    },
+    {
+      "item_id": "PP.POR_MEANS.R01",
+      "stage_id": "POR_MEANS",
+      "kind": "review",
+      "english": "The patient received the report by email.",
+      "spanish": "El paciente recibió el informe por correo electrónico.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Means / by way of"
+    },
+    {
+      "item_id": "PP.POR_MEANS.R02",
+      "stage_id": "POR_MEANS",
+      "kind": "review",
+      "english": "He communicated with the doctor by video call.",
+      "spanish": "Se comunicó con el médico por videollamada.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Means / by way of"
+    },
+    {
+      "item_id": "PP.POR_EXCHANGE.M01",
+      "stage_id": "POR_EXCHANGE",
+      "kind": "main",
+      "english": "I paid ten dollars for the medicine.",
+      "spanish": "Pagué diez dólares por la medicina.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Exchange / substitution"
+    },
+    {
+      "item_id": "PP.POR_EXCHANGE.M02",
+      "stage_id": "POR_EXCHANGE",
+      "kind": "main",
+      "english": "We exchanged the old thermometer for a new one.",
+      "spanish": "Cambiamos el termómetro viejo por uno nuevo.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Exchange / substitution"
+    },
+    {
+      "item_id": "PP.POR_EXCHANGE.M03",
+      "stage_id": "POR_EXCHANGE",
+      "kind": "main",
+      "english": "She traded her shift for another one.",
+      "spanish": "Cambió su turno por otro.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Exchange / substitution"
+    },
+    {
+      "item_id": "PP.POR_EXCHANGE.M04",
+      "stage_id": "POR_EXCHANGE",
+      "kind": "main",
+      "english": "I will replace this mask with a new one.",
+      "spanish": "Cambiaré esta mascarilla por una nueva.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Exchange / substitution"
+    },
+    {
+      "item_id": "PP.POR_EXCHANGE.R01",
+      "stage_id": "POR_EXCHANGE",
+      "kind": "review",
+      "english": "They exchanged the broken chair for a new one.",
+      "spanish": "Cambiaron la silla rota por una nueva.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Exchange / substitution"
+    },
+    {
+      "item_id": "PP.POR_EXCHANGE.R02",
+      "stage_id": "POR_EXCHANGE",
+      "kind": "review",
+      "english": "I paid twenty dollars for the book.",
+      "spanish": "Pagué veinte dólares por el libro.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Exchange / substitution"
+    },
+    {
+      "item_id": "PP.POR_RATE.M01",
+      "stage_id": "POR_RATE",
+      "kind": "main",
+      "english": "I take this pill twice a day.",
+      "spanish": "Tomo esta pastilla dos veces por día.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Unit of measure / frequency"
+    },
+    {
+      "item_id": "PP.POR_RATE.M02",
+      "stage_id": "POR_RATE",
+      "kind": "main",
+      "english": "The clinic sees fifty patients per day.",
+      "spanish": "La clínica atiende a cincuenta pacientes por día.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Unit of measure / frequency"
+    },
+    {
+      "item_id": "PP.POR_RATE.M03",
+      "stage_id": "POR_RATE",
+      "kind": "main",
+      "english": "The nurse checks the patient once an hour.",
+      "spanish": "La enfermera revisa al paciente una vez por hora.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Unit of measure / frequency"
+    },
+    {
+      "item_id": "PP.POR_RATE.M04",
+      "stage_id": "POR_RATE",
+      "kind": "main",
+      "english": "We exercise three times per week.",
+      "spanish": "Hacemos ejercicio tres veces por semana.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Unit of measure / frequency"
+    },
+    {
+      "item_id": "PP.POR_RATE.M05",
+      "stage_id": "POR_RATE",
+      "kind": "main",
+      "english": "The car traveled sixty kilometers per hour.",
+      "spanish": "El coche viajó a sesenta kilómetros por hora.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Unit of measure / frequency"
+    },
+    {
+      "item_id": "PP.POR_RATE.R01",
+      "stage_id": "POR_RATE",
+      "kind": "review",
+      "english": "He takes the medicine four times per day.",
+      "spanish": "Toma la medicina cuatro veces por día.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Unit of measure / frequency"
+    },
+    {
+      "item_id": "PP.POR_RATE.R02",
+      "stage_id": "POR_RATE",
+      "kind": "review",
+      "english": "The doctor works five days per week.",
+      "spanish": "El médico trabaja cinco días por semana.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Unit of measure / frequency"
+    },
+    {
+      "item_id": "PP.POR_AGENT.M01",
+      "stage_id": "POR_AGENT",
+      "kind": "main",
+      "english": "The report was written by the doctor.",
+      "spanish": "El informe fue escrito por el médico.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Passive agent"
+    },
+    {
+      "item_id": "PP.POR_AGENT.M02",
+      "stage_id": "POR_AGENT",
+      "kind": "main",
+      "english": "The vaccine was developed by scientists.",
+      "spanish": "La vacuna fue desarrollada por científicos.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Passive agent"
+    },
+    {
+      "item_id": "PP.POR_AGENT.M03",
+      "stage_id": "POR_AGENT",
+      "kind": "main",
+      "english": "The decision was made by the committee.",
+      "spanish": "La decisión fue tomada por el comité.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Passive agent"
+    },
+    {
+      "item_id": "PP.POR_AGENT.M04",
+      "stage_id": "POR_AGENT",
+      "kind": "main",
+      "english": "The medicine was approved by the agency.",
+      "spanish": "El medicamento fue aprobado por la agencia.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Passive agent"
+    },
+    {
+      "item_id": "PP.POR_AGENT.R01",
+      "stage_id": "POR_AGENT",
+      "kind": "review",
+      "english": "The patient was examined by the nurse.",
+      "spanish": "El paciente fue examinado por la enfermera.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Passive agent"
+    },
+    {
+      "item_id": "PP.POR_AGENT.R02",
+      "stage_id": "POR_AGENT",
+      "kind": "review",
+      "english": "The report was reviewed by the specialist.",
+      "spanish": "El informe fue revisado por la especialista.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Passive agent"
+    },
+    {
+      "item_id": "PP.POR_EXPR.M01",
+      "stage_id": "POR_EXPR",
+      "kind": "main",
+      "english": "For now, we are waiting.",
+      "spanish": "Por ahora, estamos esperando.",
+      "target_span": "Por ahora",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.POR_EXPR.M02",
+      "stage_id": "POR_EXPR",
+      "kind": "main",
+      "english": "For example, drink more water.",
+      "spanish": "Por ejemplo, bebe más agua.",
+      "target_span": "Por ejemplo",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.POR_EXPR.M03",
+      "stage_id": "POR_EXPR",
+      "kind": "main",
+      "english": "At last, the doctor arrived.",
+      "spanish": "Por fin, llegó el médico.",
+      "target_span": "Por fin",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.POR_EXPR.M04",
+      "stage_id": "POR_EXPR",
+      "kind": "main",
+      "english": "It was an accident; it happened by chance.",
+      "spanish": "Fue un accidente; pasó por casualidad.",
+      "target_span": "por",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.POR_EXPR.M05",
+      "stage_id": "POR_EXPR",
+      "kind": "main",
+      "english": "In general, this medicine works well.",
+      "spanish": "Por lo general, esta medicina funciona bien.",
+      "target_span": "Por lo general",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.POR_EXPR.M06",
+      "stage_id": "POR_EXPR",
+      "kind": "main",
+      "english": "At least, you should call the clinic.",
+      "spanish": "Por lo menos, debes llamar a la clínica.",
+      "target_span": "Por lo menos",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.POR_EXPR.M07",
+      "stage_id": "POR_EXPR",
+      "kind": "main",
+      "english": "That is why I am here.",
+      "spanish": "Por eso estoy aquí.",
+      "target_span": "Por eso",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.POR_EXPR.M08",
+      "stage_id": "POR_EXPR",
+      "kind": "main",
+      "english": "By the way, the appointment is tomorrow.",
+      "spanish": "Por cierto, la cita es mañana.",
+      "target_span": "Por cierto",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.POR_EXPR.R01",
+      "stage_id": "POR_EXPR",
+      "kind": "review",
+      "english": "For the first time, I understood the instructions.",
+      "spanish": "Por primera vez, entendí las instrucciones.",
+      "target_span": "Por primera vez",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.POR_EXPR.R02",
+      "stage_id": "POR_EXPR",
+      "kind": "review",
+      "english": "Of course, we can help you.",
+      "spanish": "Por supuesto, podemos ayudarte.",
+      "target_span": "Por supuesto",
+      "preposition": "por",
+      "usage": "Expressions with por"
+    },
+    {
+      "item_id": "PP.PARA_EXPR.M01",
+      "stage_id": "PARA_EXPR",
+      "kind": "main",
+      "english": "I am not in the mood for jokes.",
+      "spanish": "No estoy para bromas.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Expressions with para"
+    },
+    {
+      "item_id": "PP.PARA_EXPR.M02",
+      "stage_id": "PARA_EXPR",
+      "kind": "main",
+      "english": "It is not such a big deal.",
+      "spanish": "No es para tanto.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Expressions with para"
+    },
+    {
+      "item_id": "PP.PARA_EXPR.M03",
+      "stage_id": "PARA_EXPR",
+      "kind": "main",
+      "english": "To top it all off, it started to rain.",
+      "spanish": "Para colmo, empezó a llover.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Expressions with para"
+    },
+    {
+      "item_id": "PP.PARA_EXPR.M04",
+      "stage_id": "PARA_EXPR",
+      "kind": "main",
+      "english": "I will tell you so that you know.",
+      "spanish": "Te lo diré para que lo sepas.",
+      "target_span": "para que",
+      "preposition": "para",
+      "usage": "Expressions with para"
+    },
+    {
+      "item_id": "PP.PARA_EXPR.M05",
+      "stage_id": "PARA_EXPR",
+      "kind": "main",
+      "english": "The medicine is for you, not for me.",
+      "spanish": "La medicina es para ti, no para mí.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Expressions with para"
+    },
+    {
+      "item_id": "PP.PARA_EXPR.M06",
+      "stage_id": "PARA_EXPR",
+      "kind": "main",
+      "english": "This is forever.",
+      "spanish": "Esto es para siempre.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Expressions with para"
+    },
+    {
+      "item_id": "PP.PARA_EXPR.R01",
+      "stage_id": "PARA_EXPR",
+      "kind": "review",
+      "english": "I am not in the mood for jokes today.",
+      "spanish": "Hoy no estoy para bromas.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Expressions with para"
+    },
+    {
+      "item_id": "PP.PARA_EXPR.R02",
+      "stage_id": "PARA_EXPR",
+      "kind": "review",
+      "english": "It is not such a big deal; relax.",
+      "spanish": "No es para tanto; relájate.",
+      "target_span": "para",
+      "preposition": "para",
+      "usage": "Expressions with para"
+    }
+  ]
+}
