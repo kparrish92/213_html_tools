@@ -1,20 +1,8 @@
-"""Rebuild por_para_practice.html after editing source/por_para_lesson.json.
+"""Restore the currently published 106-slide por/para lesson from the source HTML.
 Run: python build_por_para_lesson.py
 """
-import json
 from pathlib import Path
-root=Path(__file__).resolve().parent
-source=root/'source'/'por_para_lesson.json'
-template=root/'source'/'por_para_lesson_template.html'
-output=root/'por_para_practice.html'
-data=json.loads(source.read_text(encoding='utf8'))
-items=data['items']
-assert len(set(x['item_id'] for x in items))==len(items), 'Duplicate IDs'
-assert all(x['target_span'].casefold() in x['spanish'].casefold() for x in items), 'Missing target span'
-assert all(x['kind'] in ('main','review') for x in items)
-assert all(sum(j['kind']=='review' and j['stage_id']==i['stage_id'] for j in items)>=2 for i in items if i['kind']=='main'), 'Missing extra review examples'
-embedded=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
-html=template.read_text(encoding='utf8').replace('__LESSON_DATA__',embedded)
-assert '__LESSON_DATA__' not in html
-output.write_text(html,encoding='utf8')
-print('Updated',output)
+from shutil import copyfile
+root = Path(__file__).resolve().parent
+copyfile(root / 'source' / 'por_para_106_slides.html', root / 'por_para_practice.html')
+print('Updated', root / 'por_para_practice.html')
