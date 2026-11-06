@@ -2,422 +2,139 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Por y para · Lección 4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Por y para | SPN 213 MT slides</title>
 <style>
-:root {
-  --blue: #355C8A;
-  --red: #B33A3A;
-  --purple: #7A5AA6;
-  --purple-bg: #F1ECF7;
-  --ink: #2b3035;
-  --muted: #8a9299;
-  --line: #e2e6e9;
-  --soft: #f7f8fa;
-}
-* { box-sizing: border-box; }
-html, body {
-  margin: 0; width: 100%; height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  background: white; color: var(--ink);
-}
-button, select, input { font: inherit; }
-.screen {
-  width: 100vw; height: 100vh;
-  display: none; flex-direction: column;
-  justify-content: center; align-items: center;
-  text-align: center; padding: 7vh 8vw 12vh;
-}
-.screen.active { display: flex; }
-.title {
-  color: var(--blue); font-size: 3rem; font-weight: 800;
-  line-height: 1.08; margin-bottom: .6em;
-}
-.subtitle {
-  color: #66717a; max-width: 780px; line-height: 1.5;
-  margin-bottom: 1.5em;
-}
-.primary {
-  border: 0; background: var(--blue); color: white;
-  font-weight: 800; border-radius: 9px; padding: .8em 1.4em;
-  cursor: pointer;
-}
-.secondary {
-  border: 1px solid var(--blue); background: white; color: var(--blue);
-  font-weight: 800; border-radius: 9px; padding: .72em 1.2em;
-  cursor: pointer;
-}
-.prompt {
-  color: var(--blue); font-size: 3rem; font-weight: 800;
-  line-height: 1.25; max-width: 1050px;
-}
-.answer-en {
-  color: var(--blue); font-size: 1.35rem; font-weight: 650;
-  margin-bottom: 1em; max-width: 1000px; line-height: 1.3;
-}
-.answer-es {
-  color: var(--red); font-size: 2.75rem; font-weight: 800;
-  line-height: 1.28; max-width: 1100px;
-}
-.target {
-  text-decoration: underline dotted 2px;
-  text-underline-offset: .18em; cursor: pointer;
-  border-radius: .13em; padding: 0 .03em;
-}
-.target.flagged {
-  text-decoration-style: solid;
-  background: #E8EEF5;
-}
-.review-target {
-  color: var(--purple);
-  background: var(--purple-bg);
-  text-decoration: underline solid 2px;
-  text-underline-offset: .18em;
-  border-radius: .13em; padding: 0 .04em;
-}
-.section-title {
-  color: var(--red); font-size: 3rem; font-weight: 850;
-  line-height: 1.12; max-width: 1000px;
-}
-.section-kicker {
-  color: var(--muted); font-size: .95rem; font-weight: 800;
-  letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1em;
-}
-#progress {
-  position: fixed; bottom: 19px; left: 50%;
-  transform: translateX(-50%); color: var(--muted); font-size: .85rem;
-}
-.nav {
-  position: fixed; bottom: 13px; border: 0; background: transparent;
-  color: #6f777e; font-weight: 800; cursor: pointer; padding: .7em 1em;
-}
-.nav:disabled { opacity: .25; cursor: default; }
-#back { left: 14px; }
-#next { right: 14px; }
-#exit {
-  position: fixed; top: 12px; right: 16px; border: 0;
-  background: transparent; color: #a0a6aa; font-size: 1.5rem;
-  cursor: pointer;
-}
-.controls {
-  display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
-  margin: .7em 0 1.2em;
-}
-.choice {
-  border: 2px solid var(--blue); color: var(--blue); background: white;
-  border-radius: 8px; padding: .55em .9em; font-weight: 800;
-  cursor: pointer;
-}
-.choice.selected { background: var(--blue); color: white; }
-select, input[type=number] {
-  border: 1px solid #adb5bc; border-radius: 7px;
-  padding: .55em .7em; min-width: 220px;
-}
-.end-detail { color: #657078; line-height: 1.5; margin-bottom: 1.2em; }
-#subset-controls {
-  position: fixed;
-  top: 12px;
-  right: 52px;
-  display: flex;
-  gap: 7px;
-  align-items: center;
-  z-index: 20;
-}
-#subset-controls select,
-#subset-controls button {
-  font: inherit;
-  font-size: .78rem;
-  color: #68737c;
-  background: rgba(255,255,255,.94);
-  border: 1px solid #d7dde2;
-  border-radius: 7px;
-  padding: .42em .55em;
-}
-#subset-controls button {
-  cursor: pointer;
-  font-weight: 700;
-}
-#subset-controls button:hover {
-  border-color: #aeb8c0;
-}
-
-@media (max-width: 700px) {
-  .screen { padding: 7vh 7vw 14vh; }
-  .title { font-size: 2.15rem; }
-  .prompt { font-size: 2rem; }
-  .answer-en { font-size: 1.02rem; }
-  .answer-es { font-size: 1.9rem; }
-  .section-title { font-size: 2.2rem; }
-  #subset-controls {
-    top: 8px;
-    right: 44px;
-  }
-  #subset-controls select,
-  #subset-controls button {
-    font-size: .7rem;
-    padding: .36em .45em;
-  }
-}
-
-.audio-toggle {
-  position: fixed;
-  top: 52px;
-  right: 14px;
-  z-index: 25;
-  font: inherit;
-  font-size: .76rem;
-  font-weight: 700;
-  color: #68737c;
-  background: rgba(255,255,255,.96);
-  border: 1px solid #d7dde2;
-  border-radius: 7px;
-  padding: .42em .6em;
-  cursor: pointer;
-}
-
-.audio-toggle.on {
-  color: #355C8A;
-  border-color: #9fb2c7;
-  background: #eef3f8;
-}
-
-.audio-button {
-  margin-top: 1.15rem;
-  border: 1px solid #d7dde2;
-  background: white;
-  color: #5f6b75;
-  border-radius: 999px;
-  min-width: 44px;
-  min-height: 38px;
-  padding: .42em .75em;
-  font-size: 1.05rem;
-  cursor: pointer;
-}
-
-.audio-button:hover {
-  border-color: #aeb8c0;
-  background: #f7f9fb;
-}
-
-@media (max-width: 700px) {
-  .audio-toggle {
-    top: 48px;
-    right: 8px;
-    font-size: .68rem;
-    padding: .36em .48em;
-  }
-
-  .audio-button {
-    margin-top: .9rem;
-    min-width: 42px;
-    min-height: 36px;
-  }
-}
-
-
-.cue {
-  color: var(--muted); font-size: .95rem; font-weight: 500;
-  margin-top: 1.25rem; line-height: 1.4;
-}
-#content { max-width: 100%; }
-.target:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
-#exit:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
-@media (max-width: 700px) { .cue { font-size: .82rem; } }
+:root{--blue:#15579f;--red:#b93037;--ink:#1f2937;--muted:#67778a;--line:#e5eaf0;--background:#fff}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;width:100%;min-height:100%;background:var(--background);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+body{min-height:100svh;min-height:100dvh;display:flex;flex-direction:column}
+header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px clamp(20px,4.5vw,70px) 12px;min-height:52px;color:#7d8795;font-size:clamp(12px,1.05vw,15px);font-weight:600;letter-spacing:.085em}
+#progress{height:3px;flex:none;background:#eff2f6}
+#progressbar{height:100%;background:var(--blue);width:0;transition:width .12s linear}
+main{flex:1;min-height:0;display:flex;justify-content:center;align-items:center;padding:clamp(18px,4vh,48px) clamp(22px,5vw,78px)}
+.slide{width:100%;max-width:1260px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:clamp(19px,3vh,32px)}
+.kicker{font-size:clamp(17px,1.55vw,23px);letter-spacing:.09em;text-transform:uppercase;color:#7c8796;font-weight:700}
+.use-prep{font-size:clamp(40px,5vw,80px);line-height:1.12;color:var(--blue);font-weight:700;letter-spacing:-.028em}
+.use-title{font-size:clamp(43px,5.1vw,76px);line-height:1.16;color:var(--ink);font-weight:600;letter-spacing:-.032em;text-wrap:balance}
+.use-gloss{font-size:clamp(26px,3.1vw,44px);line-height:1.26;color:var(--muted);text-wrap:balance}
+.english{font-size:clamp(38px,4.85vw,68px);line-height:1.23;letter-spacing:-.024em;font-weight:500;color:var(--blue);text-wrap:balance;max-width:1200px}
+.answer{font-size:clamp(37px,4.25vw,62px);line-height:1.24;letter-spacing:-.021em;font-weight:500;color:var(--red);text-wrap:balance;max-width:1200px}
+.cue{font-size:clamp(24px,2.4vw,34px);color:#607184;line-height:1.32;text-wrap:balance;max-width:1200px}
+.hintbox{max-width:1160px;display:flex;flex-direction:column;align-items:center;gap:clamp(10px,1.6vh,18px);font-weight:400}
+.hint{font-size:clamp(27px,2.45vw,38px);line-height:1.3;color:#566677;text-wrap:balance}
+.vocab{font-size:clamp(27px,2.3vw,35px);line-height:1.3;color:#718096;text-wrap:balance}
+.mixed-title{font-size:clamp(50px,6vw,90px);color:var(--blue);font-weight:600;line-height:1.2;letter-spacing:-.03em}
+.mixed-subtitle{font-size:clamp(32px,3.7vw,53px);color:var(--ink);line-height:1.25}
+footer{flex:none;min-height:88px;display:flex;justify-content:center;align-items:center;gap:12px;padding:14px 24px 20px;border-top:1px solid #f4f6f8}
+button{font-family:inherit;border:1px solid #dfe5ec;color:#46576a;background:#fff;border-radius:7px;min-height:46px;padding:9px 20px;font-size:17px;cursor:pointer}
+button:hover{background:#f6f9fc}button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}button:disabled{opacity:.22;cursor:default}
+#prev,#next{font-size:28px;padding:0;width:52px;line-height:1.0}
+#reveal{color:var(--blue);border-color:#b9d1e9;min-width:170px}
+#speak{padding:0;width:50px;font-size:21px}
+#counter{font-size:17px;color:#7b8793;min-width:94px;text-align:center;font-variant-numeric:tabular-nums}
+#fullscreen{margin-left:8px;font-size:19px;width:48px;padding:0}
+@media (min-width:1500px){.english{font-size:clamp(57px,4.9vw,81px)}.answer{font-size:clamp(53px,4.3vw,74px)}.hint{font-size:clamp(28px,1.9vw,37px)}.vocab{font-size:clamp(26px,1.8vw,35px)}}
+@media(max-width:700px){header{min-height:44px;padding:10px 20px;font-size:12px}main{padding:28px 20px}.slide{gap:23px}.use-prep{font-size:clamp(34px,8vw,48px)}.use-title{font-size:clamp(34px,8.2vw,53px)}.use-gloss{font-size:clamp(23px,5.4vw,34px)}.english{font-size:clamp(32px,7.9vw,49px)}.answer{font-size:clamp(30px,7.4vw,47px)}.cue{font-size:clamp(23px,5.9vw,34px)}.hint{font-size:clamp(21px,5.4vw,28px)}.vocab{font-size:clamp(20px,4.9vw,27px)}footer{min-height:80px;gap:8px;padding:10px 8px 16px}button{min-height:44px;font-size:14px;padding:8px 12px}#prev,#next{width:44px}#reveal{min-width:120px}#counter{min-width:63px;font-size:13px}#speak{width:43px;font-size:18px}#fullscreen{display:none}}
+@media(max-height:650px) and (min-width:701px){main{padding-top:15px;padding-bottom:15px}.slide{gap:16px}.english{font-size:clamp(35px,4vw,54px)}.answer{font-size:clamp(32px,3.8vw,50px)}.hint,.vocab{font-size:24px}footer{min-height:66px;padding:7px 15px}}
+@media(prefers-reduced-motion:reduce){#progressbar{transition:none}}
 </style>
 </head>
 <body>
-<div id="lesson-screen" class="screen active">
-  <button id="audio-toggle" class="audio-toggle" type="button" aria-pressed="false">Audio: Off</button>
-  <button id="exit" type="button" aria-label="Start a new lesson">×</button>
-  <div id="subset-controls">
-    <select id="subset-size" aria-label="Practice set size">
-      <option value="10">10 items</option>
-      <option value="20" selected>20 items</option>
-      <option value="30">30 items</option>
-      <option value="all">All</option>
-    </select>
-    <button id="new-subset" type="button">New set</button>
+<header><span>SPN 213</span><span>POR Y PARA</span></header>
+<div id="progress" aria-hidden="true"><div id="progressbar"></div></div>
+<main>
+<section class="slide" aria-live="polite" aria-atomic="true">
+  <div id="kicker" class="kicker" hidden></div>
+  <div id="usePrep" class="use-prep" hidden></div>
+  <div id="useTitle" class="use-title" hidden></div>
+  <div id="useGloss" class="use-gloss" hidden></div>
+  <div id="english" class="english" hidden></div>
+  <div id="cue" class="cue" hidden></div>
+  <div id="answer" class="answer" hidden></div>
+  <div id="hintbox" class="hintbox" hidden>
+    <div id="hint" class="hint"></div>
+    <div id="vocab" class="vocab"></div>
   </div>
-  <div id="content" aria-live="polite"></div>
-  <button id="back" class="nav" type="button">← Back</button>
-  <div id="progress"></div>
-  <button id="next" class="nav" type="button">Next →</button>
-</div>
-<div id="end-screen" class="screen">
-  <div class="title" id="end-title">Lesson complete</div>
-  <div class="end-detail" id="end-detail"></div>
-  <div class="controls">
-    <button id="review" class="primary" type="button">Extra review</button>
-    <button id="repeat" class="secondary" type="button">Repeat lesson</button>
-  </div>
-</div>
+  <div id="mixedTitle" class="mixed-title" hidden></div>
+  <div id="mixedSubtitle" class="mixed-subtitle" hidden></div>
+</section>
+</main>
+<footer>
+  <button id="prev" aria-label="Previous slide" title="Previous slide (left arrow)">‹</button>
+  <button id="reveal" title="Reveal answer (Space)">Reveal</button>
+  <button id="next" aria-label="Next slide" title="Next slide (right arrow)">›</button>
+  <button id="speak" aria-label="Read Spanish aloud" title="Read Spanish aloud">🔊</button>
+  <span id="counter"></span>
+  <button id="fullscreen" title="Fullscreen (F)" aria-label="Fullscreen">⛶</button>
+</footer>
 <script>
-const DATA = __LESSON_DATA__;
-const KIND = 'por_para';
-const ALL_MAIN = DATA.items.filter(x => x.kind === 'main');
-const ALL_REVIEWS = DATA.items.filter(x => x.kind === 'review');
-const content = document.getElementById('content');
-const progress = document.getElementById('progress');
-const back = document.getElementById('back');
-const next = document.getElementById('next');
-const lessonScreen = document.getElementById('lesson-screen');
-const endScreen = document.getElementById('end-screen');
-const reviewBtn = document.getElementById('review');
-let mode='lesson', lessonItems=[], reviewItems=[], currentIndex=0, showingAnswer=false;
-let flagged=new Set(), autoAudio=false, spanishVoice=null;
-function escapeHTML(x) {
- return String(x??'').replaceAll('&','&amp;').replaceAll('<','&lt;')
- .replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;');
+'use strict';
+const SLIDES = __SLIDES_JSON__;
+const q=(id)=>document.getElementById(id);
+let i=0,visible=false;
+function show(id,value){q(id).textContent=value ?? '';q(id).hidden=!value;}
+function isAnswerSlide(s){return s.type==='practice'||s.type==='mixed';}
+function render(){
+  const s=SLIDES[i];
+  for(const id of ['kicker','usePrep','useTitle','useGloss','english','cue','answer','hintbox','mixedTitle','mixedSubtitle'])q(id).hidden=true;
+  if(s.type==='use'){
+    show('usePrep',`${s.preposition.toUpperCase()} USE ${s.use_number}`);
+    show('useTitle',s.title);
+    show('useGloss',`(${s.gloss})`);
+  }else if(s.type==='divider'){
+    show('mixedTitle',s.title);
+    show('mixedSubtitle',s.subtitle);
+  }else{
+    if(s.type==='model')show('kicker','EXAMPLE');
+    if(s.type==='practice')show('kicker',`PRACTICE ${s.practice_number} / 3`);
+    if(s.type==='mixed')show('kicker','MIXED PRACTICE');
+    show('english',s.english);
+    const answerVisible=s.type==='model'||visible;
+    // Every unrevealed exercise includes a gray Spanish fill-in cue.
+    if(!answerVisible&&s.cue)show('cue',s.cue);
+    if(answerVisible)show('answer',s.spanish);
+    // Every example and exercise includes vocabulary support.
+    if(s.vocab){
+      q('hintbox').hidden=false;
+      if(s.type==='mixed')show('hint',`Use: ${s.hint_use||s.use}`);
+      show('vocab',`Vocabulary: ${s.vocab}`);
+    }
+  }
+  q('reveal').hidden=!isAnswerSlide(s);
+  q('reveal').textContent=visible?'Hide answer':'Reveal';
+  q('speak').hidden=!(s.spanish&&(s.type==='model'||visible));
+  q('prev').disabled=i===0;
+  q('next').disabled=i===SLIDES.length-1;
+  q('counter').textContent=`${i+1} / ${SLIDES.length}`;
+  q('progressbar').style.width=`${(i+1)/SLIDES.length*100}%`;
+  // A hash enables direct links to specific classroom slides.
+  const hash=`#${i+1}`;
+  if(location.hash!==hash)history.replaceState(null,'',hash);
 }
-function shuffle(x){const a=[...x];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-function activeItems(){return mode==='lesson'?lessonItems:reviewItems;}
-function current(){return activeItems()[currentIndex];}
-function stopAudio(){if('speechSynthesis' in window)window.speechSynthesis.cancel();}
-function chooseSpanishVoice(){
- if(!('speechSynthesis' in window))return null;
- const voices=(speechSynthesis.getVoices()||[]).filter(v=>String(v.lang).toLowerCase().startsWith('es'));
- spanishVoice=voices.find(v=>/^es-(mx|us|419)/i.test(v.lang))||voices.find(v=>/^es-es/i.test(v.lang))||voices[0]||null;
- return spanishVoice;
+function step(n){let to=i+n;if(to<0||to>=SLIDES.length)return;i=to;visible=false;render();}
+function toggle(){if(!isAnswerSlide(SLIDES[i]))return;visible=!visible;render();}
+function speak(){
+  const s=SLIDES[i];if(!s.spanish||!(s.type==='model'||visible)||!('speechSynthesis' in window))return;
+  speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(s.spanish);utterance.lang='es-ES';utterance.rate=.86;speechSynthesis.speak(utterance);
 }
-if('speechSynthesis' in window){chooseSpanishVoice();speechSynthesis.addEventListener?.('voiceschanged',chooseSpanishVoice);}
-function speakSpanish(t){
- if(!t||!('speechSynthesis' in window))return;
- stopAudio();const u=new SpeechSynthesisUtterance(t),v=spanishVoice||chooseSpanishVoice();
- if(v){u.voice=v;u.lang=v.lang;}else{u.lang='es-MX';}u.rate=.92;u.pitch=1;speechSynthesis.speak(u);
-}
-function targetMarkup(item,inReview){
- const sentence=item.spanish, span=item.target_span||'';
- const at=sentence.toLocaleLowerCase().indexOf(span.toLocaleLowerCase());
- if(!span||at<0)return escapeHTML(sentence);
- const txt=escapeHTML(sentence.slice(at,at+span.length));
- const flaggedNow=flagged.has(item.stage_id);
- const el=inReview?`<span class="review-target">${txt}</span>`:
- `<span class="target${flaggedNow?' flagged':''}" role="button" tabindex="0" aria-pressed="${flaggedNow}" title="Mark for two extra examples" data-stage="${escapeHTML(item.stage_id)}">${txt}</span>`;
- return escapeHTML(sentence.slice(0,at))+el+escapeHTML(sentence.slice(at+span.length));
-}
-function cueFor(item){
- let cue=item.infinitive||'';
- if(item.person)cue+=`${cue?' · ':''}${item.person}`;
- return cue?`<div class="cue">${escapeHTML(cue)}</div>`:'';
-}
-function show(){
- const item=current();if(!item){finish();return;}
- if(!showingAnswer){
-  content.innerHTML=`<div class="prompt">${escapeHTML(item.english)}</div>${cueFor(item)}`;
- }else{
-  content.innerHTML=`<div class="answer-en">${escapeHTML(item.english)}</div><div class="answer-es">${targetMarkup(item,mode==='review')}</div>`;
-  const b=document.createElement('button');b.className='audio-button';b.type='button';b.textContent='🔊';
-  b.setAttribute('aria-label','Play Spanish audio');b.title='Play Spanish audio';
-  b.disabled=!('speechSynthesis' in window);
-  b.onclick=e=>{e.stopPropagation();speakSpanish(item.spanish);};content.appendChild(b);
-  if(autoAudio)speakSpanish(item.spanish);
- }
- const i=currentIndex*2+(showingAnswer?2:1);
- progress.textContent=`${mode==='review'?'Review slide':'Slide'} ${i} / ${activeItems().length*2}`;
- back.disabled=currentIndex===0&&!showingAnswer;
- next.textContent=currentIndex===activeItems().length-1&&showingAnswer?'Finish →':'Next →';
- document.getElementById('subset-controls').style.display=mode==='lesson'?'flex':'none';
-}
-function forward(){
- stopAudio();if(!showingAnswer){showingAnswer=true;show();return;}
- if(currentIndex<activeItems().length-1){currentIndex++;showingAnswer=false;show();}else finish();
-}
-function backward(){
- stopAudio();if(showingAnswer){showingAnswer=false;show();}
- else if(currentIndex>0){currentIndex--;showingAnswer=true;show();}
-}
-// Deal topic-balanced mini-decks into interleaved order. No long sections or label cards.
-function roundRobin(groups){
- const keys=shuffle(Object.keys(groups));const pools=Object.fromEntries(keys.map(k=>[k,shuffle(groups[k])]));
- const out=[];while(keys.some(k=>pools[k].length)){
-  for(const k of keys)if(pools[k].length)out.push(pools[k].pop());
- }return out;
-}
-function drawSet(){
- const size=document.getElementById('subset-size').value;
- const n=size==='all'?ALL_MAIN.length:Math.min(Number(size),ALL_MAIN.length);
- const groups={};
- for(const item of ALL_MAIN){
-  const key=KIND==='combined'?item.topic:item.preposition;
-  (groups[key]??=[]).push(item);
- }
- // Group quotas are balanced for every subset; the order of groups is randomized.
- const shuffledKeys=shuffle(Object.keys(groups));const allocations=Object.fromEntries(shuffledKeys.map(k=>[k,0]));
- const chosen=Object.fromEntries(shuffledKeys.map(k=>[k,[]]));
- for(let i=0;i<n;i++){
-  const eligible=shuffledKeys.filter(k=>allocations[k]<groups[k].length);
-  if(!eligible.length)break;
-  const least=Math.min(...eligible.map(k=>allocations[k]));
-  const key=eligible.find(k=>allocations[k]===least);
-  allocations[key]++;
- }
- for(const k of shuffledKeys)chosen[k]=shuffle(groups[k]).slice(0,allocations[k]);
- return roundRobin(chosen);
-}
-function newSet(){
- stopAudio();mode='lesson';lessonItems=drawSet();reviewItems=[];
- currentIndex=0;showingAnswer=false;flagged=new Set();
- endScreen.classList.remove('active');lessonScreen.classList.add('active');show();
-}
-function repeatSet(){
- stopAudio();mode='lesson';currentIndex=0;showingAnswer=false;flagged=new Set();
- endScreen.classList.remove('active');lessonScreen.classList.add('active');show();
-}
-function finish(){
- stopAudio();lessonScreen.classList.remove('active');endScreen.classList.add('active');
- if(mode==='review'){
-  document.getElementById('end-title').textContent='Extra review complete';
-  document.getElementById('end-detail').textContent=`${reviewItems.length} additional examples completed.`;
-  reviewBtn.style.display='none';
- }else{
-  const n=flagged.size;document.getElementById('end-title').textContent='Lesson complete';
-  document.getElementById('end-detail').textContent=n?`${n} ${KIND==='combined'?'focus area':'usage category'}${n===1?'':'s'} marked for extra practice.`:'No forms were marked for extra practice.';
-  reviewBtn.style.display=n?'inline-block':'none';reviewBtn.textContent=n?`Extra review: ${n*2} items`:'Extra review';
- }
-}
-function startReview(){
- reviewItems=shuffle([...flagged].flatMap(id=>{
-  const choices=ALL_REVIEWS.filter(x=>x.stage_id===id);
-  return shuffle(choices).slice(0,2);
- }));
- if(!reviewItems.length)return;
- stopAudio();mode='review';currentIndex=0;showingAnswer=false;
- endScreen.classList.remove('active');lessonScreen.classList.add('active');show();
-}
-function toggleTarget(stage){
- if(flagged.has(stage))flagged.delete(stage);else flagged.add(stage);
- content.querySelectorAll('.target').forEach(t=>{
-  const yes=flagged.has(t.dataset.stage);t.classList.toggle('flagged',yes);t.setAttribute('aria-pressed',String(yes));
- });
-}
-content.addEventListener('click',e=>{
- const target=e.target.closest('.target');if(target){e.stopPropagation();toggleTarget(target.dataset.stage);return;}
- if(e.target.closest('.audio-button'))return;forward();
-});
-content.addEventListener('keydown',e=>{
- if((e.key==='Enter'||e.key===' ')&&e.target.matches('.target')){
-  e.preventDefault();e.stopPropagation();toggleTarget(e.target.dataset.stage);
- }
-});
-back.onclick=backward;next.onclick=forward;
-document.getElementById('new-subset').onclick=newSet;
-document.getElementById('repeat').onclick=repeatSet;
-document.getElementById('review').onclick=startReview;
-document.getElementById('exit').onclick=newSet;
-document.getElementById('audio-toggle').onclick=()=>{
- autoAudio=!autoAudio;const b=document.getElementById('audio-toggle');
- b.textContent=autoAudio?'Audio: On':'Audio: Off';b.classList.toggle('on',autoAudio);
- b.setAttribute('aria-pressed',String(autoAudio));
- if(autoAudio&&showingAnswer&&lessonScreen.classList.contains('active'))speakSpanish(current().spanish);
- else if(!autoAudio)stopAudio();
-};
+function fullscreen(){if(!document.fullscreenElement){document.documentElement.requestFullscreen?.();}else{document.exitFullscreen?.();}}
+q('prev').addEventListener('click',()=>step(-1));
+q('next').addEventListener('click',()=>step(1));
+q('reveal').addEventListener('click',toggle);
+q('speak').addEventListener('click',speak);
+q('fullscreen').addEventListener('click',fullscreen);
 document.addEventListener('keydown',e=>{
- if(!lessonScreen.classList.contains('active'))return;
- if(e.target.matches('button,select,.target'))return;
- if(['ArrowRight',' ','Enter'].includes(e.key)){e.preventDefault();forward();}
- if(e.key==='ArrowLeft'){e.preventDefault();backward();}
+  if(e.altKey||e.ctrlKey||e.metaKey)return;
+  if(e.key==='ArrowLeft'){e.preventDefault();step(-1);}
+  else if(e.key==='ArrowRight'){e.preventDefault();step(1);}
+  else if((e.key===' '||e.key==='Enter')&&!(e.target instanceof HTMLButtonElement)){
+    e.preventDefault();if(isAnswerSlide(SLIDES[i])&&!visible)toggle();else step(1);
+  }else if(e.key.toLowerCase()==='f'&&!(e.target instanceof HTMLButtonElement)){fullscreen();}
 });
-newSet();
+const initial=Number(location.hash.slice(1));if(Number.isInteger(initial)&&initial>=1&&initial<=SLIDES.length)i=initial-1;
+render();
 </script>
 </body>
 </html>
